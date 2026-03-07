@@ -22,6 +22,7 @@
   --inner-card-shadow:#1f2a48;
   --her0-gradient:#222e52;
   --shadow-cl:#00000044;
+  --footer-cl:#0f111acc;
   --transition: .2s ease-in-out
 }
 
@@ -90,7 +91,7 @@ body{
 
 header{
   height: 50px;
- padding:0 10px; 
+ padding:0 9px; 
 box-shadow: 0 1.5px 2px var(--shadow-cl);
  display: flex;
  justify-content: space-between;
@@ -121,19 +122,63 @@ box-shadow: 0 1.5px 2px var(--shadow-cl);
 .sidebar{
   position: fixed;
   top: 9vh;
-  height: 85.5vh;
+  height: 91vh;
   width: 200px;
   background-color: var(--sidebar-bg);
   border-bottom-right-radius: 3.5px;
   border-top-right-radius: 3.5px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
 
+.sidebar-title{
+  text-align: center;
+  margin: 10px 0;
+  font-size: 0.95rem;
+}
+
+.sidebar-nav:hover{
+  background-color: var(--footer-cl);
+  width: 100%;
+  padding-left: 35px;
+}
+
+.sidebar-nav{
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+  padding: 1rem 1px;
+  padding-left: 10px;
+  color: var(--muted-text);
+  transition: var(--transition);
+}
+
+.active{
+  background-color: var(--her0-gradient);
+  color: var(--primary-body-text);
+}
+
+.sidebar-Icon img{
+  width: 15.5px;
+}
+.sidebar a{
+  text-decoration: none;
+}
+
+
+
+/*main section*/
 main{
+  margin-top: 8.5px;
   margin-left: 211px;
   flex: 1;
 }
 
+/*footer section*/
 footer{
-  height: 5vh;
-  background-color: var(--sidebar-bg);
+  margin-left:202px ;
+  height: 10vh;
+  background-color:/* #0f111a */ var(--footer-cl);
+  backdrop-filter: blur(10px);
 }
