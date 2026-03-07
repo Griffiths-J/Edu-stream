@@ -1,0 +1,139 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --main-bg:#0b1220;
+  --sidebar-bg:#10192b;
+  --elevatedPanel-bg:#1a2a45;
+  --primary-main:#5b6cff;
+  --primary-hover:#434fd0;
+  --dark-accent:#383fad;
+  --deep-accent:#2e358f;
+  --progress-bar-bg:#3c82f6;
+  --progress-bar:#3474db;
+  --active-highlight:#2c63bd;
+  --main-text-headings:#fff;
+  --primary-body-text:#e6eaf2;
+  --secondary-body-text:#c9d1e3;
+  --muted-text:#9ca8c3;
+  --inner-card-shadow:#1f2a48;
+  --her0-gradient:#222e52;
+  --shadow-cl:#00000044;
+  --transition: .2s ease-in-out
+}
+
+body{
+      background-color: var(--main-bg);
+      color: var(--primary-body-text);
+      display: flex;
+     flex-direction: column;
+     min-height: 100vh;
+}
+
+/*header section*/
+
+.header-icon{
+  width: 25px;
+}
+
+.profile{
+   display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-right: 10px;
+}
+.bell{ 
+  position: relative; 
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.notify{
+  position: absolute;
+  top: 0;
+  right: -2px;
+  font-size: 0.9rem;
+  width: 14.5px;
+  height: 14.5px;
+  color:#fff;
+  padding:0 3px;
+  border-radius: 50%;
+  background-color: #f00;
+  transition: var(--transition);
+}
+
+.notify:hover{
+  color: red;
+  background-color: var(--main-text-headings);
+}
+
+.profile-icon{
+  width: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.burger div{
+  width: 20px;
+  height: 2.5px;
+  background-color: var(--primary-hover);
+  margin: 3.4px;
+}
+
+.burger .shortWidth{
+  width: 15.5px;
+  justify-self: right;
+}
+
+header{
+  height: 50px;
+ padding:0 10px; 
+box-shadow: 0 1.5px 2px var(--shadow-cl);
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ position: sticky;
+ top: 0;
+ right: 0;
+ left: 0;
+  background-color: var(--main-bg);
+}
+
+.website-name{
+  display: flex;
+  gap:2.8px;
+  align-items: center;
+}
+
+.website-name p{
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.burger{
+  display: none;
+}
+
+/*side bar*/
+
+.sidebar{
+  position: fixed;
+  top: 9vh;
+  height: 85.5vh;
+  width: 200px;
+  background-color: var(--sidebar-bg);
+  border-bottom-right-radius: 3.5px;
+  border-top-right-radius: 3.5px;
+}
+
+main{
+  margin-left: 211px;
+  flex: 1;
+}
+
+footer{
+  height: 5vh;
+  background-color: var(--sidebar-bg);
+}
