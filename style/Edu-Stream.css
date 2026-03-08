@@ -101,6 +101,7 @@ box-shadow: 0 1.5px 2px var(--shadow-cl);
  right: 0;
  left: 0;
   background-color: var(--main-bg);
+  z-index: 100;
 }
 
 .right-corner{
@@ -152,6 +153,7 @@ box-shadow: 0 1.5px 2px var(--shadow-cl);
   flex-direction: column;
   overflow: hidden;
   transition:all .2s ease-in-out;
+  z-index: 100;
 }
 
 .sidebar-title{
@@ -250,9 +252,108 @@ main{
   }
 
   main{
-    margin:8px 10px;
+    margin:8px 6px;
   }
 }
+
+
+/*hero secion*/
+
+.heroRightSide{
+  flex: 1;
+}
+
+.heroRightSide img{
+  width: 350px;
+}
+
+
+.leftSide-items{
+  height: 189px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-title{
+  text-transform: capitalize;
+  font-size: clamp(1rem, 2vw + 0.4rem, 3rem);
+  margin-bottom: 5px;
+  color: var(--main-text-headings);
+  font-family: "Poppins" , sans-serif;
+  font-weight: 500;
+}
+
+.hero-subtitle{
+  font-size: clamp(0.5rem, 1vw + 0.25rem,0.85rem);
+  margin: 2px 0 8px 0;
+  font-family: inter;
+  color: var(--secondary-body-text);
+}
+
+.hero-buttons{
+  display: flex;
+  gap:10px ;
+  margin-top: clamp(0.2rem + 1vw);
+  margin-left: 10px;
+  
+ /*  width: clamp(2vw + 1rem); */
+}
+
+.hero-buttons img{
+  width: 15px;
+}
+
+.hero-btn1,.hero-btn2{
+  border: 1px solid var(--secondary-body-text);
+  border-radius: 20px;
+  padding-left:calc(1vw + 0.55rem);
+  padding-right:calc(1vw + 0.55rem);
+  padding-top:calc(0.2vw + 0.15rem);
+  padding-bottom:calc(0.2vw + 0.15rem);
+  display: flex;
+  align-items: center;
+  font-size: clamp(0.4rem, 1vw + 0.2rem , 1rem);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all .2s ease;
+  color: var(--primary-body-text);
+}
+
+.hero-btn2:hover{
+  background-color: var(--muted-text);
+  color:#000;
+}
+
+.hero-btn1{
+  background-color: var(--primary-main);
+}
+
+.hero-btn1:hover{
+  background-color: var(--primary-hover);
+}
+
+.heroSection{
+  position: relative;
+  height: 210px;
+  padding-left: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ffffff57;
+  border-radius: 5px;
+  background-color: var(--elevatedPanel-bg);
+  overflow: hidden;
+}
+
+
+
+@media (max-width:700px){
+  .heroRightSide img{
+    width: 250px;
+  }
+}
+
 
 
 /*footer section*/
