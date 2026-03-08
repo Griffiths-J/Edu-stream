@@ -24,6 +24,9 @@
   --shadow-cl:#00000044;
   --footer-cl:#0f111acc;
   --transition: .2s ease-in-out;
+  --titles-font-size:clamp(1rem, 2vw + 0.4rem, 3rem);
+  --section-title-font-size:clamp(0.89rem , 1.3rem + 0.2rem, 1.1rem);
+  --description-font-size:clamp();
 }
 
 body{
@@ -90,7 +93,7 @@ body{
 }
 
 header{
-  height: 50px;
+  height: 7.5vh;
  padding:0 9px; 
 box-shadow: 0 1.5px 2px var(--shadow-cl);
  display: flex;
@@ -211,7 +214,7 @@ box-shadow: 0 1.5px 2px var(--shadow-cl);
 
 /*main section*/
 main{
-  margin:8px 10px 8px 211px ;
+  margin:1.5vh 10px 8px 210px ;
   flex: 1;
 }
 
@@ -252,7 +255,7 @@ main{
   }
 
   main{
-    margin:8px 6px;
+    margin:1.5vh 5px 10px 5px;
   }
 }
 
@@ -277,7 +280,7 @@ main{
 
 .hero-title{
   text-transform: capitalize;
-  font-size: clamp(1rem, 2vw + 0.4rem, 3rem);
+  font-size: var(--titles-font-size)/* clamp(1rem, 2vw + 0.4rem, 3rem) */;
   margin-bottom: 5px;
   color: var(--main-text-headings);
   font-family: "Poppins" , sans-serif;
@@ -294,7 +297,7 @@ main{
 .hero-buttons{
   display: flex;
   gap:10px ;
-  margin-top: clamp(0.2rem + 1vw);
+  margin-top: calc(0.2rem + 1vw);
   margin-left: 10px;
   
  /*  width: clamp(2vw + 1rem); */
@@ -344,6 +347,7 @@ main{
   border-radius: 5px;
   background-color: var(--elevatedPanel-bg);
   overflow: hidden;
+  box-shadow: 0 0 2px var(--primary-main)
 }
 
 
@@ -354,6 +358,25 @@ main{
   }
 }
 
+/*cards section*/
+
+.sectionTitle{
+  font-size: var(--section-title-font-size);
+}
+
+.cardSection{
+ margin: 10px 0; 
+}
+
+j
+
+
+
+
+
+
+
+
 
 
 /*footer section*/
@@ -363,3 +386,5 @@ footer{
   background-color:/* #0f111a */ var(--footer-cl);
   backdrop-filter: blur(10px);
 }
+
+
