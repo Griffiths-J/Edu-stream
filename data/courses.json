@@ -1,0 +1,43 @@
+[
+  {
+   "web-development":[
+      {
+        "id":"id",
+        "image":"image",
+        "title":"title",
+        "description":"description"
+      },{},{}
+   ]
+},
+{
+  "cybersecurity":[
+    {
+       "id":"id",
+       "image":"image",
+       "title":"title",
+       "description":"description"
+    },{},{}
+  ]
+},
+{
+  "ui/ux":[
+    {
+      "id":"id",
+      "image":"image",
+      "title":"title",
+      "description":"description"
+    },{},{}
+  ]
+},
+{
+  "AI":[
+    {
+      "id":"id",
+      "image":"image",
+      "title":"title",
+      "description":"description"
+    },{},{}
+  ]
+}
+ 
+]

@@ -22,7 +22,7 @@
   --inner-card-shadow:#1f2a48;
   --her0-gradient:#222e52;
   --shadow-cl:#00000044;
-  --footer-cl:#0f111acc;
+  --footer-cl:rgba(30,41,59,0.7)/* #284d881f */;
   --transition: .2s ease-in-out;
   --titles-font-size:clamp(1rem, 2vw + 0.4rem, 3rem);
   --section-title-font-size:clamp(0.89rem , 1.2rem + 0.18rem, 1.1rem);
@@ -36,6 +36,10 @@ body{
       display: flex;
      flex-direction: column;
      min-height: 100vh;
+}
+
+.html{
+  background-color: var(--main-bg);
 }
 
 /*header section*/
@@ -374,10 +378,10 @@ main{
 }
 
 .card{
-  box-shadow: 0 0 3px #000;
+  box-shadow: 0 0 5px #000000c1;
   background-color: var(--elevatedPanel-bg);
   overflow: hidden;
-  flex: 0 0 280px;
+  flex: 0 0 290px ;
   border-radius: 10px;
   margin-right: 25px;
   scroll-snap-align: center;
@@ -392,6 +396,9 @@ main{
 .thumbnailContainer{
   overflow: hidden;
   border-radius:7px;
+  height: 254.14px;
+  box-shadow: 0 1px 1.2px #00000058;
+  margin-bottom: 3px;
 }
 
 .thumbnailContainer img{
@@ -401,7 +408,7 @@ main{
 }
 
 .cardTitle{
-  font-size: calc(0.7vw + 0.85rem);
+  font-size: calc(0.7vw + 0.65rem);
   font-family: var(--popins-font);
   text-align: center;
   color: var(--primary-body-text);
@@ -409,12 +416,25 @@ main{
 
 @media(max-width:650px){
   .cardTitle{
-    font-size: 1.24rem;
+    font-size: 1.1rem;
+  }
+
+  .cardDescription{
+    font-size:0.89rem ;
+  }
+  .card{
+    margin-right: 10px;
+  margin-left: 10px;
+  flex: 0 0 82%;
+  }
+
+  .cardsWrapper{
+     scroll-snap-type: x mandatory;
   }
 }
 
 .cardMiddle{
-  margin: 2px 0;
+  margin: 2px 1.5px;
 }
 
 .cardDescription{
@@ -440,16 +460,17 @@ main{
   border: 1px solid ;
   font-weight: 600;
   border-radius: 10px rgba(255,255,255,0.2);
-  padding: 1px 7px;
+  padding: 3.5px 8.5px;
   align-items: center;
   border-radius: 50px;
   background: rgba(255, 255, 255, 0.046);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3), inset 1px 1px rgba(255, 255, 255, 0.16) ;
   cursor: pointer;
+  transition: all .2s ease;
 }
 
 .cardBtn1:hover{
-
+  background-color: rgba(255, 255, 255, 0.196);
 }
 
 .cardBottom{
@@ -464,15 +485,17 @@ main{
 .progressBar{
   width: 100%;
   height: 8px;
-  border: 1px solid var(--main-text-headings);
+ /*  border: 1px solid var(--main-text-headings); */
+  background-color: #0b1220a3;
   border-radius: 10px;
   overflow: hidden;
 }
 
 .progress{
   width: 50%;
+  border-radius: 10px;
   height: inherit;
-  background: linear-gradient(to right,#608dd7,#396cbe,#2e358f) ;
+  background: linear-gradient(to right,#608dd7,#396cbe,#2e358f);
 }
 
 .cardsWrapper{
@@ -488,10 +511,47 @@ main{
 
 /*footer section*/
 footer{
-  margin-left:202px ;
-  height: 10vh;
+  margin-left:200.3px ;
   background-color:/* #0f111a */ var(--footer-cl);
-  backdrop-filter: blur(10px);
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  padding: 14px 5px;
+  font-size: clamp(0.5rem , 0.55vw + 0.55rem , 1.2rem);
 }
 
+.left{
+  display: grid;
+  grid-template-columns: auto repeat(auto-fit, minmax(200px, 1fr));
+}
+.footer-logo{
+  display: flex;
+  align-items: center;
+}
+.footer-logo img{
+  width: 20px;
+}
+
+.logo-text1,.logo-text2{
+  color: var(--muted-text);
+  font-size: var(--description-font-size);
+}
+
+.joinUs{
+  padding: 0 1px;
+}
+.joininputs button{
+  width: 100%;
+  padding: 3px 1px ;
+  border-radius: 20px;
+  background-color:var(--primary-hover);
+  color: #fff;
+  border: none;
+}
+
+@media (max-width:650px){
+  footer{
+    margin-left: 0;
+  }
+  
+}
 

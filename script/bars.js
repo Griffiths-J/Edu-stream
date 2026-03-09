@@ -11,7 +11,7 @@ export function sidebar(){
     burger.classList.toggle("animateBurger");
   
         sidebarContent.forEach((item,index)=>{
-          console.log(item)
+          
           item.style.transitionDelay=`${index * 0.1}s`;
         
           item.addEventListener('transitionend',()=>{
