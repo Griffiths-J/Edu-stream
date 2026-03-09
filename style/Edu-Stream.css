@@ -536,8 +536,14 @@ footer{
   font-size: var(--description-font-size);
 }
 
+.rightTitle{
+  text-align: center;
+  font-size: 0.85rem;
+}
+
 .joinUs{
   padding: 0 1px;
+  text-align: center;
 }
 .joininputs button{
   width: 100%;
