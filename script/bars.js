@@ -22,15 +22,27 @@ export function sidebar(){
   });
 
 
-  document.addEventListener('click',()=>{
+  document.addEventListener('click',e=>{
+    const target = document.contains(e.target);
     const isOpen = sidebar.classList.contains("revertSidebar");
 
-    if(isOpen){
+    if(isOpen && !target){
       sidebar.classList.remove("revertSidebar");
       burger.classList.remove("animateBurger");
     }
   })
-  
- 
+
+}
+
+export function utils(){
+
+  class Utils{
+    constructor(delay , boxNumber){
+        this.delay=delay;
+        this.boxNumber= boxNumber;
+    }
+
+   
+  }
 
 }
