@@ -23,10 +23,9 @@ export function sidebar(){
 
 
   document.addEventListener('click',e=>{
-    const target = document.contains(e.target);
     const isOpen = sidebar.classList.contains("revertSidebar");
 
-    if(isOpen && !target){
+    if(isOpen){
       sidebar.classList.remove("revertSidebar");
       burger.classList.remove("animateBurger");
     }
@@ -34,15 +33,4 @@ export function sidebar(){
 
 }
 
-export function utils(){
 
-  class Utils{
-    constructor(delay , boxNumber){
-        this.delay=delay;
-        this.boxNumber= boxNumber;
-    }
-
-   
-  }
-
-}
