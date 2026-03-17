@@ -183,7 +183,7 @@ box-shadow: 0 1.5px 2px var(--shadow-cl);
   column-gap: 5px;
   padding: 1rem 1px;
   padding-left: 10px;
-  color: var(--primary-body-text);
+  color: var(--secondary-body-text);
   transition: var(--transition); 
 }
 
