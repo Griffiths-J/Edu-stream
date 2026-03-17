@@ -89,9 +89,9 @@ async function render(){
 
                 <div class="cardBottom">
                   <div class="progressBar">
-                    <div class="progress" style="width: ${course.progress || 0}%"></div>
+                    <div class="progress" style="width: ${course.progress || 20}%"></div>
                   </div>
-                  <div class="progressPercentage">${course.progress || '0'}%</div>
+                  <div class="progressPercentage">${course.progress || '20'}%</div>
                 </div>
               </div>
             `;
