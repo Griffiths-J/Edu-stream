@@ -10,6 +10,7 @@
     <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
     <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
     <script src="library/videojs-youtube.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <title>Trending | Edu-Stream</title>
 </head>
 <body>
@@ -151,8 +152,363 @@
 
       <div class="most-trending">
         <div class="most-trending-title">trending <span>Course today</span></div>
+
+        <div class="most-trending-wrap">
+          <div class="most-trending-course">
+            <div class="most-trending-top">
+              <div class="number1">#1</div>
+              <div class="number">
+                <div class="most-trending-number-title">React Masterclass</div>
+                <div class="most-trending-learners">12,234 <span>learners</span></div>
+                <div class="most-trending-rating">4.9 ⭐</div>
+              </div>
+            </div>
+            <div class="most-trending-bottom">
+              <div class="most-trending-bottom-left">
+                <div class="most-trending-bottom-title">Trending because:</div>
+                  <ul>
+                    <li>68 learners this week</li>
+                    <li>top on all LMS platforms</li>
+                    <li>highly rated by students</li>
+                  </ul>
+              </div>
+              <div class="most-trending-bottom-right">
+                <button>Watch Now</button>
+              </div>
+            </div>
+        </div>
+        <div class="graph-card week-activity">
+          <h3>Weekly Learning Activity</h3>
+          <canvas id="learningChart"></canvas>
+          <p class="growth">+19% platform growth</p>
+        </div>
+        </div>
+
       </div>
 
+      <div class="cardSection">
+        <div class="sectionTitle">Trending in Web Development</div>
+        <div class="cardsWrapper techadvancement-sec">
+            <div class="card">
+            <div class="cardUpper">
+              <div class="thumbnailContainer">
+                <img
+                  src="assets/thumbnails/thumbnail-card.jpeg"
+                  alt="thumbnail-card"
+                />
+              </div>
+              <div title="learn and master web ddev hhvvhvhjdhjhjgh" class="cardTitle">Learn React masterclass</div>
+            </div>
+
+            <div class="cardMiddle">
+              <div class="cardDescription">
+                React is a javascript framework that ease your work.
+              </div>
+              <div class="cardButtons">
+                <div class="cardBtn1">
+                  <img src="SVG/play-icon.png" alt="play-icon" />
+                  <p>Watch</p>
+                </div>
+                <div class="cardBtn2">
+                  <img
+                    src="SVG/bookmark-outline-icon.png"
+                    alt="bookmark-outline-icon"
+                  />
+                  <p>Bookmark</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="cardBottom">
+              <div class="progressBar">
+                <div class="progress"></div>
+              </div>
+              <div class="progressPercentage">50%</div>
+            </div>
+          </div>
+
+            <div class="card">
+            <div class="cardUpper">
+              <div class="thumbnailContainer">
+                <img
+                  src="assets/thumbnails/thumbnail-card.jpeg"
+                  alt="thumbnail-card"
+                />
+              </div>
+              <div title="learn and master web ddev hhvvhvhjdhjhjgh" class="cardTitle">Learn React masterclass</div>
+            </div>
+
+            <div class="cardMiddle">
+              <div class="cardDescription">
+                React is a javascript framework that ease your work.
+              </div>
+              <div class="cardButtons">
+                <div class="cardBtn1">
+                  <img src="SVG/play-icon.png" alt="play-icon" />
+                  <p>Watch</p>
+                </div>
+                <div class="cardBtn2">
+                  <img
+                    src="SVG/bookmark-outline-icon.png"
+                    alt="bookmark-outline-icon"
+                  />
+                  <p>Bookmark</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="cardBottom">
+              <div class="progressBar">
+                <div class="progress"></div>
+              </div>
+              <div class="progressPercentage">50%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cardSection">
+        <div class="sectionTitle">Trending in UI/UX Design</div>
+        <div class="cardsWrapper techadvancement-sec">
+            <div class="card">
+            <div class="cardUpper">
+              <div class="thumbnailContainer">
+                <img
+                  src="assets/thumbnails/thumbnail-card.jpeg"
+                  alt="thumbnail-card"
+                />
+              </div>
+              <div title="learn and master web ddev hhvvhvhjdhjhjgh" class="cardTitle">Learn React masterclass</div>
+            </div>
+
+            <div class="cardMiddle">
+              <div class="cardDescription">
+                React is a javascript framework that ease your work.
+              </div>
+              <div class="cardButtons">
+                <div class="cardBtn1">
+                  <img src="SVG/play-icon.png" alt="play-icon" />
+                  <p>Watch</p>
+                </div>
+                <div class="cardBtn2">
+                  <img
+                    src="SVG/bookmark-outline-icon.png"
+                    alt="bookmark-outline-icon"
+                  />
+                  <p>Bookmark</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="cardBottom">
+              <div class="progressBar">
+                <div class="progress"></div>
+              </div>
+              <div class="progressPercentage">50%</div>
+            </div>
+          </div>
+
+            <div class="card">
+            <div class="cardUpper">
+              <div class="thumbnailContainer">
+                <img
+                  src="assets/thumbnails/thumbnail-card.jpeg"
+                  alt="thumbnail-card"
+                />
+              </div>
+              <div title="learn and master web ddev hhvvhvhjdhjhjgh" class="cardTitle">Learn React masterclass</div>
+            </div>
+
+            <div class="cardMiddle">
+              <div class="cardDescription">
+                React is a javascript framework that ease your work.
+              </div>
+              <div class="cardButtons">
+                <div class="cardBtn1">
+                  <img src="SVG/play-icon.png" alt="play-icon" />
+                  <p>Watch</p>
+                </div>
+                <div class="cardBtn2">
+                  <img
+                    src="SVG/bookmark-outline-icon.png"
+                    alt="bookmark-outline-icon"
+                  />
+                  <p>Bookmark</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="cardBottom">
+              <div class="progressBar">
+                <div class="progress"></div>
+              </div>
+              <div class="progressPercentage">50%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cardSection">
+        <div class="sectionTitle">Trending in Cybersecurity</div>
+        <div class="cardsWrapper techadvancement-sec">
+            <div class="card">
+            <div class="cardUpper">
+              <div class="thumbnailContainer">
+                <img
+                  src="assets/thumbnails/thumbnail-card.jpeg"
+                  alt="thumbnail-card"
+                />
+              </div>
+              <div title="learn and master web ddev hhvvhvhjdhjhjgh" class="cardTitle">Learn React masterclass</div>
+            </div>
+
+            <div class="cardMiddle">
+              <div class="cardDescription">
+                React is a javascript framework that ease your work.
+              </div>
+              <div class="cardButtons">
+                <div class="cardBtn1">
+                  <img src="SVG/play-icon.png" alt="play-icon" />
+                  <p>Watch</p>
+                </div>
+                <div class="cardBtn2">
+                  <img
+                    src="SVG/bookmark-outline-icon.png"
+                    alt="bookmark-outline-icon"
+                  />
+                  <p>Bookmark</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="cardBottom">
+              <div class="progressBar">
+                <div class="progress"></div>
+              </div>
+              <div class="progressPercentage">50%</div>
+            </div>
+          </div>
+
+            <div class="card">
+            <div class="cardUpper">
+              <div class="thumbnailContainer">
+                <img
+                  src="assets/thumbnails/thumbnail-card.jpeg"
+                  alt="thumbnail-card"
+                />
+              </div>
+              <div title="learn and master web ddev hhvvhvhjdhjhjgh" class="cardTitle">Learn React masterclass</div>
+            </div>
+
+            <div class="cardMiddle">
+              <div class="cardDescription">
+                React is a javascript framework that ease your work.
+              </div>
+              <div class="cardButtons">
+                <div class="cardBtn1">
+                  <img src="SVG/play-icon.png" alt="play-icon" />
+                  <p>Watch</p>
+                </div>
+                <div class="cardBtn2">
+                  <img
+                    src="SVG/bookmark-outline-icon.png"
+                    alt="bookmark-outline-icon"
+                  />
+                  <p>Bookmark</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="cardBottom">
+              <div class="progressBar">
+                <div class="progress"></div>
+              </div>
+              <div class="progressPercentage">50%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cardSection">
+        <div class="sectionTitle">Trending in Artificial Intelligence</div>
+        <div class="cardsWrapper techadvancement-sec">
+            <div class="card">
+            <div class="cardUpper">
+              <div class="thumbnailContainer">
+                <img
+                  src="assets/thumbnails/thumbnail-card.jpeg"
+                  alt="thumbnail-card"
+                />
+              </div>
+              <div title="learn and master web ddev hhvvhvhjdhjhjgh" class="cardTitle">Learn React masterclass</div>
+            </div>
+
+            <div class="cardMiddle">
+              <div class="cardDescription">
+                React is a javascript framework that ease your work.
+              </div>
+              <div class="cardButtons">
+                <div class="cardBtn1">
+                  <img src="SVG/play-icon.png" alt="play-icon" />
+                  <p>Watch</p>
+                </div>
+                <div class="cardBtn2">
+                  <img
+                    src="SVG/bookmark-outline-icon.png"
+                    alt="bookmark-outline-icon"
+                  />
+                  <p>Bookmark</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="cardBottom">
+              <div class="progressBar">
+                <div class="progress"></div>
+              </div>
+              <div class="progressPercentage">50%</div>
+            </div>
+          </div>
+
+            <div class="card">
+            <div class="cardUpper">
+              <div class="thumbnailContainer">
+                <img
+                  src="assets/thumbnails/thumbnail-card.jpeg"
+                  alt="thumbnail-card"
+                />
+              </div>
+              <div title="learn and master web ddev hhvvhvhjdhjhjgh" class="cardTitle">Learn React masterclass</div>
+            </div>
+
+            <div class="cardMiddle">
+              <div class="cardDescription">
+                React is a javascript framework that ease your work.
+              </div>
+              <div class="cardButtons">
+                <div class="cardBtn1">
+                  <img src="SVG/play-icon.png" alt="play-icon" />
+                  <p>Watch</p>
+                </div>
+                <div class="cardBtn2">
+                  <img
+                    src="SVG/bookmark-outline-icon.png"
+                    alt="bookmark-outline-icon"
+                  />
+                  <p>Bookmark</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="cardBottom">
+              <div class="progressBar">
+                <div class="progress"></div>
+              </div>
+              <div class="progressPercentage">50%</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
       <footer>
@@ -181,5 +537,7 @@
     </footer>
 
   <script  type="module" src="script/Edu-Stream.js"></script>
+  <script src="script/trending-page.js"></script>
+  <script src="script/render.js"></script>
 </body>
 </html>
