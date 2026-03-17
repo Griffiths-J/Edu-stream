@@ -989,15 +989,15 @@ border-radius: 10px;
     right: 15px;
     z-index: 2100;
     cursor: pointer;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(15, 15, 15, 0.616);
     padding: 8px;
     border-radius: 50%;
     transition: 0.3s;
 }
 
 .close-modal:hover {
-    background: rgba(255, 255, 255, 0.3);
-    transform: scale(1.1);
+    background: rgba(23, 21, 21, 0.443);
+    transform: scale(1.2);
 }
 
 .close-modal img {
