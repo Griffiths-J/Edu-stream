@@ -55,14 +55,13 @@ async function render(){
         if (!target) return;
 
         
-        // Get bookmarks to check state
         const currentBookmarks = JSON.parse(localStorage.getItem('eduStreamBookmarks')) || [];
 
         let htmlContent = "";
 
         dataArray.forEach(course => {
             const isBookmarked = currentBookmarks.some(b => b.id === course.id);
-            const bookmarkIcon = isBookmarked ? "SVG/bookmark-solid-icon.png" : "SVG/bookmark-outline-icon.png";
+            const bookmarkIcon = isBookmarked ? "SVG/bookmark-filled-icon.png" : "SVG/bookmark-outline-icon.png";
             const bookmarkText = isBookmarked ? "Saved" : "Bookmark";
 
             htmlContent += `
@@ -123,17 +122,7 @@ async function render(){
         document.getElementById('videoModal').style.display = 'none';
         player.pause();
         }
-          
-        document.getElementById('videoModal').addEventListener('click', (e) => {
-            if (!e.target.closest('.modal-content')) {
-                closeModal();
-            }
-          }
-        );
     
-
-
-
     window.closeModal = closeModal;
     window.bookmarkCourse = bookmarkCourse;
     window.watchCourse = watchCourse;

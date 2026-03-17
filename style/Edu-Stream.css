@@ -24,7 +24,7 @@
   --shadow-cl:#00000044;
   --footer-cl:rgba(30,41,59,0.7)/* #284d881f */;
   --transition: .2s ease-in-out;
-  --titles-font-size:clamp(1rem, 2vw + 0.4rem, 3rem);
+  --titles-font-size:clamp(1.2rem, 2vw + 1rem, 4.5rem);
   --section-title-font-size:clamp(0.89rem , 1.2rem + 0.18rem, 1.1rem);
   --description-font-size:clamp();
   --popins-font:"Poppins" , sans-serif;
@@ -272,7 +272,7 @@ main{
 }
 
 .heroRightSide img{
-  width: 350px;
+  width: 400px;
 }
 
 
@@ -286,15 +286,15 @@ main{
 .hero-title{
   text-transform: capitalize;
   font-size: var(--titles-font-size)/* clamp(1rem, 2vw + 0.4rem, 3rem) */;
-  margin-bottom: 5px;
+  margin-bottom: 6px;
   color: var(--main-text-headings);
   font-family: var(--popins-font);
   font-weight: 500;
 }
 
 .hero-subtitle{
-  font-size: clamp(0.5rem, 1vw + 0.25rem,0.85rem);
-  margin: 2px 0 8px 0;
+  font-size: clamp(0.5rem, 1vw + 0.6rem,1.3rem);
+  margin: 4px 0 10px 0;
   font-family: inter;
   color: var(--secondary-body-text);
 }
@@ -302,7 +302,7 @@ main{
 .hero-buttons{
   display: flex;
   gap:10px ;
-  margin-top: calc(0.2rem + 1vw);
+  margin-top: calc(0.9rem + 1vw);
   margin-left: 10px;
   
  /*  width: clamp(2vw + 1rem); */
@@ -321,7 +321,7 @@ main{
   padding-bottom:calc(0.2vw + 0.15rem);
   display: flex;
   align-items: center;
-  font-size: clamp(0.4rem, 1vw + 0.2rem , 1rem);
+  font-size: clamp(0.5rem, 1vw + 0.4rem , 1.3rem);
   font-weight: 500;
   cursor: pointer;
   transition: all .2s ease;
@@ -343,7 +343,7 @@ main{
 
 .heroSection{
   position: relative;
-  height: 210px;
+  height: 350px;
   padding-left: 5px;
   display: flex;
   align-items: center;
@@ -394,13 +394,13 @@ main{
   box-shadow: 0 0 5px #000000c1;
   background-color: var(--elevatedPanel-bg);
   overflow: hidden;
-  flex: 0 0 290px ;
+  flex: 0 0 300px ;
   border-radius: 10px;
   margin-right: 25px;
   scroll-snap-align: center;
-  display: flex;
-  flex-direction: column;
-  gap: 7.5px;
+  display: grid;
+  grid-template-rows: 240px 70px 40px ;
+  height: 350px;
 }
 
 .cardUpper{
@@ -413,7 +413,7 @@ main{
 .thumbnailContainer{
   overflow: hidden;
   border-radius:7px;
-  height: 254.14px;
+  height: 200px;
   box-shadow: 0 1px 1.2px #00000058;
   margin-bottom: 3px;
 }
@@ -457,6 +457,7 @@ main{
   flex-direction: column;
   gap:4px;
   margin-bottom: 5px;
+  justify-content: center;
 }
 
 .cardDescription{
@@ -525,6 +526,8 @@ main{
   display: flex;
   overflow: auto;
   scrollbar-width: none;
+  margin-top: 5px;
+  height: 375px;
 }
 
 .cardsWrapper::-webkit-scrollbar{
