@@ -359,7 +359,7 @@ main{
 @keyframes fadein{
   0%{
     opacity:0;
-    transform: scale(1.2);
+    transform: scale(0.8);
   }45%{
      opacity: 0.5;
   }
@@ -401,6 +401,35 @@ main{
   display: grid;
   grid-template-rows: 240px 70px 40px ;
   height: 350px;
+  cursor: pointer;
+  transition: all .1s ease;
+ animation:pop-in-out 0.2s ease forwards;
+
+}
+
+.card:hover{
+ animation: scaleUp 0.3s;
+}
+
+@keyframes scaleUp{
+  0%{
+    transform: scale(0.8);
+  }
+  100%{
+    transform: scale(1);
+  }
+} 
+
+
+@keyframes pop-in-out{
+  0%{
+    /* transform: scale(0.8); */
+    opacity: 0;
+  }
+  100%{
+    /* transform: scale(1); */
+    opacity: 1;
+  }
 }
 
 .cardUpper{
