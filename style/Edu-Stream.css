@@ -208,7 +208,7 @@ box-shadow: 0 1.5px 2px var(--shadow-cl);
   bottom: 20px;
   width: 100%;
   font-size: 0.8rem;
-  color: var(--secondary-body-text);
+  color: var(--primary-body-text);
 }
 
 .sidebar-profile img{
