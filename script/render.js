@@ -98,7 +98,7 @@ async function render(){
                       <img src="SVG/play-icon.png" alt="play-icon" />
                       <p>Watch</p>
                     </div>
-                    <div onclick="bookmarkCourse('${course.id}')" class="cardBtn2">
+                    <div onclick="bookmarkCourse('${course.id}',this)" class="cardBtn2">
                       <img src="${bookmarkIcon}" alt="bookmark-icon" />
                       <p>${bookmarkText}</p>
                     </div>
@@ -118,22 +118,31 @@ async function render(){
         target.innerHTML = htmlContent;
     }
 
-    function bookmarkCourse(courseId) {
+    function bookmarkCourse(courseId,clickedElement) {
         let bookmarks = JSON.parse(localStorage.getItem('eduStreamBookmarks')) || [];
         const selectedCourse = allCourses.find(c => c.id === courseId);
         const index = bookmarks.findIndex(item => item.id === courseId);
 
         if (index === -1) {
             bookmarks.push(selectedCourse);
+            if(clickedElement){
+                clickedElement.innerHTML='<img src="SVG/bookmark-filled-icon.png">saved' 
+            }
         } else {
             bookmarks.splice(index, 1);
+            clickedElement.innerHTML='<img src="SVG/bookmark-outline-icon.png">Bookmark'
         }
 
         localStorage.setItem('eduStreamBookmarks', JSON.stringify(bookmarks));
+          console.log(bookmarks);
+
+     }
+
+
         
-        // Re-render to update the UI 
-        renderCourseCards(allCourses, '.webdev-sec');
-    }
+   
+
+
 
 
     function closeModal() {

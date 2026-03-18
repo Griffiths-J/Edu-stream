@@ -139,7 +139,7 @@
         <div class="bookmarkStats">
           <div class="statBox">
             <div class="statLabel">Total Saved</div>
-            <div class="statValue">12</div>
+            <div class="statValue"></div>
           </div>
           <div class="statBox">
             <div class="statLabel">In Progress</div>
@@ -158,88 +158,30 @@
           </div>
         </div>
         <div class="bookmarkCardsWrapper" id="savedCards">
-          <div class="card">
-            <div class="bookmarkCardUpper">
-              <div class="bookmarkThumbnailContainer">
-                <img
-                  src="assets/thumbnails/photo14.avif"
-                  alt="Course thumbnail"
-                />
-              </div>
-              <div class="bookmarkCardTitle">Design Systems in Figma</div>
-              <div class="bookmarkCardDescription">UI/UX · 3h 15m</div>
-            </div>
-            <div class="bookmarkCardMiddle">
-              <div class="bookmarkProgressBar">
-                <div class="bookmarkProgress" style="width: 60%"></div>
-              </div>
-              <div class="bookmarkCardDescription">Progress: 60%</div>
-            </div>
-            <div class="bookmarkCardBottom">
-              <button class="bookmarkCardBtn1">
-                <img src="SVG/play-icon.png" alt="play" /> Resume
-              </button>
-              <button class="bookmarkCardBtn2">
-                <img src="SVG/bookmark-icon.png" alt="bookmark" /> Remove
-              </button>
-            </div>
-          </div>
-
-           <div class="card">
-            <div class="bookmarkCardUpper">
-              <div class="bookmarkThumbnailContainer">
-                <img
-                  src="assets/thumbnails/photo14.avif"
-                  alt="Course thumbnail"
-                />
-              </div>
-              <div class="bookmarkCardTitle">Design Systems in Figma</div>
-              <div class="bookmarkCardDescription">UI/UX · 3h 15m</div>
-            </div>
-            <div class="bookmarkCardMiddle">
-              <div class="bookmarkProgressBar">
-                <div class="bookmarkProgress" style="width: 60%"></div>
-              </div>
-              <div class="bookmarkCardDescription">Progress: 60%</div>
-            </div>
-            <div class="bookmarkCardBottom">
-              <button class="bookmarkCardBtn1">
-                <img src="SVG/play-icon.png" alt="play" /> Resume
-              </button>
-              <button class="bookmarkCardBtn2">
-                <img src="SVG/bookmark-icon.png" alt="bookmark" /> Remove
-              </button>
-            </div>
-          </div>
-           <div class="card">
-            <div class="bookmarkCardUpper">
-              <div class="bookmarkThumbnailContainer">
-                <img
-                  src="assets/thumbnails/photo14.avif"
-                  alt="Course thumbnail"
-                />
-              </div>
-              <div class="bookmarkCardTitle">Design Systems in Figma</div>
-              <div class="bookmarkCardDescription">UI/UX · 3h 15m</div>
-            </div>
-            <div class="bookmarkCardMiddle">
-              <div class="bookmarkProgressBar">
-                <div class="bookmarkProgress" style="width: 60%"></div>
-              </div>
-              <div class="bookmarkCardDescription">Progress: 60%</div>
-            </div>
-            <div class="bookmarkCardBottom">
-              <button class="bookmarkCardBtn1">
-                <img src="SVG/play-icon.png" alt="play" /> Resume
-              </button>
-              <button class="bookmarkCardBtn2">
-                <img src="SVG/bookmark-icon.png" alt="bookmark" /> Remove
-              </button>
-            </div>
-          </div>
-
+    
         </div>
       </section>
+
+
+      <div id="videoModal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="close-modal" onclick="closeModal()">
+                <img src="SVG/close-icon.png" alt="close-icon" /> </div>
+
+            <div class="video-container">
+                <video 
+                    id="edu-stream-player" 
+                    class="video-js vjs-big-play-centered vjs-theme-city" 
+                    controls 
+                    preload="auto"
+                >
+                    <p class="vjs-no-js">
+                        To view this video please enable JavaScript, and consider upgrading to a web browser that supports HTML5 video.
+                    </p>
+                </video>
+            </div>
+        </div>
+    </div>
     </main>
 
     <footer>
@@ -265,16 +207,7 @@
         </div>
       </div>
     </footer>
-
-    <script>
-      const savedCards = document.querySelectorAll(".bookmarkCourses .card");
-      const emptyState = document.getElementById("noSavedCourses");
-      if (savedCards.length === 0) {
-        emptyState.classList.remove("hidden");
-      } else {
-        emptyState.classList.add("hidden");
-      }
-    </script>
     <script type="module" src="script/Edu-Stream.js"></script>
+    <script pe="module" src="script/renderBookmark.js"></script>
   </body>
 </html>
