@@ -1075,3 +1075,265 @@ border-radius: 10px;
       transform: scale(1); 
     }
 }
+
+/*
+BOOKMARK PAGE
+*/
+
+.bookmarkHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #141f38 0%, #0f1629 100%);
+  padding: 16px;
+  border: 1px solid #2e3f65;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  gap: 16px;
+}
+
+.bookmarkHeader > div {
+  flex: 1;
+}
+
+.pageSubtitle {
+  font-size: 0.87rem;
+  color: var(--primary-main);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.pageTitle {
+  font-size: clamp(1.45rem, 3vw + 0.2rem, 2.1rem);
+  color: var(--main-text-headings);
+  margin-bottom: 8px;
+  font-family: var(--popins-font);
+}
+
+.pageDescription {
+  color: var(--secondary-body-text);
+  max-width: 560px;
+  line-height: 1.45;
+}
+
+.bookmarkStats {
+  display: flex;
+  gap: 0.65rem;
+  justify-content: flex-end;
+  margin-top: 8px;
+  flex-wrap: wrap;
+}
+
+.statBox {
+  background: #1a2a45;
+  border: 1px solid #2f4375;
+  border-radius: 10px;
+  padding: 10px 12px;
+  width: 130px;
+  min-height: 65px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+}
+
+.statLabel {
+  color: #9fa9c7;
+  font-size: 0.72rem;
+  letter-spacing: 0.01rem;
+  font-weight: 500;
+}
+
+.statValue {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.bookmarkCourses {
+  padding: 14px;
+  margin-top: 4px;
+}
+
+.bookmarkCourses .sectionTitle {
+  margin-left: 0;
+  margin-bottom: 12px;
+  font-size: 1rem;
+  letter-spacing: 0.01em;
+}
+
+.emptyState {
+  display: flex;
+  align-items: center;
+  background: #0b152d;
+  border: 1px dashed #3a4f8e;
+  border-radius: 12px;
+  padding: 14px;
+  gap: 10px;
+  color: #d4dcf2;
+  margin-bottom: 12px;
+}
+
+.emptyState img {
+  width: 32px;
+}
+
+.emptyState h3 {
+  margin: 0;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.emptyState p {
+  margin: 4px 0 0;
+  color: #9fa7c3;
+  font-size: 0.9rem;
+}
+
+.hidden {
+  display: none !important;
+}
+
+
+
+
+
+.bookmarkCardsWrapper {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.bookmarkCourses .card {
+  background:var(--elevatedPanel-bg) ;
+  border-radius: 12px;
+  border: 1px solid #2e3f6b;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.28);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 210px;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+
+.bookmarkCardUpper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.bookmarkThumbnailContainer {
+  width: 230px;
+  height: 160px;
+  border-radius: 8px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.bookmarkThumbnailContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bookmarkCardTitle {
+  font-size: 0.96rem;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1.2;
+}
+
+.bookmarkCardDescription {
+  color: #c9d1e3;
+  font-size: 0.78rem;
+  margin-top: 3px;
+  text-align: center;
+}
+
+.bookmarkCardMiddle {
+  margin-top: 5px;
+  margin-bottom: 9px;
+}
+
+.bookmarkProgressBar {
+  width: 100%;
+  height: 7px;
+  border-radius: 999px;
+  background: #1e2d56;
+  overflow: hidden;
+  margin-bottom: 4px;
+}
+
+.bookmarkProgress {
+  height: 100%;
+  background: linear-gradient(90deg, #4d8cff, #1ff0d8);
+  border-radius: 999px;
+}
+
+.bookmarkCardBottom {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 6px;
+}
+
+.bookmarkCardBtn1,
+.bookmarkCardBtn2 {
+  border: none;
+  border-radius: 8px;
+  padding: 7px 10px;
+  font-size: 0.76rem;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all var(--transition);
+}
+
+.bookmarkCardBtn1 {
+  background: #203f91;
+  color: #fff;
+}
+
+.bookmarkCardBtn1:hover {
+  background: #344cc6;
+}
+
+.bookmarkCardBtn2 {
+  background: #1f2d56;
+  color: #d7e0ff;
+  border: 1px solid #364f93;
+}
+
+.bookmarkCardBtn2:hover {
+  background: #273e77;
+}
+
+.bookmarkCardBottom img{
+  width: 18px;
+}
+
+@media (max-width: 1100px) {
+  .cardsWrapper {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 850px) {
+  .bookmarkHeader {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .cardsWrapper {
+    grid-template-columns: 1fr;
+  }
+}
+

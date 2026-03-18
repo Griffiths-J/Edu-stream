@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
+  <head>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+
     <link rel="icon" href="image/edu-stream-logo.png" />
     <link rel="stylesheet" href="style/Edu-Stream.css" />
 
@@ -11,10 +11,10 @@
     <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
     <script src="library/videojs-youtube.js"></script>
     <title>Bookmark | Edu-Stream</title>
-</head>
-<body>
-<!--header bar-->  
-  <header>
+  </head>
+  <body>
+    <!--header bar-->
+    <header>
       <div class="website-name">
         <img
           class="header-icon"
@@ -126,24 +126,84 @@
       </div>
     </div>
 
-    <main></main>
+    <main>
+      <section class="bookmarkHeader">
+        <div>
+          <p class="pageSubtitle">Your Library</p>
+          <h1 class="pageTitle">Bookmarked Courses</h1>
+          <p class="pageDescription">
+            Keep learning where you left off. Save your favorite courses and
+            resume anytime.
+          </p>
+        </div>
+        <div class="bookmarkStats">
+          <div class="statBox">
+            <div class="statLabel">Total Saved</div>
+            <div class="statValue">12</div>
+          </div>
+          <div class="statBox">
+            <div class="statLabel">In Progress</div>
+            <div class="statValue">4</div>
+          </div>
+        </div>
+      </section>
 
-      <footer>
+      <section class="bookmarkCourses">
+        <div class="sectionTitle">Saved Courses</div>
+        <div class="emptyState hidden" id="noSavedCourses">
+          <img src="SVG/bookmark-icon.png" alt="empty bookmark" />
+          <div>
+            <h3>No saved courses yet</h3>
+            <p>Save courses to quickly continue learning from your library.</p>
+          </div>
+        </div>
+        <div class="bookmarkCardsWrapper" id="savedCards">
+          <div class="card">
+            <div class="bookmarkCardUpper">
+              <div class="bookmarkThumbnailContainer">
+                <img
+                  src="assets/thumbnails/photo14.avif"
+                  alt="Course thumbnail"
+                />
+              </div>
+              <div class="bookmarkCardTitle">Design Systems in Figma</div>
+              <div class="bookmarkCardDescription">UI/UX · 3h 15m</div>
+            </div>
+            <div class="bookmarkCardMiddle">
+              <div class="bookmarkProgressBar">
+                <div class="bookmarkProgress" style="width: 60%"></div>
+              </div>
+              <div class="bookmarkCardDescription">Progress: 60%</div>
+            </div>
+            <div class="bookmarkCardBottom">
+              <button class="bookmarkCardBtn1">
+                <img src="SVG/play-icon.png" alt="play" /> Resume
+              </button>
+              <button class="bookmarkCardBtn2">
+                <img src="SVG/bookmark-icon.png" alt="bookmark" /> Remove
+              </button>
+            </div>
+          </div>
 
+        </div>
+      </section>
+    </main>
+
+    <footer>
       <div class="left">
         <div class="footer-logo">
-          <img src="image/edu-stream-logo.png" alt="edu-stream-logo">
+          <img src="image/edu-stream-logo.png" alt="edu-stream-logo" />
           <div class="edu">Edu-Stream</div>
         </div>
-        <div class="logo-text1">Unlock your potential with best learning experience</div>
+        <div class="logo-text1">
+          Unlock your potential with best learning experience
+        </div>
         <div class="logo-text2">&copy;2026 Edu-Stream | All Right Served</div>
       </div>
 
       <div class="right">
         <div class="rightTitle">Connect</div>
-        <div class="footerIcons">
-          
-        </div>
+        <div class="footerIcons"></div>
         <div class="joinUs">
           <div class="joinTitle">Join our channel</div>
           <div class="joininputs">
@@ -153,6 +213,15 @@
       </div>
     </footer>
 
-  <script type="module" src="script/Edu-Stream.js"></script>
-</body>
+    <script>
+      const savedCards = document.querySelectorAll(".bookmarkCourses .card");
+      const emptyState = document.getElementById("noSavedCourses");
+      if (savedCards.length === 0) {
+        emptyState.classList.remove("hidden");
+      } else {
+        emptyState.classList.add("hidden");
+      }
+    </script>
+    <script type="module" src="script/Edu-Stream.js"></script>
+  </body>
 </html>

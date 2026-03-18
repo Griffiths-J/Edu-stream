@@ -7,23 +7,41 @@ async function render(){
     const ai = data[1].ai;
     const ui_ux = data[2].ui_ux;
     const cybersecurity = data[3].cybersecurity;
-
     const allCourses = [...webDev, ...ai, ...ui_ux, ...cybersecurity];
+ 
 
-    const homeWebDev= webDev.slice(0, 5);
-    const homeAi = ai.slice(0, 5);
-    const homeUiUx = ui_ux.slice(0, 5);
-    const homeCybersecurity = cybersecurity.slice(0, 5);
+//homepage 
+    const homeWebDev= webDev.slice(2, 7);
+    renderCourseCards(homeWebDev, '.webdev-sec');
+
+    const homeAi = ai.slice(2, 7);
+    renderCourseCards(homeAi, '.cybersecurity-sec');
 
     const contW = webDev.slice(0,1);
     const contU = ui_ux.slice(2,4);
     const contC = cybersecurity.slice(0,2)
     const contWatching = [...contU,...contW,...contC];
-
-
-    renderCourseCards(homeWebDev, '.webdev-sec');
-    renderCourseCards(homeAi, '.cybersecurity-sec');
     renderCourseCards(contWatching, '.continue-sec');
+
+//cybersecurity page    
+    renderCourseCards(cybersecurity,'.cybersecurity-course-sec');
+//ui_ux page    
+    renderCourseCards(ui_ux,'.uiux-course-sec');
+//ai page    
+    renderCourseCards(ai,'.ai-course-sec');
+//webev page    
+    renderCourseCards(webDev,'.webdev-course-sec');
+//trending page
+  const trendWebdev = webDev.slice(2,8);
+  const trendUi_ux = ui_ux.slice(2,8); 
+  const trendCyber = cybersecurity.slice(2,8);
+  const trendAi = ai.slice(2,8);
+  renderCourseCards(trendWebdev,'.trend-web-sec');
+  renderCourseCards(trendUi_ux,'.trend-ui-sec');
+  renderCourseCards(trendCyber,'.trend-cyber-sec');
+  renderCourseCards(trendAi,'.trend-ai-sec');
+
+
 
     let player;
     document.addEventListener('DOMContentLoaded', () => {
@@ -114,7 +132,7 @@ async function render(){
         localStorage.setItem('eduStreamBookmarks', JSON.stringify(bookmarks));
         
         // Re-render to update the UI 
-        renderCourseCards(courses, '.your-accumulation-class');
+        renderCourseCards(allCourses, '.webdev-sec');
     }
 
 

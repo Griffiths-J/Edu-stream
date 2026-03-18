@@ -371,9 +371,18 @@
         "description": "Understanding the landscape of professional security careers.", 
         "category": "Cybersecurity", 
         "progress": null 
+      },{
+          "id": "cy-05", 
+          "title": "Operating Systems Course", 
+          "poster": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b", 
+          "videourl": "https://youtu.be/yK1uBHPdp30?si=OaQ20AThh_G8iw3h", 
+          "level": "Beginner", 
+          "description": "A deep dive into how operating systems work and their role in cybersecurity.", 
+          "category": "Cybersecurity", 
+          "progress": null
       },
       { 
-        "id": "cy-05", 
+        "id": "cy-06", 
         "title": "Best Cyber Security Courses in 2026", 
         "poster": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b", 
         "videourl": "https://www.youtube.com/embed/NotuHP6tres", 
@@ -381,9 +390,18 @@
         "description": "Top learning paths for self-taught security enthusiasts.", 
         "category": "Cybersecurity", 
         "progress": null 
+      },{
+          "id": "cy-07", 
+          "title": "Cybersecurity Full Course", 
+          "poster": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b", 
+          "videourl": "https://youtu.be/U_P23SqJaDc?si=ADC28Yqi-dsJFHBN", 
+          "level": "Beginner", 
+          "description": "A comprehensive introduction to the fundamentals of cybersecurity.", 
+          "category": "Cybersecurity", 
+          "progress": null
       },
       { 
-        "id": "cy-06", 
+        "id": "cy-08", 
         "title": "Networking Fundamentals for Security", 
         "poster": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4", 
         "videourl": "https://www.youtube.com/embed/YJUVNlmIO6E", 
@@ -393,7 +411,7 @@
         "progress": null 
       },
       { 
-        "id": "cy-07", 
+        "id": "cy-09", 
         "title": "Ethical Hacking Full Course 2026", 
         "poster": "https://images.unsplash.com/photo-1451187580459-43490279c0fa", 
         "videourl": "https://www.youtube.com/embed/3Kq1MIfTWCE", 
@@ -403,7 +421,7 @@
         "progress": null 
       },
       { 
-        "id": "cy-08", 
+        "id": "cy-10", 
         "title": "Linux Mastery for Hackers", 
         "poster": "https://images.unsplash.com/photo-1451187580459-43490279c0fa", 
         "videourl": "https://www.youtube.com/embed/lZAoFs75_cs", 
@@ -413,7 +431,7 @@
         "progress": null 
       },
       { 
-        "id": "cy-09", 
+        "id": "cy-11", 
         "title": "Cloud Security Masterclass", 
         "poster": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d", 
         "videourl": "https://www.youtube.com/embed/fOekJmDWt5Y", 
@@ -421,9 +439,18 @@
         "description": "Securing distributed environments in the cloud.", 
         "category": "Cybersecurity", 
         "progress": null 
+      },{
+          "id": "cy-12", 
+          "title": "Hands-on Cybersecurity and Ethical Hacking", 
+          "poster": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b", 
+          "videourl": "https://youtu.be/ug8W0sFiVJo?si=rgpkW0g-PlX2WTKb", 
+          "level": "Advanced", 
+          "description": "A practical course covering real-world attack techniques and defenses.", 
+          "category": "Cybersecurity", 
+          "progress": null
       },
       { 
-        "id": "cy-10", 
+        "id": "cy-13", 
         "title": "Digital Forensics & Incident Response",
         "poster": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b", 
         "videourl": "https://www.youtube.com/embed/TZcgvi_KRvY", 
