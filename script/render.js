@@ -23,6 +23,19 @@ async function render(){
     const contWatching = [...contU,...contW,...contC];
     renderCourseCards(contWatching, '.continue-sec');
 
+
+    function bigCardWatch(course, container ){
+      let hero = course[0].id;
+    let heroBnt = document.querySelector(container);
+    heroBnt.addEventListener('click',()=>{
+      watchCourse(hero);
+    })
+    };
+
+    /* bigCardWatch(webDev , '.hero-btn1'); */
+    
+ 
+
 //cybersecurity page    
     renderCourseCards(cybersecurity,'.cybersecurity-course-sec');
 //ui_ux page    
@@ -126,7 +139,7 @@ async function render(){
         if (index === -1) {
             bookmarks.push(selectedCourse);
             if(clickedElement){
-                clickedElement.innerHTML='<img src="SVG/bookmark-filled-icon.png">saved' 
+                clickedElement.innerHTML='<img src="SVG/bookmark-filled-icon.png">Saved' 
             }
         } else {
             bookmarks.splice(index, 1);
@@ -137,12 +150,6 @@ async function render(){
           console.log(bookmarks);
 
      }
-
-
-        
-   
-
-
 
 
     function closeModal() {

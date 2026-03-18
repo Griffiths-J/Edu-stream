@@ -300,42 +300,33 @@ main{
 }
 
 .hero-buttons{
-  display: flex;
-  gap:10px ;
-  margin-top: calc(0.9rem + 1vw);
-  margin-left: 10px;
+  margin-top: calc(0.6rem + 0.5vw);
+  margin-left: 25px;
   
- /*  width: clamp(2vw + 1rem); */
 }
 
 .hero-buttons img{
-  width: 15px;
-}
-
-.hero-btn1,.hero-btn2{
-  border: 1px solid var(--secondary-body-text);
-  border-radius: 20px;
-  padding-left:calc(1vw + 0.55rem);
-  padding-right:calc(1vw + 0.55rem);
-  padding-top:calc(0.2vw + 0.15rem);
-  padding-bottom:calc(0.2vw + 0.15rem);
-  display: flex;
-  align-items: center;
-  font-size: clamp(0.5rem, 1vw + 0.4rem , 1.3rem);
-  font-weight: 500;
-  cursor: pointer;
-  transition: all .2s ease;
-  color: var(--primary-body-text);
-}
-
-.hero-btn2:hover{
-  background-color: var(--muted-text);
-  color:#000;
+  width: 25px;
 }
 
 .hero-btn1{
+  border: 1px solid var(--secondary-body-text);
+  border-radius: 20px;
+  font-size: clamp(0.5rem, 1vw + 0.8rem , 2rem);
+  font-weight: 500;
+  padding: 0.2rem 0.4rem;
+  cursor: pointer;
+  transition: all .2s ease;
+  color: var(--primary-body-text);
   background-color: var(--primary-main);
+   width: clamp(2rem , 1vw + 6rem , 8rem);
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   justify-content: center;
+   
 }
+
 
 .hero-btn1:hover{
   background-color: var(--primary-hover);
@@ -507,7 +498,7 @@ main{
   font-size: 0.8rem;
   border: 1px solid ;
   font-weight: 600;
-  border-radius: 10px rgba(255,255,255,0.2);
+  border-radius: 10px;
   padding: 3.5px 8.5px;
   align-items: center;
   border-radius: 50px;
@@ -533,7 +524,6 @@ main{
 .progressBar{
   width: 100%;
   height: 8px;
- /*  border: 1px solid var(--main-text-headings); */
   background-color: #0b1220a3;
   border-radius: 10px;
   overflow: hidden;
@@ -1278,7 +1268,7 @@ BOOKMARK PAGE
 
 .bookmarkProgress {
   height: 100%;
-  background: linear-gradient(90deg, #4d8cff, #1ff0d8);
+  background: linear-gradient(90deg, #4d8cff, #168d7f);
   border-radius: 999px;
 }
 
