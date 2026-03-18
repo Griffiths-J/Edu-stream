@@ -350,10 +350,10 @@ main{
   justify-content: space-between;
   border: 1px solid #ffffff3b;
   border-radius: 5px;
-  background-color: var(--elevatedPanel-bg);
   overflow: hidden;
   box-shadow: 0 0 2.3px var(--primary-main);
   animation: fadein 1s ;
+   background: linear-gradient(180deg, var(--elevatedPanel-bg) 0%, #0f1629 90%);
 }
 
 @keyframes fadein{
