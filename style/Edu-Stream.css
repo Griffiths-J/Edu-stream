@@ -403,12 +403,8 @@ main{
   height: 350px;
   cursor: pointer;
   transition: all .1s ease;
- /* animation:pop-in-out 0.2s ease forwards; */
+ animation:pop-in-out , scaleUp 0.2s ease forwards;
 
-}
-
-.card:hover{
- animation: scaleUp 0.3s;
 }
 
 @keyframes scaleUp{
@@ -1227,7 +1223,6 @@ BOOKMARK PAGE
   flex-direction: column;
   justify-content: space-between;
   min-height: 210px;
-  transition: transform var(--transition), box-shadow var(--transition);
 }
 
 
