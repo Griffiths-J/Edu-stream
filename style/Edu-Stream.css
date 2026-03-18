@@ -319,10 +319,10 @@ main{
   transition: all .2s ease;
   color: var(--primary-body-text);
   background-color: var(--primary-main);
-   width: clamp(2rem , 1vw + 6rem , 8rem);
+   width: clamp(2rem , 1vw + 7.5rem , 8rem);
    display: flex;
    align-items: center;
-   gap: 10px;
+   gap: 4px;
    justify-content: center;
    
 }
