@@ -497,7 +497,6 @@ main{
 .cardBtn1 , .cardBtn2{
   display: flex;
   font-size: 0.8rem;
-  
   font-weight: 600;
   border-radius: 10px;
   padding: 4px 9px;
@@ -507,6 +506,12 @@ main{
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3), inset 1px 1px rgba(255, 255, 255, 0.073) ;
   cursor: pointer;
   transition: all .2s ease;
+}
+
+@media(max-width:650px){
+  .cardBtn1,.cardBtn2{
+    padding: 6px 11px;
+  }
 }
 
 .cardBtn1{
