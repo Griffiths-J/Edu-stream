@@ -38,9 +38,9 @@ let savedBookmarks;
             </div>
             <div class="bookmarkCardMiddle">
               <div class="bookmarkProgressBar">
-                <div class="bookmarkProgress" style="width: ${marked.progress || 10}%"></div>
+                <div class="bookmarkProgress" style="width: ${marked.progress || 20}%"></div>
               </div>
-              <div class="bookmarkCardDescription">Progress: ${marked.progress}%</div>
+              <div class="bookmarkCardDescription">Progress: ${marked.progress || 20}%</div>
             </div>
             <div class="bookmarkCardBottom">
               <button onclick="watchCourse('${marked.id}')" class="bookmarkCardBtn1">
