@@ -67,20 +67,6 @@ async function render(){
     });
 
 
-    function watchCourse(courseId) {
-        const selectedCourse = allCourses.find(c => c.id === courseId);
-        if(!player) {
-          player = videojs('edu-stream-player');
-        }
-
-        if (selectedCourse) {
-            player.src({ type: 'video/youtube', src:`${selectedCourse.videourl}?rel=0&showinfo=0&modestbranding=1` });
-            document.getElementById('videoModal').style.display = 'flex';
-            player.play();
-        }
-    }
-
-
     function renderCourseCards(dataArray, containerClass) {
         const target = document.querySelector(containerClass);
         if (!target) return;
@@ -91,12 +77,15 @@ async function render(){
         let htmlContent = "";
 
         dataArray.forEach(course => {
+
+            const savedProgress = getSavedProgress(course.id);
+
             const isBookmarked = currentBookmarks.some(b => b.id === course.id);
             const bookmarkIcon = isBookmarked ? "SVG/bookmark-filled-icon.png" : "SVG/bookmark-outline-icon.png";
             const bookmarkText = isBookmarked ? "Saved" : "Bookmark";
 
             htmlContent += `
-              <div class="card">
+              <div data-course-id="${course.id}" class="card">
                 <div class="cardUpper">
                   <div class="thumbnailContainer">
                     <img src="${course.poster}" alt="thumbnail-card" />
@@ -120,9 +109,9 @@ async function render(){
 
                 <div class="cardBottom">
                   <div class="progressBar">
-                    <div class="progress" style="width: ${course.progress || 20}%"></div>
+                    <div class="progress" style="width: ${savedProgress.percent || 0}%"></div>
                   </div>
-                  <div class="progressPercentage">${course.progress || '20'}%</div>
+                  <div class="progressPercentage">${savedProgress.percent || 0}%</div>
                 </div>
               </div>
             `;
@@ -130,6 +119,75 @@ async function render(){
 
         target.innerHTML = htmlContent;
     }
+
+
+   
+    function watchCourse(courseId) {
+        const selectedCourse = allCourses.find(c => c.id === courseId);
+        if(!player) {
+          player = videojs('edu-stream-player');
+        }
+
+        if (selectedCourse) {
+            player.src({ type: 'video/youtube', src:`${selectedCourse.videourl}?rel=0&showinfo=0&modestbranding=1` });
+            document.getElementById('videoModal').style.display = 'flex';
+
+            player.on('loadedmetadata', () => {
+              const savedProgress = getSavedProgress(courseId);
+              if(savedProgress.lastPosition){
+                player.currentTime(savedProgress.lastPosition);
+              };
+              player.play();
+            });
+
+            player.on('timeupdate', () => {
+              const currentTime = player.currentTime();
+              const duration = player.duration();
+              const percent = Math.floor((currentTime / duration) * 100);
+
+              updateProgressBar(percent, courseId);
+
+              if(duration > 0){
+              saveProgress(courseId, percent, currentTime);
+              }
+            });
+        }
+      };
+
+
+    function updateProgressBar(percent, courseId){
+         const card = document.querySelector(`.card[data-course-id="${courseId}"]`);
+
+         if(card){
+          const progressBar = card.querySelector('.progress');
+          const progressPercentage = card.querySelector('.progressPercentage');
+
+          if(progressBar && progressPercentage){
+            progressBar.style.width = `${percent}%`;
+            progressPercentage.textContent = `${percent}%`;
+          }
+         }
+      };
+
+
+    function saveProgress(courseId,percent,seconds){
+
+     let allProgress = JSON.parse(localStorage.getItem('eduStreamProgress')) || {};
+
+     allProgress[courseId]={
+        percent:percent,
+        lastPosition:seconds
+      }
+
+      localStorage.setItem('eduStreamProgress',JSON.stringify(allProgress));
+    };   
+
+
+    function getSavedProgress(courseId){
+      const allProgress = JSON.parse(localStorage.getItem('eduStreamProgress')) || {};
+      return allProgress[courseId] || {percent:0, lastPosition:0};
+    }
+
 
     function bookmarkCourse(courseId,clickedElement) {
         let bookmarks = JSON.parse(localStorage.getItem('eduStreamBookmarks')) || [];
