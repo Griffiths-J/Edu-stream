@@ -442,10 +442,11 @@ main{
 }
 
 .cardTitle{
-  font-size: calc(0.7vw + 0.65rem);
+  font-size: calc(0.58vw + 0.65rem);
   font-family: var(--popins-font);
   text-align: center;
   color: var(--primary-body-text);
+  line-height: 15.5px;
 }
 
 @media(max-width:650px){
@@ -454,7 +455,7 @@ main{
   }
 
   .cardDescription{
-    font-size:0.89rem ;
+    font-size:0.79rem ;
     text-align: left;
   }
   .card{
@@ -480,8 +481,9 @@ main{
 .cardDescription{
   color: var(--secondary-body-text);
   text-align: center;
-  line-height: 12px;
+  line-height: 13.5px;
   margin-bottom: 5px;
+  font-size: clamp(0.6rem , 0.5vw + 0.65rem , 1rem);
 }
 
 .cardButtons{

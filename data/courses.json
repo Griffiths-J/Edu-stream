@@ -3,38 +3,55 @@
     "Webdev": [
       { 
         "id": "wd-01", 
-        "title": "Web Development Roadmap 2026 (No BS Guide!)", 
-        "poster": "https://images.unsplash.com/photo-1498050108023-c5249f4df085", 
-        "videourl": "https://www.youtube.com/embed/-4e3ewcTupM", 
+        "title": "Web Development Roadmap 2026", 
+        "poster": "assets/thumbnails/photo37.webp", 
+        "videourl": "https://youtu.be/GxmfcnU3feo?si=_Xxl0FUXMmzT4QsE", 
         "level": "Beginner", 
         "description": "The definitive guide to modern web standards and expectations in 2026.", 
         "category": "Webdev", 
         "progress": null 
-      },
-      { 
+      },{
         "id": "wd-02", 
-        "title": "Fullstack + AI Web Development Roadmap", 
-        "poster": "https://images.unsplash.com/photo-1542831371-29b0f74f9713", 
-        "videourl": "https://www.youtube.com/embed/uB6orI_RpmY", 
+        "title": "HTML Crash Course 2026 - Build a Website in 1 Hour", 
+        "poster": "assets/thumbnails/photo38.webp", 
+        "videourl": "https://youtu.be/kUMe1FH4CHE?si=1Nnk3CW6En-j6Bkv", 
         "level": "Beginner", 
-        "description": "Integrating AI tools into the fullstack development lifecycle.", 
+        "description": "Learn the basics of HTML in 2026.From tags to semantic structure, this course covers it all.", 
         "category": "Webdev", 
         "progress": null 
       },
       { 
         "id": "wd-03", 
-        "title": "The Journey of React - The Beginning", 
-        "poster": "https://images.unsplash.com/photo-1507721999472-8ed4421c4af2", 
-        "videourl": "https://www.youtube.com/embed/8pDqJVdNa44", 
+        "title": "Fullstack + AI Web Development Roadmap", 
+        "poster": "assets/thumbnails/photo2.jpg", 
+        "videourl": "https://www.youtube.com/embed/uB6orI_RpmY", 
         "level": "Beginner", 
-        "description": "How a small team from facebook developed react .", 
+        "description": "Integrating AI tools into the fullstack development lifecycle.", 
         "category": "Webdev", 
         "progress": null 
+      },{
+        "id": "wd-04", 
+        "title": "A Complete CSS Course - 2026", 
+        "poster": "assets/thumbnails/photo3.jpg", 
+        "videourl": "https://youtu.be/OXGznpKZ_sA?si=WU_HQjeQb8xHc_HE", 
+        "level": "Beginner", 
+        "description": "Learn the fundamentals of CSS in 2026 with the latest features and best practices. ", 
+        "category": "Webdev", 
+        "progress": null
+      },{
+        "id": "wd-05", 
+        "title": "In-Depth Responsive Web Development Course", 
+        "poster": "assets/thumbnails/photo33.webp", 
+        "videourl": "https://youtu.be/srvUrASNj0s?si=wUiKbqklilN9x_23", 
+        "level": "Beginner", 
+        "description": "Mastering media queries, flexible layouts, and mobile-first design principles.", 
+        "category": "Webdev", 
+        "progress": null
       },
       { 
-        "id": "wd-04", 
+        "id": "wd-06", 
         "title": "Modern JavaScript Deep Dive", 
-        "poster": "https://images.unsplash.com/photo-1579468118864-1b9ea3c0db4a", 
+        "poster": "assets/thumbnails/photo4.jpg", 
         "videourl": "https://www.youtube.com/embed/PkZNo7MFNFg", 
         "level": "Intermediate", 
         "description": "Mastering ES6+, asynchronous logic, and DOM manipulation.", 
@@ -42,29 +59,83 @@
         "progress": null 
       },
       { 
-        "id": "wd-05", 
+        "id": "wd-07", 
+        "title": "The Journey of React - The Beginning", 
+        "poster": "assets/thumbnails/photo6.jpg", 
+        "videourl": "https://www.youtube.com/embed/8pDqJVdNa44", 
+        "level": "Beginner", 
+        "description": "How a small team from facebook developed react .", 
+        "category": "Webdev", 
+        "progress": null 
+      },
+      { 
+        "id": "wd-08", 
         "title": "Tailwind CSS Layout Mastery", 
-        "poster": "https://images.unsplash.com/photo-1587620962725-abab7fe55159", 
+        "poster": "assets/thumbnails/49.webp", 
         "videourl": "https://www.youtube.com/embed/dFgzHOX84xQ", 
         "level": "Intermediate", 
         "description": "Building rapid, responsive UIs with utility-first CSS.", 
         "category": "Webdev", 
         "progress": null 
+      },{
+        "id": "wd-09", 
+        "title": "Bootstrap CSS Crash Course", 
+        "poster": "assets/thumbnails/50.webp", 
+        "videourl": "", 
+        "level": "Intermediate", 
+        "description": "Build responsive and modern websites with Bootstrap CSS framework.", 
+        "progress": null
+      },{
+        "id": "wd-10", 
+        "title": "GSAP Course - Animation for the Web", 
+        "poster": "assets/thumbnails/51.webp", 
+        "videourl": "https://youtu.be/AW1yfBKRMKc?si=ytLF7MI1IjEOejhB", 
+        "level": "Beginner", 
+        "description": "Learn how to create stunning animations for the web using GSAP.", 
+        "category": "Webdev", 
+        "progress": null
+      },{
+        "id": "wd-11", 
+        "title": "API Crush Course - How to use APIs in 2026", 
+        "poster": "assets/thumbnails/52.webp", 
+        "videourl": "https://youtu.be/WXsD0ZgxjRw?si=M0WGe3Ase_FR3NPb", 
+        "level": "Beginner", 
+        "description": "Learn how to integrate and utilize APIs effectively in your web applications.", 
+        "category": "Webdev", 
+        "progress": null
       },
       { 
-        "id": "wd-06", 
+        "id": "wd-12", 
         "title": "React JS Fundamentals 2026", 
-        "poster": "https://images.unsplash.com/photo-1633356122544-f134324a6cee", 
+        "poster": "assets/thumbnails/53.webp", 
         "videourl": "https://www.youtube.com/embed/bMknfKXIFA8", 
         "level": "Intermediate", 
         "description": "Harnessing the power of hooks and component-based architecture.", 
         "category": "Webdev", 
         "progress": null 
+      },{
+        "id": "wd-13", 
+        "title": "React Full Course", 
+        "poster": "assets/thumbnails/54.webp", 
+        "videourl": "https://youtu.be/RVFAyFWO4go?si=7KDL5EPG0PQV7qsE", 
+        "level": "Advanced", 
+        "description": "Building complex applications with state management, routing, and performance optimization.", 
+        "category": "Webdev", 
+        "progress": null
+      },{
+        "id": "wd-14", 
+        "title": "Intro to Backend Web Development", 
+        "poster": "assets/thumbnails/55.webp", 
+        "videourl": "https://youtu.be/KOutPbKc9UM?si=GS7PHL9mOHeNFQ-x", 
+        "level": "Advanced", 
+        "description": "Understanding server-side programming, databases, and APIs to build full-stack applications.", 
+        "category": "Webdev", 
+        "progress": null
       },
       { 
-        "id": "wd-07", 
+        "id": "wd-15", 
         "title": "Next.js 15 Full Course", 
-        "poster": "https://images.unsplash.com/photo-1555066931-4365d14bab8c", 
+        "poster": "assets/thumbnails/photo15.avif", 
         "videourl": "https://www.youtube.com/embed/wm5gMKuwSYk", 
         "level": "Advanced", 
         "description": "Server-side rendering and static site generation at scale.", 
@@ -72,29 +143,38 @@
         "progress": null 
       },
       { 
-        "id": "wd-08", 
+        "id": "wd-16", 
         "title": "Node.js & Express API Development", 
-        "poster": "https://images.unsplash.com/photo-1618477247222-acbdb0e159b3", 
+        "poster": "assets/thumbnails/56.webp", 
         "videourl": "https://www.youtube.com/embed/Oe421EPjeBE", 
         "level": "Advanced", 
         "description": "Building robust back-end systems and RESTful services.", 
         "category": "Webdev", 
         "progress": null 
+      },{
+          "id": "wd-17", 
+          "title": "Node js Full Course", 
+          "poster": "assets/thumbnails/photo17.webp", 
+          "videourl": "https://youtu.be/f2EqECiTBL8?si=Xcgup6ag4GRAPKag", 
+          "level": "Advanced", 
+          "description": "A comprehensive guide to building scalable server-side applications with Node.js.", 
+          "category": "Webdev", 
+          "progress": null
       },
       {
-         "id": "wd-09", 
+         "id": "wd-18", 
          "title": "Supabase for Real-time Applications", 
-         "poster": "https://images.unsplash.com/photo-1633412802994-5c058f151b66", 
+         "poster": "assets/thumbnails/photo9.jpg", 
          "videourl": "https://www.youtube.com/embed/WiwfiVdfRIc", 
          "level": "Advanced", 
-         "description": "Implementing databases, auth, and storage effortlessly.", 
+         "description": "Implementing databases, authentication, and storage effortlessly.", 
          "category": "Webdev", 
          "progress": null 
       },
       { 
-        "id": "wd-10", 
+        "id": "wd-19", 
         "title": "UML Diagram Course", 
-        "poster": "https://images.unsplash.com/photo-1460925895917-afdab827c52f", 
+        "poster": "assets/thumbnails/57.jpg", 
         "videourl": "https://youtu.be/WnMQ8HlmeXc?si=5ZF01dLNICQ95TVO", 
         "level": "Beginner", 
         "description": "Learn about how to use UML diaagrams to visualize the design of database or systems", 
@@ -102,14 +182,50 @@
         "progress": null 
       },
       { 
-        "id": "wd-11", 
+        "id": "wd-20", 
         "title": "Portfolio Projects: Build & Deploy", 
-        "poster": "https://images.unsplash.com/photo-1460925895917-afdab827c52f", 
+        "poster": "assets/thumbnails/57.webp", 
         "videourl": "https://www.youtube.com/embed/0pThnRneDjw", 
         "level": "Advanced", 
         "description": "Creating professional projects to impress top-tier recruiters.", 
         "category": "Webdev", 
         "progress": null 
+      },{
+        "id": "wd-21", 
+        "title": "Build and Deploy a Banking Application", 
+        "poster": "assets/thumbnails/photo10.jpg", 
+        "videourl": "https://youtu.be/PuOVqP_cjkE?si=prvO_ChkoDdFwZoB", 
+        "level": "Advanced", 
+        "description": "A step-by-step guide to building and deploying a full-stack banking application", 
+        "category": "Webdev", 
+        "progress": null
+      },{
+        "id": "wd-22", 
+        "title": "Build and Deploy Modern Web 3.0 App with React", 
+        "poster": "assets/thumbnails/58.jpg", 
+        "videourl": "https://youtu.be/1wZw7RvYqZs?si=9n2XhQy8jHkKJr3e", 
+        "level": "Advanced", 
+        "description": "Learn how to build and deploy a modern web 3.0 application using React and blockchain technologies.", 
+        "category": "Webdev", 
+        "progress": null
+      },{
+        "id": "wd-23", 
+        "title": "Build 3 Complete Full-Stack Web Apps", 
+        "poster": "assets/thumbnails/59.webp", 
+        "videourl": "https://youtu.be/8vIDZO_w7lY?si=UI-97eCav1AUfKwo", 
+        "level": "Advanced", 
+        "description": "Build three complete full-stack web applications from scratch", 
+        "category": "Webdev", 
+        "progress": null
+      },{
+        "id": "wd-24", 
+        "title": "Build and Deploy 3 Full-Stack React Native Apps", 
+        "poster": "assets/thumbnails/60.webp", 
+        "videourl": "https://youtu.be/BTfcnxXevm0?si=OZtAuFXxb8u4JXYO", 
+        "level": "Advanced", 
+        "description": "Kick off your iOS/Android development with React Native.", 
+        "category": "Webdev", 
+        "progress": null
       }
     ]
   },
