@@ -172,7 +172,7 @@ box-shadow: 0 1.5px 2px var(--shadow-cl);
 }
 
 .sidebar-nav:hover{
-  background-color: var(--footer-cl);
+   background:linear-gradient(to right,var(--sidebar-bg),var(--dark-accent));;
   width: 100%;
   padding-left: 35px;
 }
@@ -188,7 +188,7 @@ box-shadow: 0 1.5px 2px var(--shadow-cl);
 }
 
 .active{
-  background-color: var(--her0-gradient);
+  background:linear-gradient(to left,var(--sidebar-bg),var(--dark-accent));;
   color: var(--primary-body-text);
 }
 
