@@ -172,7 +172,7 @@ async function render(){
 
     function saveProgress(courseId,percent,seconds){
 
-     let allProgress = JSON.parse(localStorage.getItem('eduStreamProgress')) || {};
+     const allProgress = JSON.parse(localStorage.getItem('eduStreamProgress')) || {};
 
      allProgress[courseId]={
         percent:percent,
