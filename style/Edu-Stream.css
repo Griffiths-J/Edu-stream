@@ -874,6 +874,7 @@ footer{
   color: var(--main-text-headings);
   font-size: 1.3rem;
   margin-bottom: 8px;
+  text-align: center;
 }
 
 .popular-path-grid{
