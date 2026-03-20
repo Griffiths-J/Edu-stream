@@ -22,8 +22,11 @@ let savedBookmarks;
        }
 
      let Bookmarkpage='';
+      const allProgress = JSON.parse(localStorage.getItem('eduStreamProgress')) || {};
 
     bookmarks.forEach(marked=>{
+
+        const active = allProgress[marked.id] || {percent:0,lastPosition:0}
       Bookmarkpage += `
           <div class="card">
             <div class="bookmarkCardUpper">
@@ -38,13 +41,13 @@ let savedBookmarks;
             </div>
             <div class="bookmarkCardMiddle">
               <div class="bookmarkProgressBar">
-                <div class="bookmarkProgress" style="width: ${marked.progress || 20}%"></div>
+                <div class="bookmarkProgress" style="width: ${active.percent}%"></div>
               </div>
-              <div class="bookmarkCardDescription">Progress: ${marked.progress || 20}%</div>
+              <div class="bookmarkCardDescription">Progress: ${active.percent}%</div>
             </div>
             <div class="bookmarkCardBottom">
               <button onclick="watchCourse('${marked.id}')" class="bookmarkCardBtn1">
-                <img src="SVG/play-icon.png" alt="play" /> Resume
+                <img src="SVG/play-icon.png" alt="play" /> Watch
               </button>
               <button onclick="bookmarkCourse('${marked.id}')" class="bookmarkCardBtn2">
                 <img src="SVG/bookmark-icon.png" alt="bookmark" /> Remove
@@ -52,6 +55,8 @@ let savedBookmarks;
             </div>
           </div>
               ` 
+
+              console.log(allProgress)
              })
               wrapper.innerHTML=Bookmarkpage;
 
@@ -107,7 +112,9 @@ let savedBookmarks;
         if (selectedCourse) {
             player.src({ type: 'video/youtube', src:`${selectedCourse.videourl}?rel=0&showinfo=0&modestbranding=1` });
             document.getElementById('videoModal').style.display = 'flex';
+
             player.play();
+
         }
     }
 

@@ -735,7 +735,9 @@ footer{
   background-color: var(--elevatedPanel-bg);
   flex: 1;
   border-radius: 10px;
-  box-shadow: inset 0 0 2px  ;
+  /* box-shadow: inset 0 0 2px  ; */
+  overflow: hidden;
+  background: url('../assets/thumbnails/color-bg3.jpeg');
 }
 
 .most-trending-top{
@@ -743,9 +745,10 @@ footer{
   display: flex;
   gap: 30px;
   padding: 1rem;
-  border-bottom: 1px solid #ffffff6b;
   border-bottom-left-radius:10px;
   border-bottom-right-radius:10px;
+  background: url('../assets/thumbnails/et.jpg');
+  
 }
 
 .number1{
@@ -819,7 +822,8 @@ footer{
     web dev page
 ==========*/
 .section-hero{
-  background-color: var(--elevatedPanel-bg);
+ /*  background-color: var(--elevatedPanel-bg); */
+ background: url('../assets/thumbnails/color-bg3.jpeg');
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -874,8 +878,8 @@ footer{
 
 .popular-path-grid{
 display: grid;
-gap: 3px;
-grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+gap: 12px;
+grid-template-columns: repeat(auto-fit, minmax(253px, 1fr));
 }
 
 @media (max-width:650px){
@@ -889,12 +893,24 @@ grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 height: 170px;
 background-color: var(--elevatedPanel-bg);
 border-radius: 8px;
-box-shadow: inset 0 0 2px  ;
+box-shadow:0 0 4px #00000069 ;
+overflow: hidden;
 }
 
-.path-top{
-  height: 90px;
+.pt{
+  display: flex;
+align-items: center;
+
 }
+
+.pt1{
+  background: url('../assets/thumbnails/ftend.webp');
+}
+
+.pt2{
+background: url('../assets/thumbnails/bktend.png');
+}
+
 .path-bottom{
   width: 100%;
   display: flex;
@@ -904,10 +920,15 @@ box-shadow: inset 0 0 2px  ;
 }
 .path-bottom-title{
   color: var(--main-text-headings);
+  font-weight: 900;
+  font-size: 1.5rem;
 }
 .path-bottom-path{
   color:var(--secondary-body-text);
-  font-size: 0.8rem;
+  font-size: 0.99rem;
+  font-weight: 900;
+  backdrop-filter: blur(60px);
+  background-color: rgba(15, 14, 14, 0.37);
 }
 .path-bottom-button{
   width: 100%;
@@ -917,14 +938,23 @@ box-shadow: inset 0 0 2px  ;
 }
 
 .path-bottom-button div{
-  background-color: rgba(255, 255, 255, 0.171);
-  box-shadow: inset 0 0 3px rgba(255, 255, 255, 0.208);
-  padding: 0.25rem 0.6rem;
+  background-color: rgba(51, 134, 155, 0.566);
+  box-shadow:0 0 3px #000000b3,inset 0 -4px 4px rgba(255, 255, 255, 0.411);
+  padding: 0.4rem 0.7rem;
   border-radius: 8px;
+  font-weight: 900;
+  cursor: pointer;
+  transition: all .2s ;
+}
+
+.path-bottom-button div:hover{
+  transform: scale(1.15);
+  filter: brightness(1.3);
 }
 
 .path-progress{
   padding: 0.25rem;
+  box-shadow: inset 0 -3px 5px rgba(255, 255, 255, 0.094);
 }
 
 .progress-path-title{
@@ -960,6 +990,7 @@ border-radius: 10px;
   height: inherit;
   background: linear-gradient(to left, orange , #f0debd);
   border-radius: inherit;
+  cursor: pointer;
 }
 .cssprogress{
   width: 50%;
@@ -974,6 +1005,9 @@ border-radius: 10px;
   background: linear-gradient(to left, #ec4bef , #f4c6f4);
 }
 
+.cssprogress:hover, .jsprogress:hover, .reactprogress:hover, .htmlprogress:hover{
+  filter: brightness(1.35);
+}
 /*AI section*/
 
 .secProgress{
