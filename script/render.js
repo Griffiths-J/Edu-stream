@@ -128,6 +128,8 @@ async function render(){
           player = videojs('edu-stream-player');
         }
 
+        player.off('timeupdate');
+
         if (selectedCourse) {
             player.src({ type: 'video/youtube', src:`${selectedCourse.videourl}?rel=0&showinfo=0&modestbranding=1` });
             document.getElementById('videoModal').style.display = 'flex';
