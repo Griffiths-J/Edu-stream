@@ -89,7 +89,7 @@ export function path(){
         }
       ]
     },{
-      title:'Security Analyst (Defensive Path)',
+      title:'Security Analyst',
       img:'assets/thumbnails/security.webp',
       description:'This path focuses on monitoring, protecting, and responding to threats. It begins with understanding security fundamentals, system hardening, and log analysis. Analysts then learn to use SIEM tools, intrusion detection systems, and firewalls to spot suspicious activity. As skills grow, the roadmap expands into incident response, malware analysis, and compliance frameworks like ISO or NIST. Advanced stages involve threat hunting, vulnerability management, and building defense strategies that keep organizations resilient against evolving attacks.',
       roadmapCards:[
