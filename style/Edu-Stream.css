@@ -897,8 +897,8 @@ grid-template-columns: repeat(auto-fit, minmax(253px, 1fr));
 
 @media (max-width:650px){
   .popular-path-grid{
-    margin:0 40px;
-    gap: 20px;
+    margin:0 7px;
+    gap: 25px;
   }
 }
 
@@ -1445,10 +1445,16 @@ BOOKMARK PAGE
   text-transform: uppercase;
 }
 
+@media(max-width:650px){
+  .pathModal{
+      width: 94%;
+  }
+}
+
 .pathModal-Title::after{
   content: '';
   background: linear-gradient(to right, var(--primary-main), #203355);
-  width:clamp(10rem , 1vw + 20rem , 30.5rem) ;
+  width:clamp(7rem , 1vw + 15rem , 20rem) ;
   height: 5px;
   position: absolute;
   bottom: -5px;
@@ -1532,9 +1538,9 @@ BOOKMARK PAGE
 }
 
 .closePath-modal{
-  position: absolute;
-  top: 35px;
-  right: 10px;
+  position: fixed;
+  top: 25px;
+  right: 13.5px;
   z-index: 10000;
 }
 .closePath-modal img{
