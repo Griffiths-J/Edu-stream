@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 *{
   margin: 0;
   padding: 0;
@@ -25,9 +28,12 @@
   --footer-cl:rgba(30,41,59,0.7)/* #284d881f */;
   --transition: .2s ease-in-out;
   --titles-font-size:clamp(1.2rem, 2vw + 1rem, 4.5rem);
-  --section-title-font-size:clamp(0.89rem , 1.2rem + 0.18rem, 1.1rem);
+  --section-title-font-size:clamp(0.99rem , 0.89vw + 0.89rem, 1.4rem);
   --description-font-size:clamp();
-  --popins-font:"Poppins" , sans-serif;
+  --popins-font:"Poppins", sans-serif;
+  --inter-font:"Inter", sans-serif;
+  --jetbrains-font:"JetBrains Mono", monospace;
+  --montserrat-font:"Montserrat", sans-serif;
 }
 
 body{
@@ -36,6 +42,7 @@ body{
       display: flex;
      flex-direction: column;
      min-height: 100vh;
+     font-family: var(--inter-font) , sans-serif;
 }
 
 .html{
@@ -295,7 +302,7 @@ main{
 .hero-subtitle{
   font-size: clamp(0.5rem, 1vw + 0.6rem,1.3rem);
   margin: 4px 0 10px 0;
-  font-family: inter;
+  font-family: var(--montserrat-font);
   color: var(--secondary-body-text);
 }
 
@@ -439,6 +446,11 @@ main{
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: all 1s;
+}
+
+.card:hover .thumbnailContainer img{
+  transform: scale(1.2);
 }
 
 .cardTitle{
@@ -446,7 +458,7 @@ main{
   font-family: var(--popins-font);
   text-align: center;
   color: var(--primary-body-text);
-  line-height: 15.5px;
+  line-height: 15.8px;
 }
 
 @media(max-width:650px){
@@ -483,7 +495,8 @@ main{
   text-align: center;
   line-height: 13.5px;
   margin-bottom: 5px;
-  font-size: clamp(0.6rem , 0.5vw + 0.65rem , 1rem);
+  font-size: clamp(0.6rem , 0.5vw + 0.5rem , 1rem);
+  
 }
 
 .cardButtons{
@@ -890,7 +903,7 @@ grid-template-columns: repeat(auto-fit, minmax(253px, 1fr));
 }
 
 .learning-path-card{
-height: 170px;
+height: 175px;
 background-color: var(--elevatedPanel-bg);
 border-radius: 8px;
 box-shadow:0 0 4px #00000069 ;
@@ -974,7 +987,7 @@ background: url('../assets/thumbnails/bktend.png');
 }
 
 .progressW p{
-width: 40px;
+width: 65px;
 font-size: 0.78rem;
  margin: 0.45rem 0;
 }
@@ -1028,6 +1041,14 @@ border-radius: 10px;
   gap: 20px;
 }
 
+/*Cyber page*/
+
+.cyberPath1{
+  background: url('../assets/thumbnails/hack.jpg');
+}
+.cyberPath2{
+  background:url('../assets/thumbnails/security.webp') ;
+}
 
 /*-------------
   modal section and video-js section
@@ -1385,4 +1406,146 @@ BOOKMARK PAGE
 
   
 }
+.pathModal-overlay{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #0000007e;
+  backdrop-filter: blur(8px);
+  z-index: 100000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
 
+.pathModal{
+  width: 80%;
+  background-color: var(--main-bg);
+  height: 90%;
+  border-radius: 10px;
+  box-shadow: 0 0 25px #0000008b;
+  padding: 0.5rem;
+  color: var(--primary-body-text);
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #203355 #111b2c;
+  position: relative;
+}
+
+.pathModal-Title{
+  font-size: clamp(1rem , 1vw + 1.1rem , 1.5rem);
+  font-weight: 600;
+  letter-spacing: 3.5px;
+  position: relative;
+  color: var(--primary-main);
+  font-family: var(--popins-font) , sans-serif;
+  text-transform: uppercase;
+}
+
+.pathModal-Title::after{
+  content: '';
+  background: linear-gradient(to right, var(--primary-main), #203355);
+  width:clamp(10rem , 1vw + 20rem , 30.5rem) ;
+  height: 5px;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+.pathModal-image img:hover{
+  transform:scale(1.25);
+}
+
+.pathModal-image{
+  width: 70%;
+  height: fit-content;
+  margin: 30px auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 1px 2px 4px #00000036, 0 2px 4px #0000002c;
+  cursor: pointer;
+  
+}
+
+.pathModal-image img{
+  width: 100%;
+  height: 100%;
+  transition: all 1s ease-out;
+}
+
+
+
+.pathModal-cont{
+  width: 90%;
+  margin:0 auto;
+}
+.pathModal-description-Title{
+  font-size: clamp(1rem , 1vw + 0.89rem , 1.8rem);
+  margin-left: 10px;
+  color: var(--primary-main);
+}
+
+.pathModal-description{
+  color: var(--secondary-body-text);
+  margin: 10px 0;
+  line-height: 2;
+}
+
+.path-Topic{
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform:capitalize;
+}
+
+
+.pathRoadmap{
+  margin: 16px 0;
+  display: grid;
+  gap: 13.5px;
+  grid-template-columns: repeat(auto-fit , minmax(235px,1fr));
+}
+
+.roadmapCard{
+  background:linear-gradient(to left, var(--main-bg), var(--elevatedPanel-bg)/* #283be88c  */);
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow:  0 0 4px #0000007e;
+  display: grid;
+  grid-template-rows: 40px 130px;
+
+}
+
+.roadmapCard-title{
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--primary-body-text);
+}
+
+.roadmapCard-description{
+  color: var(--secondary-body-text);
+  font-size: 0.88rem;
+  margin-top: 3px;
+  line-height: 1.2;
+}
+
+.closePath-modal{
+  position: absolute;
+  top: 35px;
+  right: 10px;
+  z-index: 10000;
+}
+.closePath-modal img{
+  cursor: pointer;
+  width: 20px;
+}
+
+.closePath-modal img:hover{
+  transform: scale(1.25);
+}
+
+.pathModal-overlay[style*="display: flex"] {
+    animation: fadeIn 0.3s ease-out;
+}
