@@ -143,7 +143,7 @@ export function path(){
         const active= path[index];
         
 
-        const pathTitle = document.querySelector('.pathModal-Title');
+      const pathTitle = document.querySelector('.pathModal-Title');
       const path_image = document.querySelector('.pathModal-image img');
       const pathTopic =  document.querySelector('.path-Topic');
       const pathDesc = document.querySelector('.path-des');
