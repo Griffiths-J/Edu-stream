@@ -24,15 +24,17 @@ async function render(){
     renderCourseCards(contWatching, '.continue-sec');
 
 
-    function bigCardWatch(course, container ){
-      let hero = course[0].id;
-    let heroBnt = document.querySelector(container);
+    function bigCardWatch(course, container ,index){
+      let heroBnt = document.querySelector(container);
+      if(!heroBnt)return;
+      let hero = course[index].id;
     heroBnt.addEventListener('click',()=>{
       watchCourse(hero);
     })
     };
 
-    /* bigCardWatch(webDev , '.hero-btn1'); */
+    bigCardWatch(webDev , '.hero-btn1',0);
+    bigCardWatch(ai,'.trend-watch-button',12);
     
  
 

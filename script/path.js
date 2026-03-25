@@ -114,21 +114,41 @@ export function path(){
         }
       ]
     },{
-      title:'',
-      description:'',
+      title:'UI Design',
+      img:'',
+      description:'UI focuses on the visual and interactive elements of a product. This path is about creating layouts, choosing colors, typography, icons, and ensuring consistency across screens. UI designers work with tools like Figma, Sketch, or Adobe XD to craft polished interfaces that are aesthetically pleasing and easy to navigate. The emphasis is on how the product looks and feels at the surface level.',
       roadmapCards:[
         {
-          title:'',
-          description:''
+          title:'Core Foundations',
+          description:'Start with visual design basics: color theory, typography, spacing, and layout principles. These ensure interfaces look clean and consistent.'
         },{
-          title:'',
-          description:''
+          title:'Tools & Prototyping',
+          description:'Learn design tools like Figma, Sketch, or Adobe XD. Practice creating wireframes, mockups, and interactive prototypes to bring ideas to life.'
         },{
-          title:'',
-          description:''
+          title:'Design Systems',
+          description:'Understand component libraries and style guides. This helps maintain consistency across products and speeds up collaboration with developers.'
         },{
-          title:'',
-          description:''
+          title:'Advanced Skills',
+          description:'Move into animation, micro-interactions, and responsive design. These refine the user interface, making it engaging and adaptable across devices.'
+        }
+      ]
+    },{
+      title:'UX Design',
+      img:'',
+      description:'UX is centered on the overall journey and usability of a product. This path involves research, wireframing, prototyping, and testing to ensure the product solves user problems effectively. UX designers study user behavior, map out flows, and design interactions that make the experience intuitive and satisfying. The focus is on how the product works and how users feel while using it.',
+      roadmapCards:[
+        {
+          title:'Core Foundations',
+          description:'Begin with user research and psychology. Learn how to study user needs, behaviors, and pain points to design meaningful experiences.'
+        },{
+          title:'Wireframing & Flows',
+          description:'Practice wireframes, user flows, and journey maps. These outline how users move through a product and highlight areas for improvement.'
+        },{
+          title:'Testing & Feedback',
+          description:'Focus on usability testing and prototyping. Gathering feedback ensures designs are intuitive and solve real problems effectively'
+        },{
+          title:'Advanced Skills',
+          description:'Develop expertise in information architecture, accessibility, and service design. This makes experiences scalable, inclusive, and aligned with business goals.'
         }
       ]
     }
@@ -185,12 +205,18 @@ export function path(){
  getPathbutton('.backendPath',0);
  getPathbutton('.ethicalHacking',2);
  getPathbutton('.securityAnalyst',3);
+ getPathbutton('.uiPath',4);
+ getPathbutton('.uxPath',5);
 
 
-
- document.querySelector('.closePath-modal').addEventListener('click',()=>{
+function closeM(){
+ let close = document.querySelector('.closePath-modal')
+  if(!close)return;
+  close.addEventListener('click',()=>{
   document.querySelector('.pathModal-overlay').style.display='none';
  })
+}
+ closeM();
 
 
 }

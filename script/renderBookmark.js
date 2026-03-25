@@ -6,14 +6,13 @@ let savedBookmarks;
     if (wrapper) {
          savedBookmarks = JSON.parse(localStorage.getItem('eduStreamBookmarks')) || [];
         renderBookmark(savedBookmarks);
-    }
+      }
     });
  
 
     function renderBookmark(bookmarks){
 
       let wrapper = document.querySelector('.bookmarkCardsWrapper');
-       
        if(!wrapper){
         console.log("does no exist");
         throw new Error("does not")

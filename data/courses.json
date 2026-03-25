@@ -181,9 +181,18 @@
         "description": "Learn about how to use UML diaagrams to visualize the design of database or systems", 
         "category": "Webdev", 
         "progress": null 
+      },{
+        "id": "wd-20", 
+        "title": "React Native Full Course", 
+        "poster": "assets/thumbnails/native.jpg", 
+        "videourl": "https://youtu.be/sm5Y7Vtuihg?si=103Q4yzhacX1ZtoL", 
+        "level": "Intermediate", 
+        "description": "This React Native Course is an all-in-one tutorial full of over 4 hours of React Native code", 
+        "category": "Webdev", 
+        "progress": null 
       },
       { 
-        "id": "wd-20", 
+        "id": "wd-21", 
         "title": "Portfolio Projects: Build & Deploy", 
         "poster": "assets/thumbnails/57.webp", 
         "videourl": "https://www.youtube.com/embed/0pThnRneDjw", 
@@ -192,7 +201,7 @@
         "category": "Webdev", 
         "progress": null 
       },{
-        "id": "wd-21", 
+        "id": "wd-22", 
         "title": "Build and Deploy a Banking Application", 
         "poster": "assets/thumbnails/photo10.jpg", 
         "videourl": "https://youtu.be/PuOVqP_cjkE?si=prvO_ChkoDdFwZoB", 
@@ -201,7 +210,7 @@
         "category": "Webdev", 
         "progress": null
       },{
-        "id": "wd-22", 
+        "id": "wd-23", 
         "title": "Build and Deploy Modern Web 3.0 App with React", 
         "poster": "assets/thumbnails/58.jpg", 
         "videourl": "https://youtu.be/1wZw7RvYqZs?si=9n2XhQy8jHkKJr3e", 
@@ -210,7 +219,7 @@
         "category": "Webdev", 
         "progress": null
       },{
-        "id": "wd-23", 
+        "id": "wd-24", 
         "title": "Build 3 Complete Full-Stack Web Apps", 
         "poster": "assets/thumbnails/59.webp", 
         "videourl": "https://youtu.be/8vIDZO_w7lY?si=UI-97eCav1AUfKwo", 
@@ -219,7 +228,7 @@
         "category": "Webdev", 
         "progress": null
       },{
-        "id": "wd-24", 
+        "id": "wd-25", 
         "title": "Build and Deploy 3 Full-Stack React Native Apps", 
         "poster": "assets/thumbnails/60.webp", 
         "videourl": "https://youtu.be/BTfcnxXevm0?si=OZtAuFXxb8u4JXYO", 
@@ -235,7 +244,7 @@
       { 
         "id": "ai-01", 
         "title": "How to Become an AI Engineer FAST (2026)", 
-        "poster": "https://images.unsplash.com/photo-1677442136019-21780ecad995", 
+        "poster": "assets/thumbnails/photo11.jpg", 
         "videourl": "https://www.youtube.com/embed/ILrYwyPd1Dc", 
         "level": "Beginner", 
         "description": "An expert-built roadmap for mastering AI engineering in record time.", 
@@ -245,7 +254,7 @@
       { 
         "id": "ai-02", 
         "title": "AI Roadmap 2026: High-Paying Skills", 
-        "poster": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5", 
+        "poster": "assets/thumbnails/photo12.jpg", 
         "videourl": "https://www.youtube.com/embed/QYlUoT1L-60", 
         "level": "Beginner", 
         "description": "The essential technical stack for the next generation of AI roles.", 
@@ -255,7 +264,7 @@
       { 
         "id": "ai-03", 
         "title": "Python for Absolute Beginners", 
-        "poster": "https://images.unsplash.com/photo-1635070041078-e363dbe005cb", 
+        "poster": "assets/thumbnails/photo13.jpg", 
         "videourl": "https://www.youtube.com/embed/rfscVS0vtbw", 
         "level": "Beginner", 
         "description": "Demystifying algorithms and data-driven predictions.", 
@@ -265,17 +274,33 @@
       { 
         "id": "ai-04", 
         "title": "Essential Mathematics for AI & ML", 
-        "poster": "https://images.unsplash.com/photo-16350700441078-e363dbe005cb", 
+        "poster": "assets/thumbnails/math.webp", 
         "videourl": "https://youtu.be/0z6AhrOSrRs?si=oH_H4lvvnMQ-Kf1T", 
         "level": "Intermediate", 
         "description": "Linear algebra and probability for neural network design.", 
         "category": "AI", 
         "progress": null 
+      },{
+        "id":"ai-05",
+        "title":"Introducion into Machine Learning", 
+        "poster":"assets/thumbnails/ml.jpg",
+        "videourl":"https://youtu.be/tmB5JIX3Lxk?si=En8_vr6jHHR4xXS1",
+        "level":"Beginner",
+        "description":"Learn the theory and practical application of machine learning concepts in this comprehensive course for beginners.",
+        "category":""
+      },{
+        "id":"ai-06",
+        "title":"ML Framework - Scikit-learn",
+        "poster":"assets/thumbnails/scikit.webp",
+        "videourl":"https://youtu.be/0B5eIE_1vpU?si=DprcdI_7nXyICZ7e", 
+        "level":"Beginner",
+        "description":"Scikit-learn is a free software machine learning library for the Python programming language.",
+        "category":""
       },
       { 
-        "id": "ai-05", 
+        "id": "ai-07", 
         "title": "Deep Learning with PyTorch Tutorial", 
-        "poster": "https://images.unsplash.com/photo-1620712943543-bcc4638d9980", 
+        "poster": "assets/thumbnails/pytorch.jpg", 
         "videourl": "https://www.youtube.com/embed/GIsg-ZUy0MY", 
         "level": "Intermediate", 
         "description": "Training deep models from scratch using industry-standard tools.", 
@@ -283,9 +308,9 @@
         "progress": null 
       },
       { 
-        "id": "ai-06", 
+        "id": "ai-08", 
         "title": "Natural Language Processing Foundations", 
-        "poster": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b", 
+        "poster": "assets/thumbnails/nlp.webp", 
         "videourl": "https://www.youtube.com/embed/CMrHM8a3hqw", 
         "level": "Intermediate", 
         "description": "How computers understand and generate human language.", 
@@ -293,9 +318,9 @@
         "progress": null 
       },
       { 
-        "id": "ai-07", 
+        "id": "ai-09", 
         "title": "Full AI Crush Course - Havard CS50", 
-        "poster": "https://images.unsplash.com/photo-1546410531-bb4caa6b424d", 
+        "poster": "assets/thumbnails/aibrain.jpg", 
         "videourl": "https://youtu.be/5NgNicANyqM?si=QS54Ni20hbH76Hyb", 
         "level": "Advanced", 
         "description": "Building applications on top of large language models.", 
@@ -303,9 +328,9 @@
         "progress": null 
       },
       { 
-        "id": "ai-08", 
+        "id": "ai-10", 
         "title": "What Are Vision Language Model", 
-        "poster": "https://images.unsplash.com/photo-1675271591211-126ad94e495d", 
+        "poster": "assets/thumbnails/mv.jpg", 
         "videourl": "https://youtu.be/lOD_EE96jhM?si=pjGoWQBid4TOLjWn", 
         "level": "Advanced", 
         "description": "How AI sees and understands images", 
@@ -313,9 +338,9 @@
         "progress": null 
       },
       { 
-        "id": "ai-09", 
+        "id": "ai-11", 
         "title": "Computer Vision and Image Processing ", 
-        "poster": "https://images.unsplash.com/photo-1551288049-bbda38a10ad5", 
+        "poster": "assets/thumbnails/cv.jpg", 
         "videourl": "https://youtu.be/01sAkU_NvOY?si=hzqLb2WVpsEZ_dhO", 
         "level": "Advanced", 
         "description": "Scaling AI models from experiments to production.", 
@@ -323,9 +348,9 @@
         "progress": null 
       },
       { 
-        "id": "ai-10", 
+        "id": "ai-12", 
         "title": "End to End Machine Learning Project", 
-        "poster": "https://images.unsplash.com/photo-1551288049-bbda38a10ad5", 
+        "poster": "assets/thumbnails/photo16.avif", 
         "videourl": "https://youtu.be/o6vbe5G7xNo?si=ssw0xqyRAm3YYuo8", 
         "level": "Advanced", 
         "description": "Scaling AI models from experiments to production.", 
@@ -333,9 +358,9 @@
         "progress": null 
       },
       { 
-        "id": "ai-11", 
+        "id": "ai-13", 
         "title": "AI Ethics and Future Impact", 
-        "poster": "https://images.unsplash.com/photo-1507146426996-ef05306b995a", 
+        "poster": "assets/thumbnails/ae.jpg", 
         "videourl": "https://www.youtube.com/embed/reUZRyXxUs4", 
         "level": "Intermediate", 
         "description": "The social and ethical considerations of global AI adoption.", 
@@ -349,7 +374,7 @@
       { 
         "id": "ui-01", 
         "title": "UI UX Design Roadmap 2026", 
-        "poster": "https://images.unsplash.com/photo-1586717791821-3f44a563eb4c", 
+        "poster": "assets/thumbnails/photo30.webp", 
         "videourl": "https://www.youtube.com/embed/G0xCiXihUGQ", 
         "level": "Beginner", 
         "description": "Mapping out your career in product design.", 
@@ -359,7 +384,7 @@
       { 
         "id": "ui-02", 
         "title": "If I started UX in 2026, I’d do this", 
-        "poster": "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7", 
+        "poster": "assets/thumbnails/how.jpg", 
         "videourl": "https://www.youtube.com/embed/Y02HlIIAg4Q", 
         "level": "Beginner", 
         "description": "Prioritizing the right skills to avoid burnout and get hired.", 
@@ -369,7 +394,7 @@
       { 
         "id": "ui-03", 
         "title": "UI/UX Explained In 8 Minutes", 
-        "poster": "https://images.unsplash.com/photo-1558655146-d09347e92766", 
+        "poster": "assets/thumbnails/photo33.jpg", 
         "videourl": "https://www.youtube.com/embed/ODpB9-MCa5s", 
         "level": "Beginner", 
         "description": "A high-speed introduction to the core principles of design.", 
@@ -379,7 +404,7 @@
       { 
         "id": "ui-04", 
         "title": "Learn UI/UX Design with AI", 
-        "poster": "https://images.unsplash.com/photo-1551434678-e076c223a692", 
+        "poster": "assets/thumbnails/uiux_ai.webp", 
         "videourl": "https://www.youtube.com/embed/2OlT0n6JlUg", 
         "level": "Beginner", "description": "A 6-month roadmap leveraging AI to accelerate your learning.", 
         "category": "UI UX", 
@@ -388,7 +413,7 @@
       { 
         "id": "ui-05", 
         "title": "Graphic Design Principles Masterclass", 
-        "poster": "https://images.unsplash.com/photo-1545235617-9465d2a55698", 
+        "poster": "assets/thumbnails/principles.webp", 
         "videourl": "https://youtu.be/SVIBfzLRZRU?si=paxsaHDnS-TLDyZp", 
         "level": "Intermediate", 
         "description": "Perfecting color theory, hierarchy, and whitespace.", 
@@ -398,7 +423,7 @@
       { 
         "id": "ui-06", 
         "title": "Figma for Beginners 2026", 
-        "poster": "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e", 
+        "poster": "assets/thumbnails/figma.webp", 
         "videourl": "https://youtu.be/jwCmIBJ8Jtc?si=5vqPLn-X1q_jImV8", 
         "level": "Intermediate", 
         "description": "Mastering auto-layouts, components, and variables.", 
@@ -408,7 +433,7 @@
       { 
         "id": "ui-07", 
         "title": "User Research and Testing", 
-        "poster": "https://images.unsplash.com/photo-1573164713714-d95e436ab8d6", 
+        "poster":"assets/thumbnails/research.webp", 
         "videourl": "https://www.youtube.com/embed/D4NyQ5iOMF0", 
         "level": "Intermediate", 
         "description": "Validating assumptions with real-world user data.", 
@@ -418,7 +443,7 @@
       { 
         "id": "ui-08", 
         "title": "Prototyping & Micro-interactions", 
-        "poster": "https://images.unsplash.com/photo-1508921912186-1d1a45ebb3c1", 
+        "poster": "assets/thumbnails/prototype.webp", 
         "videourl": "https://www.youtube.com/embed/76u-t6drWFY", 
         "level": "Advanced", 
         "description": "Bringing designs to life with realistic movement.", 
@@ -428,7 +453,7 @@
       { 
         "id": "ui-09", 
         "title": "Inclusive & Accessible Design", 
-        "poster": "https://images.unsplash.com/photo-1454165833222-d1d44a604e71", 
+        "poster": "assets/thumbnails/inclusive.webp", 
         "videourl": "https://www.youtube.com/embed/n9xDqrxlWa0", 
         "level": "Advanced", 
         "description": "Designing digital products that everyone can use.", 
@@ -438,7 +463,7 @@
       { 
         "id": "ui-10", 
         "title": "Building Your First UX Case Study", 
-        "poster": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f", 
+        "poster": "assets/thumbnails/caseS.webp", 
         "videourl": "https://youtu.be/HZuk6Wkx_Eg?si=FVZiPURkyd28HyX8", 
         "level": "Advanced", 
         "description": "How to tell a compelling story with your design work.", 
@@ -472,7 +497,7 @@
       { 
         "id": "cy-03", 
         "title": "How I Would Start Cybersecurity in 2026", 
-        "poster": "https://images.unsplash.com/photo-1629654297299-c8506221ca97", 
+        "poster": "assets/thumbnails/photo22.webp", 
         "videourl": "https://www.youtube.com/embed/qAztehdV6VQ", 
         "level": "Beginner", 
         "description": "A recruiter's perspective on the fastest way into the field.", 
@@ -510,7 +535,7 @@
       },{
           "id": "cy-07", 
           "title": "Cybersecurity Full Course", 
-          "poster": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b", 
+          "poster": "assets/thumbnails/photo19.webp", 
           "videourl": "https://youtu.be/U_P23SqJaDc?si=ADC28Yqi-dsJFHBN", 
           "level": "Beginner", 
           "description": "A comprehensive introduction to the fundamentals of cybersecurity.", 
@@ -520,7 +545,7 @@
       { 
         "id": "cy-08", 
         "title": "Networking Fundamentals for Security", 
-        "poster": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4", 
+        "poster": "assets/thumbnails/photo21.webp", 
         "videourl": "https://www.youtube.com/embed/YJUVNlmIO6E", 
         "level": "Intermediate", 
         "description": "Mastering the protocols that power the internet.", 
