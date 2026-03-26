@@ -8,18 +8,14 @@
         "vidID":"M7Ic1UVf-VE", 
         "videourl": "https://youtu.be/GxmfcnU3feo?si=_Xxl0FUXMmzT4QsE", 
         "level": "Beginner", 
-        "description": "The definitive guide to modern web standards and expectations in 2026.", 
-        "category": "Webdev", 
-        "progress": null 
+        "description": "The definitive guide to modern web standards and expectations in 2026."
       },{
         "id": "wd-02", 
         "title": "HTML Crash Course 2026 - Build a Website in 1 Hour", 
         "poster": "assets/thumbnails/photo38.webp", 
         "videourl": "https://youtu.be/kUMe1FH4CHE?si=1Nnk3CW6En-j6Bkv", 
         "level": "Beginner", 
-        "description": "Learn the basics of HTML in 2026.From tags to semantic structure, this course covers it all.", 
-        "category": "Webdev", 
-        "progress": null 
+        "description": "Learn the basics of HTML in 2026.From tags to semantic structure, this course covers it all."
       },
       { 
         "id": "wd-03", 
@@ -27,27 +23,21 @@
         "poster": "assets/thumbnails/photo2.jpg", 
         "videourl": "https://www.youtube.com/embed/uB6orI_RpmY", 
         "level": "Beginner", 
-        "description": "Integrating AI tools into the fullstack development lifecycle.", 
-        "category": "Webdev", 
-        "progress": null 
+        "description": "Integrating AI tools into the fullstack development lifecycle."
       },{
         "id": "wd-04", 
         "title": "A Complete CSS Course - 2026", 
         "poster": "assets/thumbnails/photo3.jpg", 
         "videourl": "https://youtu.be/OXGznpKZ_sA?si=WU_HQjeQb8xHc_HE", 
         "level": "Beginner", 
-        "description": "Learn the fundamentals of CSS in 2026 with the latest features and best practices. ", 
-        "category": "Webdev", 
-        "progress": null
+        "description": "Learn the fundamentals of CSS in 2026 with the latest features and best practices. "
       },{
         "id": "wd-05", 
         "title": "In-Depth Responsive Web Development Course", 
         "poster": "assets/thumbnails/photo33.webp", 
         "videourl": "https://youtu.be/srvUrASNj0s?si=wUiKbqklilN9x_23", 
         "level": "Beginner", 
-        "description": "Mastering media queries, flexible layouts, and mobile-first design principles.", 
-        "category": "Webdev", 
-        "progress": null
+        "description": "Mastering media queries, flexible layouts, and mobile-first design principles."
       },
       { 
         "id": "wd-06", 
@@ -55,9 +45,7 @@
         "poster": "assets/thumbnails/photo4.jpg", 
         "videourl": "https://www.youtube.com/embed/PkZNo7MFNFg", 
         "level": "Intermediate", 
-        "description": "Mastering ES6+, asynchronous logic, and DOM manipulation.", 
-        "category": "Webdev", 
-        "progress": null 
+        "description": "Mastering ES6+, asynchronous logic, and DOM manipulation."
       },
       { 
         "id": "wd-07", 
@@ -65,9 +53,7 @@
         "poster": "assets/thumbnails/photo6.jpg", 
         "videourl": "https://www.youtube.com/embed/8pDqJVdNa44", 
         "level": "Beginner", 
-        "description": "How a small team from facebook developed react .", 
-        "category": "Webdev", 
-        "progress": null 
+        "description": "How a small team from facebook developed react ."
       },
       { 
         "id": "wd-08", 
@@ -75,35 +61,27 @@
         "poster": "assets/thumbnails/49.webp", 
         "videourl": "https://www.youtube.com/embed/dFgzHOX84xQ", 
         "level": "Intermediate", 
-        "description": "Building rapid, responsive UIs with utility-first CSS.", 
-        "category": "Webdev", 
-        "progress": null 
+        "description": "Building rapid, responsive UIs with utility-first CSS."
       },{
         "id": "wd-09", 
         "title": "Bootstrap CSS Crash Course", 
         "poster": "assets/thumbnails/50.webp", 
         "videourl": "", 
-        "level": "Intermediate", 
-        "description": "Build responsive and modern websites with Bootstrap CSS framework.", 
-        "progress": null
+        "description": "Build responsive and modern websites with Bootstrap CSS framework."
       },{
         "id": "wd-10", 
         "title": "GSAP Course - Animation for the Web", 
         "poster": "assets/thumbnails/51.webp", 
         "videourl": "https://youtu.be/AW1yfBKRMKc?si=ytLF7MI1IjEOejhB", 
-        "level": "Beginner", 
         "description": "Learn how to create stunning animations for the web using GSAP.", 
-        "category": "Webdev", 
-        "progress": null
+        "category": "Webdev"
       },{
         "id": "wd-11", 
         "title": "API Crush Course - How to use APIs in 2026", 
         "poster": "assets/thumbnails/52.webp", 
         "videourl": "https://youtu.be/WXsD0ZgxjRw?si=M0WGe3Ase_FR3NPb", 
         "level": "Beginner", 
-        "description": "Learn how to integrate and utilize APIs effectively in your web applications.", 
-        "category": "Webdev", 
-        "progress": null
+        "description": "Learn how to integrate and utilize APIs effectively in your web applications."
       },
       { 
         "id": "wd-12", 
@@ -111,27 +89,21 @@
         "poster": "assets/thumbnails/53.webp", 
         "videourl": "https://www.youtube.com/embed/bMknfKXIFA8", 
         "level": "Intermediate", 
-        "description": "Harnessing the power of hooks and component-based architecture.", 
-        "category": "Webdev", 
-        "progress": null 
+        "description": "Harnessing the power of hooks and component-based architecture."
       },{
         "id": "wd-13", 
         "title": "React Full Course", 
         "poster": "assets/thumbnails/54.webp", 
         "videourl": "https://youtu.be/RVFAyFWO4go?si=7KDL5EPG0PQV7qsE", 
         "level": "Advanced", 
-        "description": "Building complex applications with state management, routing, and performance optimization.", 
-        "category": "Webdev", 
-        "progress": null
+        "description": "Building complex applications with state management, routing, and performance optimization."
       },{
         "id": "wd-14", 
         "title": "Intro to Backend Web Development", 
         "poster": "assets/thumbnails/55.webp", 
         "videourl": "https://youtu.be/KOutPbKc9UM?si=GS7PHL9mOHeNFQ-x", 
         "level": "Advanced", 
-        "description": "Understanding server-side programming, databases, and APIs to build full-stack applications.", 
-        "category": "Webdev", 
-        "progress": null
+        "description": "Understanding server-side programming, databases, and APIs to build full-stack applications."
       },
       { 
         "id": "wd-15", 
@@ -139,9 +111,7 @@
         "poster": "assets/thumbnails/photo15.avif", 
         "videourl": "https://www.youtube.com/embed/wm5gMKuwSYk", 
         "level": "Advanced", 
-        "description": "Server-side rendering and static site generation at scale.", 
-        "category": "Webdev", 
-        "progress": null 
+        "description": "Server-side rendering and static site generation at scale."
       },
       { 
         "id": "wd-16", 
@@ -149,18 +119,14 @@
         "poster": "assets/thumbnails/56.webp", 
         "videourl": "https://www.youtube.com/embed/Oe421EPjeBE", 
         "level": "Advanced", 
-        "description": "Building robust back-end systems and RESTful services.", 
-        "category": "Webdev", 
-        "progress": null 
+        "description": "Building robust back-end systems and RESTful services."
       },{
           "id": "wd-17", 
           "title": "Node js Full Course", 
           "poster": "assets/thumbnails/photo17.webp", 
           "videourl": "https://youtu.be/f2EqECiTBL8?si=Xcgup6ag4GRAPKag", 
           "level": "Advanced", 
-          "description": "A comprehensive guide to building scalable server-side applications with Node.js.", 
-          "category": "Webdev", 
-          "progress": null
+          "description": "A comprehensive guide to building scalable server-side applications with Node.js."
       },
       {
          "id": "wd-18", 
@@ -168,9 +134,7 @@
          "poster": "assets/thumbnails/photo9.jpg", 
          "videourl": "https://www.youtube.com/embed/WiwfiVdfRIc", 
          "level": "Advanced", 
-         "description": "Implementing databases, authentication, and storage effortlessly.", 
-         "category": "Webdev", 
-         "progress": null 
+         "description": "Implementing databases, authentication, and storage effortlessly."
       },
       { 
         "id": "wd-19", 
@@ -178,18 +142,14 @@
         "poster": "assets/thumbnails/57.jpg", 
         "videourl": "https://youtu.be/WnMQ8HlmeXc?si=5ZF01dLNICQ95TVO", 
         "level": "Beginner", 
-        "description": "Learn about how to use UML diaagrams to visualize the design of database or systems", 
-        "category": "Webdev", 
-        "progress": null 
+        "description": "Learn about how to use UML diaagrams to visualize the design of database or systems"
       },{
         "id": "wd-20", 
         "title": "React Native Full Course", 
         "poster": "assets/thumbnails/native.jpg", 
         "videourl": "https://youtu.be/sm5Y7Vtuihg?si=103Q4yzhacX1ZtoL", 
         "level": "Intermediate", 
-        "description": "This React Native Course is an all-in-one tutorial full of over 4 hours of React Native code", 
-        "category": "Webdev", 
-        "progress": null 
+        "description": "This React Native Course is an all-in-one tutorial full of over 4 hours of React Native code"
       },
       { 
         "id": "wd-21", 
@@ -197,45 +157,35 @@
         "poster": "assets/thumbnails/57.webp", 
         "videourl": "https://www.youtube.com/embed/0pThnRneDjw", 
         "level": "Advanced", 
-        "description": "Creating professional projects to impress top-tier recruiters.", 
-        "category": "Webdev", 
-        "progress": null 
+        "description": "Creating professional projects to impress top-tier recruiters."
       },{
         "id": "wd-22", 
         "title": "Build and Deploy a Banking Application", 
         "poster": "assets/thumbnails/photo10.jpg", 
         "videourl": "https://youtu.be/PuOVqP_cjkE?si=prvO_ChkoDdFwZoB", 
         "level": "Advanced", 
-        "description": "A step-by-step guide to building and deploying a full-stack banking application", 
-        "category": "Webdev", 
-        "progress": null
+        "description": "A step-by-step guide to building and deploying a full-stack banking application"
       },{
         "id": "wd-23", 
         "title": "Build and Deploy Modern Web 3.0 App with React", 
         "poster": "assets/thumbnails/58.jpg", 
         "videourl": "https://youtu.be/1wZw7RvYqZs?si=9n2XhQy8jHkKJr3e", 
         "level": "Advanced", 
-        "description": "Learn how to build and deploy a modern web 3.0 application using React and blockchain technologies.", 
-        "category": "Webdev", 
-        "progress": null
+        "description": "Learn how to build and deploy a modern web 3.0 application using React and blockchain technologies."
       },{
         "id": "wd-24", 
         "title": "Build 3 Complete Full-Stack Web Apps", 
         "poster": "assets/thumbnails/59.webp", 
         "videourl": "https://youtu.be/8vIDZO_w7lY?si=UI-97eCav1AUfKwo", 
         "level": "Advanced", 
-        "description": "Build three complete full-stack web applications from scratch", 
-        "category": "Webdev", 
-        "progress": null
+        "description": "Build three complete full-stack web applications from scratch"
       },{
         "id": "wd-25", 
         "title": "Build and Deploy 3 Full-Stack React Native Apps", 
         "poster": "assets/thumbnails/60.webp", 
         "videourl": "https://youtu.be/BTfcnxXevm0?si=OZtAuFXxb8u4JXYO", 
         "level": "Advanced", 
-        "description": "Kick off your iOS/Android development with React Native.", 
-        "category": "Webdev", 
-        "progress": null
+        "description": "Kick off your iOS/Android development with React Native."
       }
     ]
   },
@@ -247,9 +197,7 @@
         "poster": "assets/thumbnails/photo11.jpg", 
         "videourl": "https://www.youtube.com/embed/ILrYwyPd1Dc", 
         "level": "Beginner", 
-        "description": "An expert-built roadmap for mastering AI engineering in record time.", 
-        "category": "AI", 
-        "progress": null 
+        "description": "An expert-built roadmap for mastering AI engineering in record time."
       },
       { 
         "id": "ai-02", 
@@ -257,9 +205,7 @@
         "poster": "assets/thumbnails/photo12.jpg", 
         "videourl": "https://www.youtube.com/embed/QYlUoT1L-60", 
         "level": "Beginner", 
-        "description": "The essential technical stack for the next generation of AI roles.", 
-        "category": "AI", 
-        "progress": null 
+        "description": "The essential technical stack for the next generation of AI roles."
       },
       { 
         "id": "ai-03", 
@@ -267,9 +213,7 @@
         "poster": "assets/thumbnails/photo13.jpg", 
         "videourl": "https://www.youtube.com/embed/rfscVS0vtbw", 
         "level": "Beginner", 
-        "description": "Demystifying algorithms and data-driven predictions.", 
-        "category": "AI", 
-        "progress": null 
+        "description": "Demystifying algorithms and data-driven predictions."
       },
       { 
         "id": "ai-04", 
@@ -277,25 +221,19 @@
         "poster": "assets/thumbnails/math.webp", 
         "videourl": "https://youtu.be/0z6AhrOSrRs?si=oH_H4lvvnMQ-Kf1T", 
         "level": "Intermediate", 
-        "description": "Linear algebra and probability for neural network design.", 
-        "category": "AI", 
-        "progress": null 
+        "description": "Linear algebra and probability for neural network design."
       },{
         "id":"ai-05",
         "title":"Introducion into Machine Learning", 
         "poster":"assets/thumbnails/ml.jpg",
         "videourl":"https://youtu.be/tmB5JIX3Lxk?si=En8_vr6jHHR4xXS1",
-        "level":"Beginner",
-        "description":"Learn the theory and practical application of machine learning concepts in this comprehensive course for beginners.",
-        "category":""
+        "description":"Learn the theory and practical application of machine learning concepts in this comprehensive course for beginners."
       },{
         "id":"ai-06",
         "title":"ML Framework - Scikit-learn",
         "poster":"assets/thumbnails/scikit.webp",
         "videourl":"https://youtu.be/0B5eIE_1vpU?si=DprcdI_7nXyICZ7e", 
-        "level":"Beginner",
-        "description":"Scikit-learn is a free software machine learning library for the Python programming language.",
-        "category":""
+        "description":"Scikit-learn is a free software machine learning library for the Python programming language."
       },
       { 
         "id": "ai-07", 
@@ -303,9 +241,7 @@
         "poster": "assets/thumbnails/pytorch.jpg", 
         "videourl": "https://www.youtube.com/embed/GIsg-ZUy0MY", 
         "level": "Intermediate", 
-        "description": "Training deep models from scratch using industry-standard tools.", 
-        "category": "AI", 
-        "progress": null 
+        "description": "Training deep models from scratch using industry-standard tools."
       },
       { 
         "id": "ai-08", 
@@ -313,9 +249,7 @@
         "poster": "assets/thumbnails/nlp.webp", 
         "videourl": "https://www.youtube.com/embed/CMrHM8a3hqw", 
         "level": "Intermediate", 
-        "description": "How computers understand and generate human language.", 
-        "category": "AI", 
-        "progress": null 
+        "description": "How computers understand and generate human language."
       },
       { 
         "id": "ai-09", 
@@ -323,9 +257,7 @@
         "poster": "assets/thumbnails/aibrain.jpg", 
         "videourl": "https://youtu.be/5NgNicANyqM?si=QS54Ni20hbH76Hyb", 
         "level": "Advanced", 
-        "description": "Building applications on top of large language models.", 
-        "category": "AI", 
-        "progress": null 
+        "description": "Building applications on top of large language models."
       },
       { 
         "id": "ai-10", 
@@ -333,9 +265,7 @@
         "poster": "assets/thumbnails/mv.jpg", 
         "videourl": "https://youtu.be/lOD_EE96jhM?si=pjGoWQBid4TOLjWn", 
         "level": "Advanced", 
-        "description": "How AI sees and understands images", 
-        "category": "AI", 
-        "progress": null 
+        "description": "How AI sees and understands images"
       },
       { 
         "id": "ai-11", 
@@ -343,9 +273,7 @@
         "poster": "assets/thumbnails/cv.jpg", 
         "videourl": "https://youtu.be/01sAkU_NvOY?si=hzqLb2WVpsEZ_dhO", 
         "level": "Advanced", 
-        "description": "Scaling AI models from experiments to production.", 
-        "category": "AI", 
-        "progress": null 
+        "description": "Scaling AI models from experiments to production."
       },
       { 
         "id": "ai-12", 
@@ -353,9 +281,7 @@
         "poster": "assets/thumbnails/photo16.avif", 
         "videourl": "https://youtu.be/o6vbe5G7xNo?si=ssw0xqyRAm3YYuo8", 
         "level": "Advanced", 
-        "description": "Scaling AI models from experiments to production.", 
-        "category": "AI", 
-        "progress": null 
+        "description": "Scaling AI models from experiments to production."
       },
       { 
         "id": "ai-13", 
@@ -363,9 +289,7 @@
         "poster": "assets/thumbnails/ae.jpg", 
         "videourl": "https://www.youtube.com/embed/reUZRyXxUs4", 
         "level": "Intermediate", 
-        "description": "The social and ethical considerations of global AI adoption.", 
-        "category": "AI", 
-        "progress": null 
+        "description": "The social and ethical considerations of global AI adoption."
       }
     ]
   },
@@ -377,9 +301,7 @@
         "poster": "assets/thumbnails/photo30.webp", 
         "videourl": "https://www.youtube.com/embed/G0xCiXihUGQ", 
         "level": "Beginner", 
-        "description": "Mapping out your career in product design.", 
-        "category": "UI UX", 
-        "progress": null 
+        "description": "Mapping out your career in product design."
       },
       { 
         "id": "ui-02", 
@@ -387,9 +309,7 @@
         "poster": "assets/thumbnails/how.jpg", 
         "videourl": "https://www.youtube.com/embed/Y02HlIIAg4Q", 
         "level": "Beginner", 
-        "description": "Prioritizing the right skills to avoid burnout and get hired.", 
-        "category": "UI UX", 
-        "progress": null 
+        "description": "Prioritizing the right skills to avoid burnout and get hired."
       },
       { 
         "id": "ui-03", 
@@ -397,18 +317,14 @@
         "poster": "assets/thumbnails/photo33.jpg", 
         "videourl": "https://www.youtube.com/embed/ODpB9-MCa5s", 
         "level": "Beginner", 
-        "description": "A high-speed introduction to the core principles of design.", 
-        "category": "UI UX", 
-        "progress": null 
+        "description": "A high-speed introduction to the core principles of design."
       },
       { 
         "id": "ui-04", 
         "title": "Learn UI/UX Design with AI", 
         "poster": "assets/thumbnails/uiux_ai.webp", 
         "videourl": "https://www.youtube.com/embed/2OlT0n6JlUg", 
-        "level": "Beginner", "description": "A 6-month roadmap leveraging AI to accelerate your learning.", 
-        "category": "UI UX", 
-        "progress": null 
+        "level": "Beginner", "description": "A 6-month roadmap leveraging AI to accelerate your learning."
       },
       { 
         "id": "ui-05", 
@@ -416,9 +332,7 @@
         "poster": "assets/thumbnails/principles.webp", 
         "videourl": "https://youtu.be/SVIBfzLRZRU?si=paxsaHDnS-TLDyZp", 
         "level": "Intermediate", 
-        "description": "Perfecting color theory, hierarchy, and whitespace.", 
-        "category": "UI UX", 
-        "progress": null 
+        "description": "Perfecting color theory, hierarchy, and whitespace."
       },
       { 
         "id": "ui-06", 
@@ -426,9 +340,7 @@
         "poster": "assets/thumbnails/figma.webp", 
         "videourl": "https://youtu.be/jwCmIBJ8Jtc?si=5vqPLn-X1q_jImV8", 
         "level": "Intermediate", 
-        "description": "Mastering auto-layouts, components, and variables.", 
-        "category": "UI UX", 
-        "progress": null 
+        "description": "Mastering auto-layouts, components, and variables."
       },
       { 
         "id": "ui-07", 
@@ -436,9 +348,7 @@
         "poster":"assets/thumbnails/research.webp", 
         "videourl": "https://www.youtube.com/embed/D4NyQ5iOMF0", 
         "level": "Intermediate", 
-        "description": "Validating assumptions with real-world user data.", 
-        "category": "UI UX", 
-        "progress": null 
+        "description": "Validating assumptions with real-world user data."
       },
       { 
         "id": "ui-08", 
@@ -446,9 +356,7 @@
         "poster": "assets/thumbnails/prototype.webp", 
         "videourl": "https://www.youtube.com/embed/76u-t6drWFY", 
         "level": "Advanced", 
-        "description": "Bringing designs to life with realistic movement.", 
-        "category": "UI UX", 
-        "progress": null 
+        "description": "Bringing designs to life with realistic movement."
       },
       { 
         "id": "ui-09", 
@@ -456,9 +364,7 @@
         "poster": "assets/thumbnails/inclusive.webp", 
         "videourl": "https://www.youtube.com/embed/n9xDqrxlWa0", 
         "level": "Advanced", 
-        "description": "Designing digital products that everyone can use.", 
-        "category": "UI UX", 
-        "progress": null 
+        "description": "Designing digital products that everyone can use."
       },
       { 
         "id": "ui-10", 
@@ -466,9 +372,7 @@
         "poster": "assets/thumbnails/caseS.webp", 
         "videourl": "https://youtu.be/HZuk6Wkx_Eg?si=FVZiPURkyd28HyX8", 
         "level": "Advanced", 
-        "description": "How to tell a compelling story with your design work.", 
-        "category": "UI UX", 
-        "progress": null 
+        "description": "How to tell a compelling story with your design work."
       }
     ]
   },
@@ -480,9 +384,7 @@
         "poster": "assets/thumbnails/cybersecurityrm.webp",
         "videourl": "https://www.youtube.com/embed/TTbDkiVG7Z8", 
         "level": "Beginner", 
-        "description": "The exact steps to start your career in security from zero.", 
-        "category": "Cybersecurity", 
-        "progress": null 
+        "description": "The exact steps to start your career in security from zero."
       },
       { 
         "id": "cy-02", 
@@ -490,9 +392,7 @@
         "poster": "assets/thumbnails/cybersecurityrm2.webp", 
         "videourl": "https://www.youtube.com/embed/U-mAqnc6ZkI", 
         "level": "Beginner", 
-        "description": "Starting in security with no coding background.", 
-        "category": "Cybersecurity", 
-        "progress": null 
+        "description": "Starting in security with no coding background."
       },
       { 
         "id": "cy-03", 
@@ -500,9 +400,7 @@
         "poster": "assets/thumbnails/photo22.webp", 
         "videourl": "https://www.youtube.com/embed/qAztehdV6VQ", 
         "level": "Beginner", 
-        "description": "A recruiter's perspective on the fastest way into the field.", 
-        "category": "Cybersecurity", 
-        "progress": null 
+        "description": "A recruiter's perspective on the fastest way into the field."
       },
       { 
         "id": "cy-04", 
@@ -510,18 +408,14 @@
         "poster": "assets/thumbnails/offer-services.jpg", 
         "videourl": "https://www.youtube.com/embed/qOFI01xLJWs", 
         "level": "Beginner", 
-        "description": "Understanding the landscape of professional security careers.", 
-        "category": "Cybersecurity", 
-        "progress": null 
+        "description": "Understanding the landscape of professional security careers."
       },{
           "id": "cy-05", 
           "title": "Operating Systems Course", 
           "poster": "assets/thumbnails/OS.png", 
           "videourl": "https://youtu.be/yK1uBHPdp30?si=OaQ20AThh_G8iw3h", 
           "level": "Beginner", 
-          "description": "A deep dive into how operating systems work and their role in cybersecurity.", 
-          "category": "Cybersecurity", 
-          "progress": null
+          "description": "A deep dive into how operating systems work and their role in cybersecurity."
       },
       { 
         "id": "cy-06", 
@@ -529,18 +423,14 @@
         "poster": "assets/thumbnails/security-courses.webp", 
         "videourl": "https://www.youtube.com/embed/NotuHP6tres", 
         "level": "Beginner", 
-        "description": "Top learning paths for self-taught security enthusiasts.", 
-        "category": "Cybersecurity", 
-        "progress": null 
+        "description": "Top learning paths for self-taught security enthusiasts." 
       },{
           "id": "cy-07", 
           "title": "Cybersecurity Full Course", 
           "poster": "assets/thumbnails/photo19.webp", 
           "videourl": "https://youtu.be/U_P23SqJaDc?si=ADC28Yqi-dsJFHBN", 
           "level": "Beginner", 
-          "description": "A comprehensive introduction to the fundamentals of cybersecurity.", 
-          "category": "Cybersecurity", 
-          "progress": null
+          "description": "A comprehensive introduction to the fundamentals of cybersecurity."
       },
       { 
         "id": "cy-08", 
@@ -548,9 +438,7 @@
         "poster": "assets/thumbnails/photo21.webp", 
         "videourl": "https://www.youtube.com/embed/YJUVNlmIO6E", 
         "level": "Intermediate", 
-        "description": "Mastering the protocols that power the internet.", 
-        "category": "Cybersecurity", 
-        "progress": null 
+        "description": "Mastering the protocols that power the internet."
       },
       { 
         "id": "cy-09", 
@@ -558,9 +446,7 @@
         "poster": "assets/thumbnails/EH.webp", 
         "videourl": "https://www.youtube.com/embed/3Kq1MIfTWCE", 
         "level": "Intermediate", 
-        "description": "From reconnaissance to post-exploitation.", 
-        "category": "Cybersecurity", 
-        "progress": null 
+        "description": "From reconnaissance to post-exploitation." 
       },
       { 
         "id": "cy-10", 
@@ -568,9 +454,7 @@
         "poster": "assets/thumbnails/linux.jpg", 
         "videourl": "https://www.youtube.com/embed/lZAoFs75_cs", 
         "level": "Intermediate", 
-        "description": "Using the command line for effective penetration testing.", 
-        "category": "Cybersecurity", 
-        "progress": null 
+        "description": "Using the command line for effective penetration testing."
       },
       { 
         "id": "cy-11", 
@@ -578,18 +462,14 @@
         "poster": "assets/thumbnails/clouds.avif", 
         "videourl": "https://www.youtube.com/embed/fOekJmDWt5Y", 
         "level": "Advanced", 
-        "description": "Securing distributed environments in the cloud.", 
-        "category": "Cybersecurity", 
-        "progress": null 
+        "description": "Securing distributed environments in the cloud."
       },{
           "id": "cy-12", 
           "title": "Hands-on Cybersecurity and Ethical Hacking", 
           "poster": "assets/thumbnails/SE.webp", 
           "videourl": "https://youtu.be/ug8W0sFiVJo?si=rgpkW0g-PlX2WTKb", 
           "level": "Advanced", 
-          "description": "A practical course covering real-world attack techniques and defenses.", 
-          "category": "Cybersecurity", 
-          "progress": null
+          "description": "A practical course covering real-world attack techniques and defenses."
       },
       { 
         "id": "cy-13", 
@@ -597,9 +477,7 @@
         "poster":"assets/thumbnails/DI.webp", 
         "videourl": "https://www.youtube.com/embed/TZcgvi_KRvY", 
         "level": "Advanced", 
-        "description": "Investigating breaches and data recovery.", 
-        "category": "Cybersecurity", 
-        "progress": null 
+        "description": "Investigating breaches and data recovery."
       }
     ]
   },{

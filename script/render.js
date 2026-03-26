@@ -1,5 +1,5 @@
 
-async function render(){
+export async function render(){
     const courseJson = await fetch('./data/courses.json');
     const data = await courseJson.json();
 
@@ -36,7 +36,7 @@ async function render(){
     })
     };
 
-    bigCardWatch(webDev , '.hero-btn1',0);
+    bigCardWatch(webDev , '.hero-btn1',12);
     bigCardWatch(ai,'.trend-watch-button',12);
     
  
@@ -227,4 +227,3 @@ async function render(){
     window.watchCourse = watchCourse;
 }
 
-render();
