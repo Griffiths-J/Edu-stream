@@ -477,7 +477,7 @@
       { 
         "id": "cy-01", 
         "title": "2026 Cybersecurity Roadmap (The Action Path)", 
-        "poster": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b",
+        "poster": "assets/thumbnails/cybersecurityrm.webp",
         "videourl": "https://www.youtube.com/embed/TTbDkiVG7Z8", 
         "level": "Beginner", 
         "description": "The exact steps to start your career in security from zero.", 
@@ -487,7 +487,7 @@
       { 
         "id": "cy-02", 
         "title": "Complete CyberSecurity Roadmap 2026", 
-        "poster": "https://images.unsplash.com/photo-1558494949-ef010cbdcc51", 
+        "poster": "assets/thumbnails/cybersecurityrm2.webp", 
         "videourl": "https://www.youtube.com/embed/U-mAqnc6ZkI", 
         "level": "Beginner", 
         "description": "Starting in security with no coding background.", 
@@ -507,7 +507,7 @@
       { 
         "id": "cy-04", 
         "title": "Cybersecurity Roadmap - Roles & Salaries", 
-        "poster": "https://images.unsplash.com/photo-1563986768609-322da13575f3", 
+        "poster": "assets/thumbnails/offer-services.jpg", 
         "videourl": "https://www.youtube.com/embed/qOFI01xLJWs", 
         "level": "Beginner", 
         "description": "Understanding the landscape of professional security careers.", 
@@ -516,7 +516,7 @@
       },{
           "id": "cy-05", 
           "title": "Operating Systems Course", 
-          "poster": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b", 
+          "poster": "assets/thumbnails/OS.png", 
           "videourl": "https://youtu.be/yK1uBHPdp30?si=OaQ20AThh_G8iw3h", 
           "level": "Beginner", 
           "description": "A deep dive into how operating systems work and their role in cybersecurity.", 
@@ -526,7 +526,7 @@
       { 
         "id": "cy-06", 
         "title": "Best Cyber Security Courses in 2026", 
-        "poster": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b", 
+        "poster": "assets/thumbnails/security-courses.webp", 
         "videourl": "https://www.youtube.com/embed/NotuHP6tres", 
         "level": "Beginner", 
         "description": "Top learning paths for self-taught security enthusiasts.", 
@@ -555,7 +555,7 @@
       { 
         "id": "cy-09", 
         "title": "Ethical Hacking Full Course 2026", 
-        "poster": "https://images.unsplash.com/photo-1451187580459-43490279c0fa", 
+        "poster": "assets/thumbnails/EH.webp", 
         "videourl": "https://www.youtube.com/embed/3Kq1MIfTWCE", 
         "level": "Intermediate", 
         "description": "From reconnaissance to post-exploitation.", 
@@ -565,7 +565,7 @@
       { 
         "id": "cy-10", 
         "title": "Linux Mastery for Hackers", 
-        "poster": "https://images.unsplash.com/photo-1451187580459-43490279c0fa", 
+        "poster": "assets/thumbnails/linux.jpg", 
         "videourl": "https://www.youtube.com/embed/lZAoFs75_cs", 
         "level": "Intermediate", 
         "description": "Using the command line for effective penetration testing.", 
@@ -575,7 +575,7 @@
       { 
         "id": "cy-11", 
         "title": "Cloud Security Masterclass", 
-        "poster": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d", 
+        "poster": "assets/thumbnails/clouds.avif", 
         "videourl": "https://www.youtube.com/embed/fOekJmDWt5Y", 
         "level": "Advanced", 
         "description": "Securing distributed environments in the cloud.", 
@@ -584,7 +584,7 @@
       },{
           "id": "cy-12", 
           "title": "Hands-on Cybersecurity and Ethical Hacking", 
-          "poster": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b", 
+          "poster": "assets/thumbnails/SE.webp", 
           "videourl": "https://youtu.be/ug8W0sFiVJo?si=rgpkW0g-PlX2WTKb", 
           "level": "Advanced", 
           "description": "A practical course covering real-world attack techniques and defenses.", 
@@ -594,12 +594,52 @@
       { 
         "id": "cy-13", 
         "title": "Digital Forensics & Incident Response",
-        "poster": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b", 
+        "poster":"assets/thumbnails/DI.webp", 
         "videourl": "https://www.youtube.com/embed/TZcgvi_KRvY", 
         "level": "Advanced", 
         "description": "Investigating breaches and data recovery.", 
         "category": "Cybersecurity", 
         "progress": null 
+      }
+    ]
+  },{
+    "tech":[
+    {
+        "id":"tech-4",
+        "title":"Top 17 New Technology Trend Part 1",
+        "poster":"assets/thumbnails/trend1.jpg",
+        "videourl":"https://youtu.be/Otim2mDjsYM?si=wnW85s9P7iSab1sw",
+        "description":"Breakthrough technology trends that are set to transform the way we work, live and think"
+      },{
+        "id":"tech-5",
+        "title":"Top 17 New Technology Trend Part 2",
+        "poster":"assets/thumbnails/trend2.webp",
+        "videourl":"https://youtu.be/f-FyMY1LMwI?si=g4OE4orI68H5t1LW",
+        "description":"New technology trends that are redefining the future."
+      },{
+        "id":"tech-6",
+        "title":"Evolution of Technology",
+        "poster":"assets/thumbnails/evolution.jpg",
+        "videourl":"https://youtu.be/YFGNXpErBoY?si=_hqgkXAQOAvB1Qib",
+        "description":"How evolution of technology has changed the world."
+      },  {
+        "id":"tech-1",
+        "title":"Emerging World Changing Technologies",
+        "poster":"assets/thumbnails/tech1.webp",
+        "videourl":"https://youtu.be/SzMiJFOa6w8?si=R-8GNdxot00yR6TX",
+        "description":"Future business tech explores AI, emerging technologies and future technologies"
+      },{
+        "id":"tech-2",
+        "title":"China's Shocking New Tech",
+        "poster":"assets/thumbnails/tech2.jpg",
+        "videourl":"https://youtu.be/xxVgTfq2Xkg?si=vJEJtFUEEwN7md4Y",
+        "description":"In 2026 China's tech is no longer just catching up-it's rewriting rules."
+      },{
+        "id":"tech-3",
+        "title":"20 Upcoming Technologies",
+        "poster":"assets/thumbnails/future.webp",
+        "videourl":"https://youtu.be/kE-IJLXd4ZI?si=HK3dNiYqkjfYlKNY",
+        "description":"Explore 20 emerging technologies poised to reshape our work"
       }
     ]
   }

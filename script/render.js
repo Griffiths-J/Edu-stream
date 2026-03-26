@@ -7,15 +7,17 @@ async function render(){
     const ai = data[1].ai;
     const ui_ux = data[2].ui_ux;
     const cybersecurity = data[3].cybersecurity;
-    const allCourses = [...webDev, ...ai, ...ui_ux, ...cybersecurity];
+    const tech = data[4].tech;
+    const allCourses = [...webDev, ...ai, ...ui_ux, ...cybersecurity,...tech];
  
 
 //homepage 
     const homeWebDev= webDev.slice(2, 7);
     renderCourseCards(homeWebDev, '.webdev-sec');
 
-    const homeAi = ai.slice(2, 7);
-    renderCourseCards(homeAi, '.cybersecurity-sec');
+    const homecyber = cybersecurity.slice(4, 9);
+    const reverseHomecyber=homecyber.reverse();
+    renderCourseCards(reverseHomecyber, '.cybersecurity-sec');
 
     const contW = webDev.slice(0,1);
     const contU = ui_ux.slice(2,4);
@@ -23,6 +25,7 @@ async function render(){
     const contWatching = [...contU,...contW,...contC];
     renderCourseCards(contWatching, '.continue-sec');
 
+    renderCourseCards(tech,'.techadvancement-sec')
 
     function bigCardWatch(course, container ,index){
       let heroBnt = document.querySelector(container);

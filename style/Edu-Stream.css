@@ -459,6 +459,7 @@ main{
   text-align: center;
   color: var(--primary-body-text);
   line-height: 15.8px;
+  margin: 0 5px;
 }
 
 @media(max-width:650px){
@@ -1155,11 +1156,13 @@ UIUX page
 */
 
 .ui-{
-background: url('../assets/thumbnails/');
+background: url('../assets/thumbnails/ui-.jpg');
+background-position: right;
 }
 
 .ux-{
-background: url('../assets/thumbnails/');
+background: url('../assets/thumbnails/ux-avif.avif');
+background-position: left;
 }
 
 /*
