@@ -1308,8 +1308,9 @@ BOOKMARK PAGE
 
 .bookmarkCardsWrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 12px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  row-gap: 20.5px;
+  margin: 10px 0 50px 0;
 }
 
 @media (max-width:650px) and (min-width:520px){
@@ -1320,6 +1321,7 @@ BOOKMARK PAGE
 
   .bookmarkCardsWrapper{
     margin: 0 50px;
+    gap: 20px;
   }
 }
 
@@ -1335,6 +1337,9 @@ BOOKMARK PAGE
   min-height: 210px;
 }
 
+.bookmarkCourses .card:hover .bookmarkThumbnailContainer img{
+  transform: scale(1.12);
+}
 
 .bookmarkCardUpper {
   display: flex;
@@ -1356,6 +1361,7 @@ BOOKMARK PAGE
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 1s;
 }
 
 .bookmarkCardTitle {
@@ -1363,6 +1369,7 @@ BOOKMARK PAGE
   font-weight: 600;
   color: #fff;
   line-height: 1.2;
+  text-align: center;
 }
 
 .bookmarkCardDescription {

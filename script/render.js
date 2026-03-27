@@ -1,5 +1,5 @@
 
-export async function render(){
+async function render(){
     const courseJson = await fetch('./data/courses.json');
     const data = await courseJson.json();
 
@@ -207,6 +207,9 @@ export async function render(){
                 clickedElement.innerHTML='<img src="SVG/bookmark-filled-icon.png">Saved' 
             }
         } else {
+          if(clickedElement){
+            
+          }
             bookmarks.splice(index, 1);
             clickedElement.innerHTML='<img src="SVG/bookmark-outline-icon.png">Bookmark'
         }
@@ -227,3 +230,4 @@ export async function render(){
     window.watchCourse = watchCourse;
 }
 
+render();
