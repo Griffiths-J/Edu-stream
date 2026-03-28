@@ -34,7 +34,7 @@ button.addEventListener('click',(e)=>{
     if(accuratepassword===null || accurateEmail === null){
       accuratepassword=password;
       accurateEmail=username;
-       window.location.replace('./index.html');
+       window.location.replace('./home.html');
     };
 
     if(accuratepassword!==password || accurateEmail!==username){
@@ -42,7 +42,7 @@ button.addEventListener('click',(e)=>{
       clearAlert();
       return;
     }else{
-       window.location.replace('./index.html');
+       window.location.replace('./home.html');
     }
 
 
