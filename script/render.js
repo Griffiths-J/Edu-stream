@@ -37,8 +37,7 @@ async function render(){
     };
 
     bigCardWatch(webDev , '.hero-btn1',12);
-    bigCardWatch(ai,'.trend-watch-button',12);
-    
+    bigCardWatch(webDev,'.trend-watch-button',12);
  
 
 //cybersecurity page    

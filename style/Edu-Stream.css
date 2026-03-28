@@ -714,6 +714,10 @@ footer{
  font-size: calc(0.8rem + 0.8vw);
 }
 
+.watched-top img{
+  width: 35px;
+}
+
 .watched-top span{
   width: 30px;
 }
@@ -823,6 +827,13 @@ footer{
 .most-trending-rating{
   font-size:clamp(1rem , 0.7vw + 0.6rem , 1rem);
   color: var(--secondary-body-text);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.most-trending-rating img{
+  width: 27px;
 }
 
 .most-trending-bottom{
@@ -851,6 +862,7 @@ footer{
 .most-trending-bottom-right{
   margin-right: 1rem;
 }
+
 .most-trending-bottom-right button{
   padding:0.5rem 0.4rem;
   border: none;

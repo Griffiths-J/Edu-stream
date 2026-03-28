@@ -55,7 +55,6 @@ let savedBookmarks;
           </div>
               ` 
 
-              console.log(allProgress)
              })
               wrapper.innerHTML=Bookmarkpage;
 
