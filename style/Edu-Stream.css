@@ -1679,9 +1679,11 @@ BOOKMARK PAGE
 }
 
 .secProjectswrapper{
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 15px;
+  margin: 0 auto;
 }
 
 @media (max-width:750px){
@@ -1694,7 +1696,8 @@ BOOKMARK PAGE
 
 .notifyMessage{
   position: absolute;
-  width: 100px;
+  width: 120px;
+  padding: 5px;
   right: 17px;
   top: 23px;
   text-align: center;
