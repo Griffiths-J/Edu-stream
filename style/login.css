@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-page-title img{
+    width: 70px;
+}
+.login-page-title p{
+  font-size: clamp(1.5rem, 1vw + 1.45rem , 2.7rem);
+}
+
+.loginWrapper{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login{
+   margin: 0 auto;
+   max-width: 350px;
+   width: 85%; 
+}
+
+.logintitle{
+  text-align: center;
+  font-size: clamp(0.8rem, 0.55vw + 0.65rem, 1.3rem);
+}
+
+.loginInputs{
+  background-color: #1a2a45;
+  box-shadow: 0 0 4px #0000008e;
+  border-radius: 4.5px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.input1,.input2{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.input1 input, .input2 input{
+  padding: 8px 4px;
+  border: none; 
+  border-bottom: 3px solid #2c63bd;
+  outline: none;
+  border-top-left-radius: 1.5px;
+  border-top-right-radius: 1.5px;
+  cursor: pointer;
+
+}
+
+.input{
+    background-color: #132445;
+    backdrop-filter: blur(40deg);
+    color: #c9d1e3;
+    box-shadow: 0 0 3px #0000004f;
+   
+}
+
+label{
+  font-size: clamp(0.6rem, 0.6vw + 0.65, 1.3rem);
+  color: #e6eaf2;
+  
+}
+
+.Ilabel{
+   position: relative;
+}
+
+.Ilabel::after{
+  content: '*';
+  position: absolute;
+  color: #ff2020d8;
+}
+
+.input2{
+  margin-bottom: 5px;
+}
+
+::placeholder{
+  color: #c9d1e3;
+}
+
+.input1 input:focus, .input2 input:focus{
+  outline: none;
+  border-bottom: 3px solid #2c63bd;
+}
+
+.techArea{
+  display: flex;
+  flex-direction: column;
+  gap: 8.5px;
+  
+}
+
+.techArea p{
+  font-size: clamp(0.80rem, 0.40vw + 0.55, 0.95rem);
+  color: #c9d1e3;
+}
+
+.techArea input{
+  margin-right: 5px;
+}
+
+.signin {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.signin button{
+  width: 100%;
+  padding:8px 0 ;
+  outline: none;
+  border: none;
+  box-shadow: 0 0 3px #0000004f;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 1.5px;
+  background-color:  #2c63bd;
+  backdrop-filter: blur(40deg);
+}
+
+.signin button:hover{
+  background-color: #2d5dab;
+}
+
+.forgot{
+  font-size: 0.9rem;
+  margin: 0 auto;
+}
+
+.clickHere{
+  text-decoration: underline;
+  cursor: pointer;
+   color: #4747e6;
+   font-style: italic;
+}
+
+
+.alert{
+  font-size: 0.7rem;
+  color: red;
+  margin: 0 auto;
+  height: 16px;
+  transition: all 1s;
+}

@@ -1,323 +1,56 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="A LMS with curated tutorial on tech stuff"
-    />
-    
-    <link rel="icon" href="image/edu-stream-logo.png" />
-    <link rel="stylesheet" href="style/Edu-Stream.css" />
-
-    <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
-    <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
-    <script src="library/videojs-youtube.js"></script>
-
-
-
-    <title>Edu-Stream</title>
-  </head>
-  <body>
-    <!--header-->
-    <header>
-      <div class="website-name">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="image/edu-stream-logo.png">
+  <link rel="stylesheet" href="style/Edu-Stream.css">
+  <link rel="stylesheet" href="style/login.css">
+  <title>Login | Edu-Stream</title>
+</head>
+<body>
+  
+  <div class="loginWrapper">
+    <div class="login-page-title"><div class="website-name">
         <img
           class="header-icon"
           src="image/edu-stream-logo.png"
           alt="website-logo"
         />
         <p>Edu-Stream</p>
-      </div>
+      </div></div>
 
-      <div class="right-corner">
-        <div class="profile">
-          <div class="bell">
-            <img
-              class="header-icon"
-              src="SVG/notification-bell-icon.png"
-              alt="notification-bell-icon"
-            />
-            <div class="notify"></div> 
-            <div class="notifyMessage">Bookmark your favorite courses.</div>
+      <form class="login">
+        <div class="logintitle">Login/Sign up</div>
+        <div class="loginInputs">
+
+          <div class="input1">
+            <label class="Ilabel" for="name">Username:</label>
+            <input class="input inputName-js" type="text" placeholder="Enter username" name="name" required>
           </div>
-          <img
-            class="profile-icon"
-            src="image/profile-image.jpg"
-            alt="profile image"
-          />
-        </div>
 
-        <div class="burger">
-          <div class="line1"></div>
-          <div class="line2 shortWidth"></div>
-          <div class="line3"></div>
-        </div>
-      </div>
-    </header>
-
-    <!--Sidde bar-->
-    <div class="sidebar">
-      <a href="#">
-        <div class="sidebar-nav active">
-          <div class="sidebar-Icon">
-            <img src="SVG/home-icon.png" alt="home-icon" />
+          <div class="input2">
+            <label class="Ilabel" for="password">Password:</label>
+            <input class="input inputPassword-js" type="password" placeholder="enter password" name="password" required>
           </div>
-          <div class="sidebar-name">Home</div>
-        </div>
-      </a>
 
-      <a href="Trending-page.html">
-        <div class="sidebar-nav">
-          <div class="sidebar-Icon">
-            <img src="SVG/trending-icon.png" alt="trending-icon" />
-          </div>
-          <div class="sidebar-name">Trending</div>
-        </div>
-      </a>
+          <div class="techArea">
+            <label for="course">Areas of Interest:</label>
+            <p><input type="checkbox" value="Webdev" name="course">Web Development</p>
+            <p><input type="checkbox" value="Cybersecurity" name="course">Cybersecurity</p>
+            <p><input type="checkbox" value="ui_ux" name="course">Ui/Ux</p>
+            <p><input type="checkbox" value="ai" name="course">Artificial Intelligence</p>
+          </div> 
 
-      <a href="Bookmark-page.html">
-        <div class="sidebar-nav">
-          <div class="sidebar-Icon">
-            <img src="SVG/bookmark-icon.png" alt="bookmark-icon" />
-          </div>
-          <div class="sidebar-name">Bookmark</div>
-        </div>
-      </a>
-
-      <div class="sidebar-title">Courses</div>
-
-      <a href="Webdev-page.html">
-        <div class="sidebar-nav">
-          <div class="sidebar-Icon">
-            <img
-              src="SVG/web-development-icon.png"
-              alt="web-development-icon"
-            />
-          </div>
-          <div class="sidebar-name">Web Development</div>
-        </div>
-      </a>
-
-      <a href="Cybersecurity-page.html">
-        <div class="sidebar-nav">
-          <div class="sidebar-Icon">
-            <img src="SVG/cyber-security-icon.png" alt="cyber-security-icon" />
-          </div>
-          <div class="sidebar-name">Cybersecurity</div>
-        </div>
-      </a>
-
-      <a href="Ui-ux-page.html">
-        <div class="sidebar-nav">
-          <div class="sidebar-Icon">
-            <img src="SVG/ui-ux-design-icon.png" alt="ui-ux-design-icon" />
-          </div>
-          <div class="sidebar-name">UI/UX Design</div>
-        </div>
-      </a>
-
-      <a href="AI-page.html">
-        <div class="sidebar-nav">
-          <div class="sidebar-Icon">
-            <img src="SVG/AI-icon.png" alt="AI-icon" />
-          </div>
-          <div class="sidebar-name">Artificial Intelligence</div>
-        </div>
-      </a>
-
-      <div class="sidebar-profile">
-        <img src="image/profile-image.jpg" alt="profile-image" />
-        Griffiths Aggrey
-      </div>
-    </div>
-
-    <main>
-<!--hero section-->
-      <div class="heroSection">
-        <div class="heroLeftSide">
-          <div class="leftSide-items">
-            <p class="hero-title">
-              advance web development:
-              <span style="white-space: nowrap">Full-Stack</span> masterclass
-            </p>
-            <p class="hero-subtitle">
-              Build scalable applications with edge-cutting technology
-            </p>
-            <div class="hero-buttons">
-              <div class="hero-btn1">
-                <img src="SVG/play-icon.png" alt="play-icon" />Play
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="heroRightSide">
-          <img src="assets/thumbnails/codingLaptop_H.png" alt="" />
-        </div>
-      </div>
-<!--continue section-->
-      <div class="cardSection">
-        <div class="sectionTitle">Continue Watching</div>
-        <div class="cardsWrapper continue-sec">
-         
-
-        </div>
-      </div>
-<!--Popular in web dev section-->
-      <div class="cardSection">
-        <div class="sectionTitle">Popular in Web Development</div>
-        <div class="cardsWrapper webdev-sec">
+          <div class="signin signin-js"><a href=""><button>Sign in</button></a></div>
           
-        </div>
-      </div>
-<!--Popular in Cybersecurity-->
-      <div class="cardSection">
-        <div class="sectionTitle">Popular in Cybersecurity</div>
-        <div class="cardsWrapper cybersecurity-sec">
+          <div class="forgot">forgot password? <span class="clickHere clickHere-js">click here</span></div>
+
+          <div class="alert"></div>
 
         </div>
-      </div>
-<!--Tech advancement sec-->
-      <div class="cardSection">
-        <div class="sectionTitle">Technology Advancement</div>
-        <div class="cardsWrapper techadvancement-sec">
-            <div class="card">
-            <div class="cardUpper">
-              <div class="thumbnailContainer">
-                <img
-                  src="assets/thumbnails/thumbnail-card.jpeg"
-                  alt="thumbnail-card"
-                />
-              </div>
-              <div title="learn and master web ddev hhvvhvhjdhjhjgh" class="cardTitle">Learn React masterclass</div>
-            </div>
-
-            <div class="cardMiddle">
-              <div class="cardDescription">
-                React is a javascript framework that ease your work.
-              </div>
-              <div class="cardButtons">
-                <div class="cardBtn1">
-                  <img src="SVG/play-icon.png" alt="play-icon" />
-                  <p>Watch</p>
-                </div>
-                <div class="cardBtn2">
-                  <img
-                    src="SVG/bookmark-outline-icon.png"
-                    alt="bookmark-outline-icon"
-                  />
-                  <p>Bookmark</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="cardBottom">
-              <div class="progressBar">
-                <div class="progress"></div>
-              </div>
-              <div class="progressPercentage">50%</div>
-            </div>
-          </div>
-
-            <div class="card">
-            <div class="cardUpper">
-              <div class="thumbnailContainer">
-                <img
-                  src="assets/thumbnails/thumbnail-card.jpeg"
-                  alt="thumbnail-card"
-                />
-              </div>
-              <div title="learn and master web ddev hhvvhvhjdhjhjgh" class="cardTitle">Learn React masterclass</div>
-            </div>
-
-            <div class="cardMiddle">
-              <div class="cardDescription">
-                React is a javascript framework that ease your work.
-              </div>
-              <div class="cardButtons">
-                <div class="cardBtn1">
-                  <img src="SVG/play-icon.png" alt="play-icon" />
-                  <p>Watch</p>
-                </div>
-                <div class="cardBtn2">
-                  <img
-                    src="SVG/bookmark-outline-icon.png"
-                    alt="bookmark-outline-icon"
-                  />
-                  <p>Bookmark</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="cardBottom">
-              <div class="progressBar">
-                <div class="progress"></div>
-              </div>
-              <div class="progressPercentage">50%</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-     
-
-    <div id="videoModal" class="modal-overlay">
-        <div class="modal-content">
-            <div class="close-modal" onclick="closeModal()">
-                <img src="SVG/close-icon.png" alt="close-icon" /> </div>
-
-            <div class="video-container">
-                <video 
-                    id="edu-stream-player" 
-                    class="video-js vjs-big-play-centered vjs-theme-city" 
-                    controls 
-                    preload="auto"
-                >
-                    <p class="vjs-no-js">
-                        To view this video please enable JavaScript, and consider upgrading to a web browser that supports HTML5 video.
-                    </p>
-                </video>
-            </div>
-        </div>
-    </div>
-
-
-    </main>
-
-    <footer>
-
-      <div class="left">
-        <div class="footer-logo">
-          <img src="image/edu-stream-logo.png" alt="edu-stream-logo">
-          <div class="edu">Edu-Stream</div>
-        </div>
-        <div class="logo-text1">Unlock your potential with best learning experience</div>
-        <div class="logo-text2">&copy;2026 Edu-Stream | All Right Served</div>
-      </div>
-
-      <div class="right">
-        <div class="rightTitle">Connect</div>
-        <div class="footerIcons">
-          <a href=""><img src="SVG/linkedin-icon.png" alt="linkedin-icon"></a>
-          <a href=""><img src="SVG/github-icon.png" alt="github-icon"></a>
-          <a href=""><img src="SVG/x-icon.png" alt="x-icon"></a>
-        </div>
-        <div class="joinUs">
-          <div class="joinTitle">Join our channel</div>
-          <div class="joininputs">
-            <a href="https://whatsapp.com/channel/0029Vb7LsOj8kyyFgAiAuR1O"><button>Join Us</button></a>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <script type="module" src="script/Edu-Stream.js"></script>
-    <script src="script/render.js"></script>
-  </body>
+      </form>
+  </div>
+  <script src="script/login.js"></script>
+</body>
 </html>
-
-
-            
