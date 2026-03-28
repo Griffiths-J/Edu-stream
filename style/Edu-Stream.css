@@ -79,6 +79,7 @@ body{
   border-radius: 50%;
   background-color: #f00;
   transition: var(--transition);
+  display: none
 }
 
 .notify:hover{
@@ -1687,4 +1688,30 @@ BOOKMARK PAGE
   .secProjectswrapper{
     margin: 0 10px;
   }
+}
+
+/*notify*/
+
+.notifyMessage{
+  position: absolute;
+  width: 100px;
+  right: 17px;
+  top: 23px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  color: #000;
+  box-shadow: 0 0 4px ;
+  z-index: 10;
+  opacity: 0;
+  max-height:0 ;
+  transition: all .85s ;
+  overflow: hidden;
+  border-top-right-radius: 0;
+}
+
+.toggleMessage{
+   opacity:1;
+   max-height:80px;
 }

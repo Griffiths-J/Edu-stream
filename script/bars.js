@@ -1,3 +1,5 @@
+
+
 export function sidebar(){
 
   const sidebar = document.querySelector(".sidebar");
@@ -30,6 +32,57 @@ export function sidebar(){
       burger.classList.remove("animateBurger");
     }
   })
+
+
+  //notify
+  const notify1 = document.querySelector('.notify');
+  const message = document.querySelector('.notifyMessage');
+
+
+
+function notify(){
+  setTimeout(()=>{
+    notify1.style.display='block';
+    notify1.innerHTML='1';
+    message.classList.add('toggleMessage');
+  },12000)
+
+  setTimeout(()=>{
+  message.classList.remove('toggleMessage');
+  },25000)
+}
+
+
+document.addEventListener('DOMContentLoaded',()=>{
+
+  notify1.style.display='block';
+  notify1.innerHTML='1';
+  notify();
+});
+
+const bell = document.querySelector('.bell');
+
+let setTimeoutId;
+
+bell.addEventListener('click',()=>{
+  const isActive = message.classList.contains('toggleMessage');
+  
+  if(isActive){
+    message.classList.remove('toggleMessage');
+  }else{
+    if(setTimeoutId){
+        clearTimeout(setTimeoutId);
+    }
+    message.classList.add('toggleMessage');
+    setTimeoutId = setTimeout(()=>{
+  message.classList.remove('toggleMessage');
+      setTimeoutId=null;
+    },11000);
+   
+  }
+})
+
+
 
 }
 
