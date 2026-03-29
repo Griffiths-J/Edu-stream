@@ -13,12 +13,7 @@ let savedBookmarks;
     function renderBookmark(bookmarks){
 
       let wrapper = document.querySelector('.bookmarkCardsWrapper');
-       if(!wrapper){
-        console.log("does no exist");
-        throw new Error("does not")
-       }else{
-        console.log("exist")
-       }
+       if(!wrapper)return;
 
      let Bookmarkpage='';
       const allProgress = JSON.parse(localStorage.getItem('eduStreamProgress')) || {};

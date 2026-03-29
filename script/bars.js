@@ -6,7 +6,7 @@ export function sidebar(){
   const burger = document.querySelector(".burger");
   const sidebarContent = document.querySelectorAll(".sidebar-nav")
 
-
+//sidebar toggle
   burger.addEventListener('click',(e)=>{
     e.stopPropagation();
     sidebar.classList.toggle("revertSidebar");
@@ -23,7 +23,7 @@ export function sidebar(){
       })
   });
 
-
+//when the anywhere in the page i clicked the siddebar closes (on mobile)
   document.addEventListener('click',e=>{
     const isOpen = sidebar.classList.contains("revertSidebar");
 
@@ -34,7 +34,7 @@ export function sidebar(){
   })
 
 
-  //notify
+  //notify section
   const notify1 = document.querySelector('.notify');
   const message = document.querySelector('.notifyMessage');
 

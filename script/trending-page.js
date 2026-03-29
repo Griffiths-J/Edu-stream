@@ -1,6 +1,6 @@
-const ctx = document.getElementById('learningChart').getContext('2d');
+const graphChart = document.getElementById('learningChart').getContext('2d');
 
-new Chart(ctx, {
+new Chart(graphChart, {
     type: 'line',
     data: {
         labels: ['Mon','Tue','Wed','Thu','Fri','Sat','Sun'],

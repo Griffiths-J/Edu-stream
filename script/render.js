@@ -214,7 +214,6 @@ async function render(){
         }
 
         localStorage.setItem('eduStreamBookmarks', JSON.stringify(bookmarks));
-          console.log(bookmarks);
 
      }
 

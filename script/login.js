@@ -5,14 +5,15 @@ const alertContainer = document.querySelector('.alert');
 const clearLocal = document.querySelector('.clickHere-js');
 const loginMessage = document.querySelector('.loginMessage');
 
-
+//clears the alert message
  function clearAlert(){
     setTimeout(()=>{
       alertContainer.innerHTML = '';
     },8000);
   } 
 
-
+//login logic - validation of password
+// logic - when a user enters the website afresh the password he types is saved in local storage. when he enters the website another timec, this logic checks if the password and username is same as the one stored in local storage
 button.addEventListener('click',(e)=>{
   e.preventDefault();
 
@@ -59,7 +60,7 @@ button.addEventListener('click',(e)=>{
    localStorage.setItem('username',JSON.stringify(accurateEmail));
 
 });
-
+// this logic clears the username and password from local storage.
 clearLocal.addEventListener('click',()=>{
     localStorage.removeItem('password');
     localStorage.removeItem('username');

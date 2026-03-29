@@ -677,6 +677,10 @@ footer{
   TRENDING PAGE
 ********/
 
+.trendingHero-section{
+  margin-bottom: 4.5rem;
+}
+
 .trendingHero-title{
   text-transform: uppercase;
   margin-left: 10px;
@@ -693,8 +697,23 @@ footer{
   border-radius: 15px;
   position: relative;
   padding: 5px;
-  text-align: center;
-  
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: center;
+  justify-content: center;
+  animation: bounceIn 1s ;
+}
+
+@keyframes bounceIn{
+  from{
+    opacity: 0;
+    transform: scale(0.8);
+  }to{
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 .trending-hero3{
@@ -712,6 +731,7 @@ footer{
   color: var(--main-text-headings);
   font-family: var(--popins-font);
  font-size: calc(0.8rem + 0.8vw);
+ margin-bottom: 7px;
 }
 
 .watched-top img{
@@ -752,10 +772,12 @@ footer{
   grid-template-columns: repeat(auto-fit , minmax(270px , 1fr));
   gap: 20px;
   margin-bottom: 25px;
+  
 }
 
 .most-trending{
-  margin: 10px 0;
+  margin-top: 10px;
+  margin-bottom: 4.5rem;
 }
 
 .most-trending-wrap{
@@ -776,6 +798,7 @@ footer{
   background-color: var(--elevatedPanel-bg);
   border-radius: 10px;
   padding: 10px;
+  animation: bounceIn 1s ;
 }
 
 .most-trending-course{
@@ -783,6 +806,7 @@ footer{
   border-radius: 10px;
   overflow: hidden;
   background: url('../assets/thumbnails/color-bg3.jpeg');
+  animation: bounceIn 1s ;
 }
 
 .most-trending-top{
@@ -889,6 +913,7 @@ footer{
   gap: 15px;
   padding: 0.5rem;
   border-radius: 5px;
+  animation: bounceIn 1s ;
 }
 
 .section-hero-title{
@@ -955,6 +980,7 @@ background-color: var(--elevatedPanel-bg);
 border-radius: 8px;
 box-shadow:0 0 4px #00000069 ;
 overflow: hidden;
+animation: bounceIn 1s ;
 }
 
 .pt{
@@ -1216,6 +1242,7 @@ BOOKMARK PAGE
   border: 1px solid #2e3f65;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
   gap: 16px;
+  animation: bounceIn 1s ;
 }
 
 .bookmarkHeader > div {
@@ -1355,6 +1382,7 @@ BOOKMARK PAGE
   flex-direction: column;
   justify-content: space-between;
   min-height: 210px;
+  transition: all 1s;
 }
 
 .bookmarkCourses .card:hover .bookmarkThumbnailContainer img{
