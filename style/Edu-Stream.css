@@ -82,11 +82,6 @@ body{
   display: none
 }
 
-.notify:hover{
-  color: red;
-  background-color: var(--main-text-headings);
-}
-
 .profile-icon{
   width: 36px;
   border-radius: 50%;
