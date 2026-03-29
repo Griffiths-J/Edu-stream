@@ -869,6 +869,13 @@ footer{
   border-radius: 5px;
   background-color: var(--primary-hover);
   color: var(--main-text-headings);
+  cursor: pointer;
+  transition:  background-color 0.25s;
+}
+
+.most-trending-bottom-right button:hover{
+  transform: translateY(-1.4px);
+  background-color: var(--dark-accent);
 }
 
 /*========

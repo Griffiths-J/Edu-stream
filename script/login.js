@@ -19,6 +19,12 @@ button.addEventListener('click',(e)=>{
   const username = name_.value;
   const password = password_.value;
 
+  if(username ==='' && password === ''){
+    alertContainer.innerHTML='enter username and password';
+    clearAlert();
+    return;
+  }
+
   if(username ===''){
     alertContainer.innerHTML = 'enter username';
     clearAlert();
