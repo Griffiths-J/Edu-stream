@@ -120,6 +120,7 @@ label{
   margin-top: 10px;
 }
 
+
 .signin button{
   width: 100%;
   padding:9.5px 0 ;
@@ -148,19 +149,16 @@ label{
 .clickHere{
   text-decoration: underline;
   cursor: pointer;
-   color: #3d5adb;
+   color: #3759f0;
    font-style: italic;
-}
-
-.clickHere:hover{
-  color: #1e64d5;
 }
 
 .alert{
   font-size: 0.7rem;
-  color: red;
+  color: #f42b2b;
   margin: 0 auto;
   height: 12px;
+  font-weight: light;
   transition: all 1s;
 }
 
