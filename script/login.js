@@ -3,18 +3,21 @@ const name_ = document.querySelector('.inputName-js');
 const password_ = document.querySelector('.inputPassword-js');
 const alertContainer = document.querySelector('.alert');
 const clearLocal = document.querySelector('.clickHere-js');
+const loginMessage = document.querySelector('.loginMessage');
+
+
+ function clearAlert(){
+    setTimeout(()=>{
+      alertContainer.innerHTML = '';
+    },8000);
+  } 
+
 
 button.addEventListener('click',(e)=>{
   e.preventDefault();
 
   const username = name_.value;
   const password = password_.value;
-
-  function clearAlert(){
-    setTimeout(()=>{
-      alertContainer.innerHTML = '';
-    },8000);
-  } 
 
   if(username ===''){
     alertContainer.innerHTML = 'enter username';
@@ -55,6 +58,23 @@ clearLocal.addEventListener('click',()=>{
     localStorage.removeItem('password');
     localStorage.removeItem('username');
 
-    alertContainer.innerHTML = 'sign up again';
-    clearAlert();
+    topMessage();
+
+    name_.value='';
+    password_.value=''
+    
    })
+
+
+   function topMessage(){
+    loginMessage.style.maxHeight='37px';
+    loginMessage.style.padding='7px';
+    loginMessage.style.opacity='1';
+
+    setTimeout(()=>{
+      loginMessage.style.maxHeight='0';
+      loginMessage.style.padding='0';
+      loginMessage.style.opacity='0';
+    },4500)
+
+   }

@@ -227,6 +227,11 @@ async function render(){
     window.closeModal = closeModal;
     window.bookmarkCourse = bookmarkCourse;
     window.watchCourse = watchCourse;
+
+
+    const profileName = document.querySelector('.profileName');
+    profileName.innerHTML= JSON.parse(localStorage.getItem('username'))
+
 }
 
 render();

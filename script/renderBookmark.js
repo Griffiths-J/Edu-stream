@@ -67,6 +67,9 @@ let savedBookmarks;
           }
 
           document.querySelector('.statValue').innerHTML=bookmarks.length;
+          document.querySelector('.vall').innerHTML=bookmarks.length;
+          document.querySelector('.bookmarkNotify').innerHTML=`${bookmarks.length} course${bookmarks.length>0?'s':''} saved`
+
         }
      
     function bookmarkCourse(courseId) {
@@ -81,7 +84,7 @@ let savedBookmarks;
         }
 
         localStorage.setItem('eduStreamBookmarks', JSON.stringify(bookmarks));
-          console.log(bookmarks);
+       
 
         savedBookmarks = JSON.parse(localStorage.getItem('eduStreamBookmarks')) || [];
         renderBookmark(savedBookmarks);
@@ -120,3 +123,10 @@ let savedBookmarks;
         document.getElementById('videoModal').style.display = 'none';
         player.pause();
         }
+
+
+
+        const profileName = document.querySelector('.profileName');
+        profileName.innerHTML= JSON.parse(localStorage.getItem('username'));
+
+        

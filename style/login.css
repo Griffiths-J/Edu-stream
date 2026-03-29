@@ -53,7 +53,7 @@ body{
 }
 
 .input1 input, .input2 input{
-  padding: 8px 4px;
+  padding: 9.5px 4px;
   border: none; 
   border-bottom: 3px solid #2c63bd;
   outline: none;
@@ -123,7 +123,7 @@ label{
 
 .signin button{
   width: 100%;
-  padding:8px 0 ;
+  padding:9.5px 0 ;
   outline: none;
   border: none;
   box-shadow: 0 0 3px #0000004f;
@@ -149,15 +149,39 @@ label{
 .clickHere{
   text-decoration: underline;
   cursor: pointer;
-   color: #4747e6;
+   color: #3d5adb;
    font-style: italic;
 }
 
+.clickHere:hover{
+  color: #1e64d5;
+}
 
 .alert{
   font-size: 0.7rem;
   color: red;
   margin: 0 auto;
-  height: 16px;
+  height: 12px;
   transition: all 1s;
+}
+
+.loginMessage{
+  position: absolute;
+  right: 50px;
+  top: 40px;
+  background-color: #132445;
+  border-bottom: 3.4px solid #12d25f;
+  transition: all 0.65s;
+  font-size: 0.9rem;
+  text-transform: lowercase;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+}
+
+@media (max-width:650px){
+  .loginMessage{
+  right: 29px;
+  top: 35px;
+}
 }
