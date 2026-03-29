@@ -47,7 +47,7 @@ button.addEventListener('click',(e)=>{
     };
 
     if(accuratepassword!==password || accurateEmail!==username){
-      alertContainer.innerHTML = 'incorrect password or email';
+      alertContainer.innerHTML = 'incorrect password or username';
       clearAlert();
       return;
     }else{

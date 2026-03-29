@@ -26,24 +26,23 @@ body{
 .login{
    margin: 0 auto;
    max-width: 380px;
-   width: 85%; 
+   width: 90%; 
 }
 
-.logintitle{
-  text-align: center;
-  font-size: clamp(0.8rem, 0.55vw + 0.65rem, 1.3rem);
+.loginLogo{
+  margin-bottom: 14px;
 }
 
 .loginInputs{
   background-color: #1a2a45;
   box-shadow: 0 0 4px #0000008e;
   border-radius: 4.5px;
-  padding: 1rem;
+  padding: 0.8rem;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 8px;
   width: 100%;
-  margin-top: 5px;
+  margin-top: 8px;
 }
 
 .input1,.input2{
