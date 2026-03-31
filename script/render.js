@@ -231,6 +231,14 @@ async function render(){
     const profileName = document.querySelector('.profileName');
     profileName.innerHTML= JSON.parse(localStorage.getItem('username'))
 
+
+
+    const logoutBtn = document.querySelector('.logOutBtn');
+    logoutBtn.addEventListener('click', () => {
+      window.location.replace('./index.html');
+    });
+
+
 }
 
 render();

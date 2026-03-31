@@ -74,7 +74,7 @@ loginForm.addEventListener('submit', (e) => {
     if (username === storedUser && password === storedPass) {
       showNotification('Login Successful!...');
       setTimeout(() => {
-        window.location.href = './home.html';
+        window.location.replace('./home.html');
       }, 1500);
     } else {
       alertBox.textContent = 'Invalid credentials. try again or Sign Up.';

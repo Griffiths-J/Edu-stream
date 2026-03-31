@@ -165,6 +165,8 @@ box-shadow: 0 1.5px 2px var(--shadow-cl);
   overflow: hidden;
   transition:all .2s ease-in-out;
   z-index: 999;
+  overflow-y: auto;
+  scrollbar-width: none;
 }
 
 .sidebar-title{
@@ -202,17 +204,39 @@ box-shadow: 0 1.5px 2px var(--shadow-cl);
   text-decoration: none;
 }
 
-.sidebar-profile{
+/* .sidebar-profile */.sidebarBottom{
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 5px;
+  gap: 20px;
   position: absolute;
   bottom: 20px;
   width: 100%;
   font-size: 0.8rem;
   color: var(--primary-body-text);
 }
+
+.sidebar-profile, .logOutBtn{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+} 
+
+.logOutBtn{
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 18px;
+  background-color: rgba(255, 255, 255, 0.046);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3), inset 1px 1px rgba(255, 255, 255, 0.073) ;
+  transition: all .2s ease;
+}
+
+.logOutBtn:hover{
+  background-color: rgba(255, 255, 255, 0.126);
+}
+
+
 
 .sidebar-profile img{
   width: 23.5px;
