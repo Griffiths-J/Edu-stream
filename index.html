@@ -3,12 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <meta
       name="description"
       content="Edu-Stream, a learning management system that guides beginners in tech areas such as Web Development, UI/UX Design, Cybersecurity and Artificial Intelligence."
     />
-
   <link rel="icon" href="image/edu-stream-logo.png">
   <link rel="stylesheet" href="style/Edu-Stream.css">
   <link rel="stylesheet" href="style/login.css">
@@ -16,20 +14,23 @@
 </head>
 <body>
 
-  <div class="loginMessage">Enter new username and password</div>
+  <div class="loginMessage">Success!</div>
   
   <div class="loginWrapper">
-    <div class="login-page-title loginLogo"><div class="website-name">
+    <div class="login-page-title loginLogo">
+      <div class="website-name">
         <img
           class="header-icon"
           src="image/edu-stream-logo.png"
           alt="website-logo"
         />
         <p>Edu-Stream</p>
-      </div></div>
+      </div>
+    </div>
 
-      <form class="login">
+      <form class="login-form-js">
         <div class="loginInputs">
+          <h2 class="form-title-js">Login</h2>
 
           <div class="input1">
             <label class="Ilabel" for="name">Username:</label>
@@ -38,26 +39,28 @@
 
           <div class="input2">
             <label class="Ilabel" for="password">Password:</label>
-            <input class="input inputPassword-js" type="password" placeholder="enter password" name="password" required>
+            <input class="input inputPassword-js" type="password" placeholder="Enter password" name="password" required>
           </div>
 
-          <div class="techArea">
-            <label for="course">Areas of Interest:</label>
-            <p><input type="checkbox" value="Webdev" name="course">Web Development</p>
-            <p><input type="checkbox" value="Cybersecurity" name="course">Cybersecurity</p>
-            <p><input type="checkbox" value="ui_ux" name="course">Ui/Ux</p>
-            <p><input type="checkbox" value="ai" name="course">Artificial Intelligence</p>
-          </div> 
-
-          <div class="signin signin-js"><button>Log in / Sign up</button></div>
+          <div class="signin">
+            <button type="submit" class="submit-btn-js">Log In</button>
+          </div>
           
-          <div class="forgot">forgot password? <span class="clickHere clickHere-js">click here</span></div>
+          <div class="form-footer">
+            <div class="forgot">Forgot password? <span class="clickHere clickHere-js">Click here</span></div>
+            
+            <div class="signup-toggle">
+              <span class="toggle-text-js">Don't have an account?</span> 
+              <span class="toggle-link-js toggle-link">Sign Up</span>
+            </div>
+          </div>
 
           <div class="alert"></div>
 
         </div>
       </form>
   </div>
+
   <script src="script/login.js"></script>
 </body>
 </html>

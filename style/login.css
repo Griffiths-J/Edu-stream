@@ -1,21 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:wght@100..900&family=Poppins:wght@100..900&display=swap');
 
-body{
+body {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: 'montserrat' sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #0d1626; 
+  min-height: 100vh;
+  margin: 0;
 }
-
-.login-page-title img{
-    width: 70px;
+.form-title-js{
+   color: #e6eaf2;
+   margin-bottom: 10px; 
+   font-size: 1.2rem;
 }
-.login-page-title p{
-  font-size: clamp(1.5rem, 1vw + 1.45rem , 2.7rem);
-}
-
-.loginWrapper{
+.loginWrapper {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -23,162 +23,171 @@ body{
   justify-content: center;
 }
 
-.login{
-   margin: 0 auto;
-   max-width: 380px;
-   width: 90%; 
-}
-
-.loginLogo{
+.login-page-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   margin-bottom: 14px;
 }
 
-.loginInputs{
+.login-page-title img {
+  width: 70px;
+}
+
+.login-page-title p {
+  color: #e6eaf2;
+  font-size: clamp(1.5rem, 1vw + 1.45rem, 2.7rem);
+  font-weight: 700;
+  margin: 0;
+}
+
+.login-form-js {
+  margin: 0 auto;
+  max-width: 380px;
+  width: 90%;
+}
+
+.loginInputs {
   background-color: #1a2a45;
-  box-shadow: 0 0 4px #0000008e;
-  border-radius: 4.5px;
-  padding: 0.8rem;
+  box-shadow: 0 0 10px #0000008e;
+  border-radius: 8px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.input1, .input2 {
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 8px;
+}
+
+.input {
+  background-color: #132445;
+  color: #c9d1e3;
+  padding: 12px 10px;
+  border: none;
+  border-bottom: 3px solid #2c63bd;
+  outline: none;
+  border-radius: 4px 4px 0 0;
+  font-family: 'Montserrat', sans-serif;
+  transition: border-color 0.3s;
+}
+
+.input:focus {
+  border-bottom: 3px solid #4a8df8;
+}
+
+label {
+  font-size: 0.9rem;
+  color: #e6eaf2;
+  position: relative;
+  display: inline-block;
+}
+
+.Ilabel::after {
+  content: '*';
+  color: #ff2020d8;
+  margin-left: 3px;
+}
+
+::placeholder {
+  color: #6c7a96;
+}
+
+.signin button {
   width: 100%;
+  padding: 12px 0;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 4px;
+  background-color: #2c63bd;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.signin button:hover {
+  background-color: #3a7be0;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.form-footer {
+  text-align: center;
+  font-size: 0.85rem;
+  display: flex; 
+  flex-direction: column; 
+  gap: 9px; 
   margin-top: 8px;
 }
 
-.input1,.input2{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-
-.input1 input, .input2 input{
-  padding: 9.5px 4px;
-  border: none; 
-  border-bottom: 3px solid #2c63bd;
-  outline: none;
-  border-top-left-radius: 1.5px;
-  border-top-right-radius: 1.5px;
-  cursor: pointer;
-
-}
-
-.input{
-    background-color: #132445;
-    backdrop-filter: blur(40deg);
-    color: #c9d1e3;
-    box-shadow: 0 0 3px #0000004f;
-   
-}
-
-label{
-  font-size: clamp(0.6rem, 0.6vw + 0.65, 1.3rem);
-  color: #e6eaf2;
-}
-
-.Ilabel{
-   position: relative;
-}
-
-.Ilabel::after{
-  content: '*';
-  position: absolute;
-  color: #ff2020d8;
-}
-
-.input2{
-  margin-bottom: 5px;
-}
-
-::placeholder{
+.forgot, .signup-toggle {
   color: #c9d1e3;
 }
 
-.input1 input:focus, .input2 input:focus{
-  outline: none;
-  border-bottom: 3px solid #2c63bd;
+.signup-toggle{
+  color: #c9d1e3; 
+  font-size: 0.85rem; 
+  text-align: center;
 }
 
-.techArea{
-  display: flex;
-  flex-direction: column;
-  gap: 8.5px;
-  
-}
-
-.techArea p{
-  font-size: clamp(0.80rem, 0.40vw + 0.55, 0.95rem);
-  color: #c9d1e3;
-}
-
-.techArea input{
-  margin-right: 5px;
-}
-
-.signin {
-  width: 100%;
-  margin-top: 10px;
-}
-
-
-.signin button{
-  width: 100%;
-  padding:9.5px 0 ;
-  outline: none;
-  border: none;
-  box-shadow: 0 0 3px #0000004f;
-  color: #fff;
-  font-weight: 700;
-  border-radius: 1.5px;
-  background-color:  #2c63bd;
-  backdrop-filter: blur(40deg);
-  cursor: pointer;
-  transition: background-color 0.4s ;
-}
-
-.signin button:hover{
-  background-color: #2d5dab;
-  transform: translateY(-1.5px);
-}
-
-.forgot{
-  font-size: 0.9rem;
-  margin: 0 auto;
-}
-
-.clickHere{
+.clickHere-js, .toggle-link-js {
   text-decoration: underline;
   cursor: pointer;
-   color: #3759f0;
-   font-style: italic;
+  color: #4a8df8;
+  font-style: italic;
+  font-weight: 600;
+  margin-left: 5px;
 }
 
-.alert{
-  font-size: 0.7rem;
+
+
+.alert {
+  font-size: 0.8rem;
   color: #f42b2b;
-  margin: 0 auto;
-  height: 12px;
-  font-weight: light;
-  transition: all 1s;
+  text-align: center;
+  min-height: 13px;
+  margin-top: 5px;
 }
 
-.loginMessage{
-  position: absolute;
-  right: 50px;
-  top: 40px;
+
+.loginMessage {
+  position: fixed;
+  top: 30px;
+  right: 30px;
   background-color: #132445;
-  border-bottom: 3.4px solid #12d25f;
-  transition: all 0.65s;
+  color: #12d25f;
+  border-left: 5px solid #12d25f;
+  padding: 0 15px;
   font-size: 0.9rem;
-  text-transform: lowercase;
+  font-weight: 600;
   max-height: 0;
   overflow: hidden;
   opacity: 0;
+  transition: all 0.5s ease-in-out;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  z-index: 100;
 }
 
-@media (max-width:650px){
-  .loginMessage{
-  right: 29px;
-  top: 35px;
+@media (max-width: 650px) {
+  .loginMessage {
+    right: 10px;
+    left: 10px;
+    top: 10px;
+    justify-content: center;
+  }
 }
-}
+
+
+
+/*style="color: #2c63bd; cursor: pointer; font-weight: bold; text-decoration: underline;"

@@ -1,87 +1,93 @@
-const button = document.querySelector('.signin-js');
-const name_ = document.querySelector('.inputName-js');
-const password_ = document.querySelector('.inputPassword-js');
-const alertContainer = document.querySelector('.alert');
-const clearLocal = document.querySelector('.clickHere-js');
+
+const loginForm = document.querySelector('.login-form-js');
+const nameInput = document.querySelector('.inputName-js');
+const passwordInput = document.querySelector('.inputPassword-js');
+const submitBtn = document.querySelector('.submit-btn-js');
+const formTitle = document.querySelector('.form-title-js');
+const toggleLink = document.querySelector('.toggle-link-js');
+const toggleText = document.querySelector('.toggle-text-js');
+const alertBox = document.querySelector('.alert');
 const loginMessage = document.querySelector('.loginMessage');
+const resetBtn = document.querySelector('.clickHere-js');
 
-//clears the alert message
- function clearAlert(){
-    setTimeout(()=>{
-      alertContainer.innerHTML = '';
-    },8000);
-  } 
 
-//login logic - validation of password
-// logic - when a user enters the website afresh the password he types is saved in local storage. when he enters the website another timec, this logic checks if the password and username is same as the one stored in local storage
-button.addEventListener('click',(e)=>{
+let isSignUpMode = false;
+
+
+function showNotification(message) {
+  loginMessage.textContent = message;
+  loginMessage.style.maxHeight = '60px';
+  loginMessage.style.padding = '15px';
+  loginMessage.style.opacity = '1';
+
+  setTimeout(() => {
+    loginMessage.style.maxHeight = '0';
+    loginMessage.style.padding = '0';
+    loginMessage.style.opacity = '0';
+  }, 4000);
+}
+
+
+toggleLink.addEventListener('click', () => {
+  isSignUpMode = !isSignUpMode; 
+  
+  if (isSignUpMode) {
+    formTitle.textContent = 'Create Account';
+    submitBtn.textContent = 'Sign Up';
+    toggleText.textContent = 'Already have an account?';
+    toggleLink.textContent = 'Log In';
+    nameInput.value = '';
+    passwordInput.value = '';
+  } else {
+    formTitle.textContent = 'Login';
+    submitBtn.textContent = 'Log In';
+    toggleText.textContent = "Don't have an account?";
+    toggleLink.textContent = 'Sign Up';
+  }
+  alertBox.textContent = ''; 
+});
+
+
+loginForm.addEventListener('submit', (e) => {
   e.preventDefault();
 
-  const username = name_.value;
-  const password = password_.value;
+  const username = nameInput.value.trim();
+  const password = passwordInput.value.trim();
 
-  if(username ==='' && password === ''){
-    alertContainer.innerHTML='enter username and password';
-    clearAlert();
-    return;
-  }
+  const storedUser = JSON.parse(localStorage.getItem('username'));
+  const storedPass = JSON.parse(localStorage.getItem('password'));
 
-  if(username ===''){
-    alertContainer.innerHTML = 'enter username';
-    clearAlert();
-    return;
-  }
+  if (isSignUpMode) {
 
-  if( password === ''){
-    alertContainer.innerHTML = 'enter password  ';
-    clearAlert();
-    return; 
-  }
-  
-  let accuratepassword = JSON.parse(localStorage.getItem('password')) || null;
-  let accurateEmail = JSON.parse(localStorage.getItem('username')) || null;
-
-    if(accuratepassword===null || accurateEmail === null){
-      accuratepassword=password;
-      accurateEmail=username;
-       window.location.replace('./home.html');
-    };
-
-    if(accuratepassword!==password || accurateEmail!==username){
-      alertContainer.innerHTML = 'incorrect password or username';
-      clearAlert();
-      return;
-    }else{
-       window.location.replace('./home.html');
-    }
-
-
-   localStorage.setItem('password',JSON.stringify(accuratepassword));
-   localStorage.setItem('username',JSON.stringify(accurateEmail));
-
-});
-// this logic clears the username and password from local storage.
-clearLocal.addEventListener('click',()=>{
-    localStorage.removeItem('password');
-    localStorage.removeItem('username');
-
-    topMessage();
-
-    name_.value='';
-    password_.value=''
+    localStorage.setItem('username', JSON.stringify(username));
+    localStorage.setItem('password', JSON.stringify(password));
     
-   })
+    showNotification('Account Created Successfully!');
+    
+    
+    toggleLink.click(); 
+    nameInput.value = '';
+    passwordInput.value = '';
+
+  } else {
+    
+    if (username === storedUser && password === storedPass) {
+      showNotification('Login Successful!...');
+      setTimeout(() => {
+        window.location.href = './home.html';
+      }, 1500);
+    } else {
+      alertBox.textContent = 'Invalid credentials. try again or Sign Up.';
+    }
+  }
+});
 
 
-   function topMessage(){
-    loginMessage.style.maxHeight='37px';
-    loginMessage.style.padding='7px';
-    loginMessage.style.opacity='1';
-
-    setTimeout(()=>{
-      loginMessage.style.maxHeight='0';
-      loginMessage.style.padding='0';
-      loginMessage.style.opacity='0';
-    },4500)
-
-   }
+resetBtn.addEventListener('click', () => {
+  localStorage.removeItem('username');
+  localStorage.removeItem('password');
+  showNotification('create a new account.');
+  
+  
+  if (!isSignUpMode) toggleLink.click();
+});
