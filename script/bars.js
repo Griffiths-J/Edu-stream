@@ -23,7 +23,7 @@ export function sidebar(){
       })
   });
 
-//when the anywhere in the page i clicked the siddebar closes (on mobile)
+
   document.addEventListener('click',e=>{
     const isOpen = sidebar.classList.contains("revertSidebar");
 

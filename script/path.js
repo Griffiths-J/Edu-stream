@@ -17,7 +17,7 @@ export function path(){
           description:'Understand the fundamentals of operating systems, including process management, memory management, and file systems, which are crucial for backend development.Basics of linux, HTTP/HTTPS, DNS,sockets, REST principles'
         },{
           title:'Authentication and Authorization',
-          description:'Learn about different authentication methods (e.g., JWT, OAuth) and how to implement secure authentication and authorization mechanisms in your backend applications to protect user data and ensure secure access.'
+          description:'Learn about different authentication methods (e.g. JWT, OAuth) and how to implement secure authentication and authorization mechanisms in your backend applications to protect user data and ensure secure access.'
         },{
           title:'Backend Frameworks',
           description:'Explore popular backend frameworks like Express.js, Django, or Spring Boot to build scalable and maintainable server-side applications.'
@@ -50,13 +50,13 @@ export function path(){
           title:'Security and Best Practice',
           description:'Protect apps from XSS, CSRF, and insecure storage by sanitizing inputs and handling tokens carefully. Following accessibility standards and writing clean code ensures safety and reliability'
         },{
-          title:'APIs and Data Handlin',
+          title:'APIs and Data Handling',
           description:'Learn to connect apps with REST APIs using Fetch or Axios, and explore GraphQL for flexible queries. Real-time tools like WebSockets or Firebase enable live updates and interactive features.'
         },{
           title:'Tooling and Workflow',
           description:'Use npm or yarn for packages, Webpack or Vite for bundling, and TypeScript for type safety. Tools like ESLint and Prettier enforce consistency, making collaboration smoother.'
         },{
-          title:'Deployment and Performanc',
+          title:'Deployment and Performance',
           description:'Deploy apps with Netlify, Vercel, or GitHub Pages, and optimize with lazy loading, caching, and code splitting. PWAs add offline support and native-like performance for better user experience.'
         },{
           title:'Advanced Topics',
@@ -75,13 +75,13 @@ export function path(){
           title:'Tools and Technique',
           description:'Get familiar with penetration testing tools like Nmap, Wireshark, and Metasploit. Practice reconnaissance, vulnerability scanning, and password cracking to simulate attacker methods.'
         },{
-          title:'Web and Application Testin',
+          title:'Web and Application Testing',
           description:'Focus on web app security by studying the OWASP Top 10. Use tools like Burp Suite to test for SQL injection, XSS, CSRF, and weak authentication.'
         },{
-          title:'Wireless and Network Securit',
+          title:'Wireless and Network Security',
           description:'Learn to test wireless networks and perform attacks like man-in-the-middle or Wi-Fi cracking. This helps identify weak encryption and insecure configurations'
         },{
-          title:'Social Engineerin',
+          title:'Social Engineering',
           description:'Understand human vulnerabilities through phishing, pretexting, or physical security checks. Social engineering shows how attackers exploit trust rather than just technology.'
         },{
           title:'Advanced Skill',
@@ -97,25 +97,25 @@ export function path(){
           title:'Core Foundation',
           description:'Start with networking, operating systems, and security basics. Learn how data moves across networks, how systems generate logs, and how firewalls and antivirus tools protect against threats.'
         },{
-          title:'Tools and Monitorin',
+          title:'Tools and Monitoring',
           description:'Get hands-on with SIEM platforms, IDS/IPS, and endpoint security tools. These help analysts detect unusual activity, monitor traffic, and respond quickly to alerts.'
         },{
           title:'Incident Response',
           description:'Learn how to investigate and contain attacks. This means analyzing logs, tracing how attackers got in, and restoring systems safely. Incident response is about minimizing damage fast.'
         },{
-          title:'Malware and Threat Analysi',
+          title:'Malware and Threat Analysis',
           description:'Develop skills in malware analysis and threat intelligence. Understand how malicious files behave, track attack patterns, and use intelligence feeds to stay ahead of new threats.'
         },{
           title:'Compliance and Governance',
           description:'Analysts also ensure organizations follow security standards and regulations like ISO, NIST, or GDPR. This involves audits, enforcing policies, and aligning defenses with legal requirements.'
         },,{
-          title:'Advanced Skill',
+          title:'Advanced Skills',
           description:'At advanced levels, focus on threat hunting, vulnerability management, and defensive architecture. This means proactively searching for hidden risks, patching weaknesses, and designing strong layered defenses.'
         }
       ]
     },{
       title:'UI Design',
-      img:'',
+      img:'assets/thumbnails/-ui.webp',
       description:'UI focuses on the visual and interactive elements of a product. This path is about creating layouts, choosing colors, typography, icons, and ensuring consistency across screens. UI designers work with tools like Figma, Sketch, or Adobe XD to craft polished interfaces that are aesthetically pleasing and easy to navigate. The emphasis is on how the product looks and feels at the surface level.',
       roadmapCards:[
         {
@@ -134,7 +134,7 @@ export function path(){
       ]
     },{
       title:'UX Design',
-      img:'',
+      img:'assets/thumbnails/-ux.webp',
       description:'UX is centered on the overall journey and usability of a product. This path involves research, wireframing, prototyping, and testing to ensure the product solves user problems effectively. UX designers study user behavior, map out flows, and design interactions that make the experience intuitive and satisfying. The focus is on how the product works and how users feel while using it.',
       roadmapCards:[
         {
