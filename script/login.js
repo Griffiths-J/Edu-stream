@@ -72,7 +72,7 @@ loginForm.addEventListener('submit', (e) => {
   } else {
     
     if (username === storedUser && password === storedPass) {
-      showNotification('Login Successful!...');
+      showNotification('Login Successful...');
       setTimeout(() => {
         window.location.replace('./home.html');
       }, 1500);
