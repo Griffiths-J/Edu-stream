@@ -636,13 +636,14 @@ footer{
   background-color:/* #0f111a */ var(--footer-cl);
   display: grid;
   grid-template-columns: 3fr 1fr;
-  padding: 14px 5px;
+  padding: 17px 6.5px;
   font-size: clamp(0.5rem , 0.55vw + 0.55rem , 1.2rem);
 }
 
 .left{
   display: grid;
   grid-template-columns: auto repeat(auto-fit, minmax(200px, 1fr));
+  gap: 5.5px;
 }
 .footer-logo{
   display: flex;
@@ -662,6 +663,12 @@ footer{
   font-size: 0.85rem;
 }
 
+.right{
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
 .footerIcons{
   display: flex;
   justify-content: space-evenly;
@@ -677,7 +684,7 @@ footer{
 }
 .joininputs button{
   width: 100%;
-  padding: 3px 1px ;
+  padding: 6px 1px ;
   border-radius: 20px;
   background-color:var(--primary-hover);
   color: #fff;
